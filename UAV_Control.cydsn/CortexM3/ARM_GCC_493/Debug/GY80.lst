@@ -1,0 +1,2270 @@
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"GY80.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.L3G4200D_init,"ax",%progbits
+  19              		.align	2
+  20              		.global	L3G4200D_init
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	L3G4200D_init, %function
+  24              	L3G4200D_init:
+  25              	.LFB63:
+  26              		.file 1 ".\\GY80.c"
+   1:.\GY80.c      **** #include "GY80.h"
+   2:.\GY80.c      **** #include "math.h"
+   3:.\GY80.c      **** //初始化L3G4200D
+   4:.\GY80.c      **** uint8 L3G_READ[BUFFER_SIZE];
+   5:.\GY80.c      **** uint8 ADXL_READ[BUFFER_SIZE];
+   6:.\GY80.c      **** int Total_ACC;
+   7:.\GY80.c      **** void L3G4200D_init()
+   8:.\GY80.c      **** {
+  27              		.loc 1 8 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 8
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 00B5     		push	{lr}
+  32              		.cfi_def_cfa_offset 4
+  33              		.cfi_offset 14, -4
+  34 0002 83B0     		sub	sp, sp, #12
+  35              		.cfi_def_cfa_offset 16
+   9:.\GY80.c      ****     I2C_UDB_M_MasterClearStatus();
+  36              		.loc 1 9 0
+  37 0004 FFF7FEFF 		bl	I2C_UDB_M_MasterClearStatus
+  38              	.LVL0:
+  10:.\GY80.c      ****     uint8 buf[6] = {0x20|(1<<7), 0x0f, 0x00, 0x08, 0x30, 0x00};
+  39              		.loc 1 10 0
+  40 0008 094B     		ldr	r3, .L4
+  41 000a 1868     		ldr	r0, [r3]	@ unaligned
+  42 000c 0090     		str	r0, [sp]	@ unaligned
+  43 000e 9B88     		ldrh	r3, [r3, #4]	@ unaligned
+  44 0010 ADF80430 		strh	r3, [sp, #4]	@ unaligned
+  11:.\GY80.c      ****     /* Read the data from the EZI2C */
+  12:.\GY80.c      ****     I2C_UDB_M_MasterWriteBuf(L3G4200D_ADDR, (uint8 *)buf,
+  45              		.loc 1 12 0
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 2
+
+
+  46 0014 6920     		movs	r0, #105
+  47 0016 6946     		mov	r1, sp
+  48 0018 0622     		movs	r2, #6
+  49 001a 0023     		movs	r3, #0
+  50 001c FFF7FEFF 		bl	I2C_UDB_M_MasterWriteBuf
+  51              	.LVL1:
+  52              	.L2:
+  13:.\GY80.c      ****                             6, I2C_UDB_M_MODE_COMPLETE_XFER);
+  14:.\GY80.c      **** 
+  15:.\GY80.c      ****     while(0u == (I2C_UDB_M_MasterStatus() & I2C_UDB_M_MSTAT_WR_CMPLT))
+  53              		.loc 1 15 0 discriminator 1
+  54 0020 FFF7FEFF 		bl	I2C_UDB_M_MasterStatus
+  55              	.LVL2:
+  56 0024 10F0020F 		tst	r0, #2
+  57 0028 FAD0     		beq	.L2
+  16:.\GY80.c      ****     {
+  17:.\GY80.c      ****         /* Wait read to be completed */
+  18:.\GY80.c      ****     }
+  19:.\GY80.c      **** }
+  58              		.loc 1 19 0
+  59 002a 03B0     		add	sp, sp, #12
+  60              		.cfi_def_cfa_offset 4
+  61              		@ sp needed
+  62 002c 5DF804FB 		ldr	pc, [sp], #4
+  63              	.L5:
+  64              		.align	2
+  65              	.L4:
+  66 0030 00000000 		.word	.LANCHOR0
+  67              		.cfi_endproc
+  68              	.LFE63:
+  69              		.size	L3G4200D_init, .-L3G4200D_init
+  70              		.section	.text.AXDL345_init,"ax",%progbits
+  71              		.align	2
+  72              		.global	AXDL345_init
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	AXDL345_init, %function
+  76              	AXDL345_init:
+  77              	.LFB64:
+  20:.\GY80.c      **** 
+  21:.\GY80.c      **** //初始化AXDL345
+  22:.\GY80.c      **** void AXDL345_init()
+  23:.\GY80.c      **** {
+  78              		.loc 1 23 0
+  79              		.cfi_startproc
+  80              		@ args = 0, pretend = 0, frame = 8
+  81              		@ frame_needed = 0, uses_anonymous_args = 0
+  82 0000 00B5     		push	{lr}
+  83              		.cfi_def_cfa_offset 4
+  84              		.cfi_offset 14, -4
+  85 0002 83B0     		sub	sp, sp, #12
+  86              		.cfi_def_cfa_offset 16
+  24:.\GY80.c      ****     I2C_UDB_M_MasterClearStatus();
+  87              		.loc 1 24 0
+  88 0004 FFF7FEFF 		bl	I2C_UDB_M_MasterClearStatus
+  89              	.LVL3:
+  25:.\GY80.c      ****     uint8 buf[5] = {0x31|(1<<7), 0x08, 0x2D|(1<<7), 0x08, 0x80};
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 3
+
+
+  90              		.loc 1 25 0
+  91 0008 104B     		ldr	r3, .L10
+  92 000a 53F8080F 		ldr	r0, [r3, #8]!	@ unaligned
+  93 000e 0090     		str	r0, [sp]	@ unaligned
+  94 0010 1B79     		ldrb	r3, [r3, #4]	@ zero_extendqisi2
+  95 0012 8DF80430 		strb	r3, [sp, #4]
+  26:.\GY80.c      ****     /* Read the data from the EZI2C */
+  27:.\GY80.c      ****     I2C_UDB_M_MasterWriteBuf(ADXL345_ADDR, (uint8 *)buf,
+  96              		.loc 1 27 0
+  97 0016 5320     		movs	r0, #83
+  98 0018 6946     		mov	r1, sp
+  99 001a 0222     		movs	r2, #2
+ 100 001c 0023     		movs	r3, #0
+ 101 001e FFF7FEFF 		bl	I2C_UDB_M_MasterWriteBuf
+ 102              	.LVL4:
+ 103              	.L7:
+  28:.\GY80.c      ****                             2, I2C_UDB_M_MODE_COMPLETE_XFER);
+  29:.\GY80.c      **** 
+  30:.\GY80.c      ****     while(0u == (I2C_UDB_M_MasterStatus() & I2C_UDB_M_MSTAT_WR_CMPLT))
+ 104              		.loc 1 30 0 discriminator 1
+ 105 0022 FFF7FEFF 		bl	I2C_UDB_M_MasterStatus
+ 106              	.LVL5:
+ 107 0026 10F0020F 		tst	r0, #2
+ 108 002a FAD0     		beq	.L7
+  31:.\GY80.c      ****     {
+  32:.\GY80.c      ****         /* Wait read to be completed */
+  33:.\GY80.c      ****     }
+  34:.\GY80.c      ****     I2C_UDB_M_MasterWriteBuf(ADXL345_ADDR, (uint8 *)(buf+2),
+ 109              		.loc 1 34 0
+ 110 002c 5320     		movs	r0, #83
+ 111 002e 0DF10201 		add	r1, sp, #2
+ 112 0032 0322     		movs	r2, #3
+ 113 0034 0023     		movs	r3, #0
+ 114 0036 FFF7FEFF 		bl	I2C_UDB_M_MasterWriteBuf
+ 115              	.LVL6:
+ 116              	.L8:
+  35:.\GY80.c      ****                         3, I2C_UDB_M_MODE_COMPLETE_XFER);
+  36:.\GY80.c      **** 
+  37:.\GY80.c      ****     while(0u == (I2C_UDB_M_MasterStatus() & I2C_UDB_M_MSTAT_WR_CMPLT))
+ 117              		.loc 1 37 0 discriminator 1
+ 118 003a FFF7FEFF 		bl	I2C_UDB_M_MasterStatus
+ 119              	.LVL7:
+ 120 003e 10F0020F 		tst	r0, #2
+ 121 0042 FAD0     		beq	.L8
+  38:.\GY80.c      ****     {
+  39:.\GY80.c      ****         /* Wait read to be completed */
+  40:.\GY80.c      ****     }
+  41:.\GY80.c      **** }
+ 122              		.loc 1 41 0
+ 123 0044 03B0     		add	sp, sp, #12
+ 124              		.cfi_def_cfa_offset 4
+ 125              		@ sp needed
+ 126 0046 5DF804FB 		ldr	pc, [sp], #4
+ 127              	.L11:
+ 128 004a 00BF     		.align	2
+ 129              	.L10:
+ 130 004c 00000000 		.word	.LANCHOR0
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 4
+
+
+ 131              		.cfi_endproc
+ 132              	.LFE64:
+ 133              		.size	AXDL345_init, .-AXDL345_init
+ 134              		.section	.text.get_raw_gyo,"ax",%progbits
+ 135              		.align	2
+ 136              		.global	get_raw_gyo
+ 137              		.thumb
+ 138              		.thumb_func
+ 139              		.type	get_raw_gyo, %function
+ 140              	get_raw_gyo:
+ 141              	.LFB65:
+  42:.\GY80.c      **** 
+  43:.\GY80.c      **** //
+  44:.\GY80.c      **** void get_raw_gyo(int16* GYO)
+  45:.\GY80.c      **** {
+ 142              		.loc 1 45 0
+ 143              		.cfi_startproc
+ 144              		@ args = 0, pretend = 0, frame = 8
+ 145              		@ frame_needed = 0, uses_anonymous_args = 0
+ 146              	.LVL8:
+ 147 0000 30B5     		push	{r4, r5, lr}
+ 148              		.cfi_def_cfa_offset 12
+ 149              		.cfi_offset 4, -12
+ 150              		.cfi_offset 5, -8
+ 151              		.cfi_offset 14, -4
+ 152 0002 83B0     		sub	sp, sp, #12
+ 153              		.cfi_def_cfa_offset 24
+ 154 0004 0446     		mov	r4, r0
+  46:.\GY80.c      ****     uint8 a = 0x28|(1<<7);
+ 155              		.loc 1 46 0
+ 156 0006 02AD     		add	r5, sp, #8
+ 157 0008 A823     		movs	r3, #168
+ 158 000a 05F8013D 		strb	r3, [r5, #-1]!
+  47:.\GY80.c      ****     /* Clear I2C Master status */
+  48:.\GY80.c      ****     I2C_UDB_M_MasterClearStatus();
+ 159              		.loc 1 48 0
+ 160 000e FFF7FEFF 		bl	I2C_UDB_M_MasterClearStatus
+ 161              	.LVL9:
+  49:.\GY80.c      ****     /* Read the data from the EZI2C */
+  50:.\GY80.c      ****     I2C_UDB_M_MasterWriteBuf(L3G4200D_ADDR,&a ,
+ 162              		.loc 1 50 0
+ 163 0012 6920     		movs	r0, #105
+ 164 0014 2946     		mov	r1, r5
+ 165 0016 0122     		movs	r2, #1
+ 166 0018 0023     		movs	r3, #0
+ 167 001a FFF7FEFF 		bl	I2C_UDB_M_MasterWriteBuf
+ 168              	.LVL10:
+ 169              	.L13:
+  51:.\GY80.c      ****                             1, I2C_UDB_M_MODE_COMPLETE_XFER);
+  52:.\GY80.c      **** 
+  53:.\GY80.c      ****     while(0u == (I2C_UDB_M_MasterStatus() & I2C_UDB_M_MSTAT_WR_CMPLT))
+ 170              		.loc 1 53 0 discriminator 1
+ 171 001e FFF7FEFF 		bl	I2C_UDB_M_MasterStatus
+ 172              	.LVL11:
+ 173 0022 10F0020F 		tst	r0, #2
+ 174 0026 FAD0     		beq	.L13
+  54:.\GY80.c      ****     {
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 5
+
+
+  55:.\GY80.c      ****         /* Wait read to be completed */
+  56:.\GY80.c      ****     }
+  57:.\GY80.c      ****     I2C_UDB_M_MasterClearStatus();
+ 175              		.loc 1 57 0
+ 176 0028 FFF7FEFF 		bl	I2C_UDB_M_MasterClearStatus
+ 177              	.LVL12:
+  58:.\GY80.c      ****     I2C_UDB_M_MasterReadBuf(L3G4200D_ADDR,L3G_READ ,
+ 178              		.loc 1 58 0
+ 179 002c 6920     		movs	r0, #105
+ 180 002e 1849     		ldr	r1, .L22
+ 181 0030 0622     		movs	r2, #6
+ 182 0032 0023     		movs	r3, #0
+ 183 0034 FFF7FEFF 		bl	I2C_UDB_M_MasterReadBuf
+ 184              	.LVL13:
+ 185              	.L14:
+  59:.\GY80.c      ****                             BUFFER_SIZE, I2C_UDB_M_MODE_COMPLETE_XFER);
+  60:.\GY80.c      ****     while(0u == (I2C_UDB_M_MasterStatus() & I2C_UDB_M_MSTAT_RD_CMPLT))
+ 186              		.loc 1 60 0 discriminator 1
+ 187 0038 FFF7FEFF 		bl	I2C_UDB_M_MasterStatus
+ 188              	.LVL14:
+ 189 003c 10F0010F 		tst	r0, #1
+ 190 0040 FAD0     		beq	.L14
+  61:.\GY80.c      ****     {
+  62:.\GY80.c      ****         /* Wait read to be completed */
+  63:.\GY80.c      ****     }
+  64:.\GY80.c      ****     uint16 Gyo[3];
+  65:.\GY80.c      ****     Gyo[0] = (L3G_READ[1]<<8) + L3G_READ[0];
+ 191              		.loc 1 65 0
+ 192 0042 1349     		ldr	r1, .L22
+ 193 0044 4878     		ldrb	r0, [r1, #1]	@ zero_extendqisi2
+ 194 0046 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 195 0048 03EB0020 		add	r0, r3, r0, lsl #8
+  66:.\GY80.c      ****     Gyo[1] = (L3G_READ[3]<<8) + L3G_READ[2];
+ 196              		.loc 1 66 0
+ 197 004c CA78     		ldrb	r2, [r1, #3]	@ zero_extendqisi2
+ 198 004e 8B78     		ldrb	r3, [r1, #2]	@ zero_extendqisi2
+ 199 0050 03EB0222 		add	r2, r3, r2, lsl #8
+ 200 0054 92B2     		uxth	r2, r2
+  67:.\GY80.c      ****     Gyo[2] = (L3G_READ[5]<<8) + L3G_READ[4];
+ 201              		.loc 1 67 0
+ 202 0056 4D79     		ldrb	r5, [r1, #5]	@ zero_extendqisi2
+ 203 0058 0B79     		ldrb	r3, [r1, #4]	@ zero_extendqisi2
+ 204 005a 03EB0523 		add	r3, r3, r5, lsl #8
+ 205 005e 9BB2     		uxth	r3, r3
+  68:.\GY80.c      ****     //Make Sure get the correct Message
+  69:.\GY80.c      ****     if(Gyo[0]>=32768)
+ 206              		.loc 1 69 0
+ 207 0060 81B2     		uxth	r1, r0
+ 208 0062 11F4004F 		tst	r1, #32768
+ 209 0066 01D0     		beq	.L15
+  70:.\GY80.c      ****     {
+  71:.\GY80.c      ****         GYO[0]=Gyo[0]-65535-1;
+ 210              		.loc 1 71 0
+ 211 0068 2180     		strh	r1, [r4]	@ movhi
+ 212 006a 00E0     		b	.L16
+ 213              	.L15:
+  72:.\GY80.c      ****     }
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 6
+
+
+  73:.\GY80.c      ****     else
+  74:.\GY80.c      ****     {
+  75:.\GY80.c      ****         GYO[0]=Gyo[0];
+ 214              		.loc 1 75 0
+ 215 006c 2180     		strh	r1, [r4]	@ movhi
+ 216              	.L16:
+  76:.\GY80.c      ****     }
+  77:.\GY80.c      ****     if(Gyo[1]>=32768)
+ 217              		.loc 1 77 0
+ 218 006e 92B2     		uxth	r2, r2
+ 219 0070 12F4004F 		tst	r2, #32768
+ 220 0074 01D0     		beq	.L17
+  78:.\GY80.c      ****     {
+  79:.\GY80.c      ****         GYO[1]=Gyo[1]-65535-1;
+ 221              		.loc 1 79 0
+ 222 0076 6280     		strh	r2, [r4, #2]	@ movhi
+ 223 0078 00E0     		b	.L18
+ 224              	.L17:
+  80:.\GY80.c      ****     }
+  81:.\GY80.c      ****     else
+  82:.\GY80.c      ****     {
+  83:.\GY80.c      ****         GYO[1]=Gyo[1];
+ 225              		.loc 1 83 0
+ 226 007a 6280     		strh	r2, [r4, #2]	@ movhi
+ 227              	.L18:
+  84:.\GY80.c      ****     }
+  85:.\GY80.c      ****     if(Gyo[2]>=32768)
+ 228              		.loc 1 85 0
+ 229 007c 9BB2     		uxth	r3, r3
+ 230 007e 13F4004F 		tst	r3, #32768
+ 231 0082 01D0     		beq	.L19
+  86:.\GY80.c      ****     {
+  87:.\GY80.c      ****         GYO[2]=Gyo[2]-65535-1;
+ 232              		.loc 1 87 0
+ 233 0084 A380     		strh	r3, [r4, #4]	@ movhi
+ 234 0086 00E0     		b	.L12
+ 235              	.L19:
+  88:.\GY80.c      ****     }
+  89:.\GY80.c      ****     else
+  90:.\GY80.c      ****     {
+  91:.\GY80.c      ****         GYO[2]=Gyo[2];
+ 236              		.loc 1 91 0
+ 237 0088 A380     		strh	r3, [r4, #4]	@ movhi
+ 238              	.L12:
+  92:.\GY80.c      ****     }
+  93:.\GY80.c      **** }
+ 239              		.loc 1 93 0
+ 240 008a 03B0     		add	sp, sp, #12
+ 241              		.cfi_def_cfa_offset 12
+ 242              		@ sp needed
+ 243 008c 30BD     		pop	{r4, r5, pc}
+ 244              	.LVL15:
+ 245              	.L23:
+ 246 008e 00BF     		.align	2
+ 247              	.L22:
+ 248 0090 00000000 		.word	L3G_READ
+ 249              		.cfi_endproc
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 7
+
+
+ 250              	.LFE65:
+ 251              		.size	get_raw_gyo, .-get_raw_gyo
+ 252              		.section	.text.get_raw_acc,"ax",%progbits
+ 253              		.align	2
+ 254              		.global	get_raw_acc
+ 255              		.thumb
+ 256              		.thumb_func
+ 257              		.type	get_raw_acc, %function
+ 258              	get_raw_acc:
+ 259              	.LFB66:
+  94:.\GY80.c      **** 
+  95:.\GY80.c      **** //get the acceleration
+  96:.\GY80.c      **** void get_raw_acc(int16* ACC)
+  97:.\GY80.c      **** {
+ 260              		.loc 1 97 0
+ 261              		.cfi_startproc
+ 262              		@ args = 0, pretend = 0, frame = 8
+ 263              		@ frame_needed = 0, uses_anonymous_args = 0
+ 264              	.LVL16:
+ 265 0000 10B5     		push	{r4, lr}
+ 266              		.cfi_def_cfa_offset 8
+ 267              		.cfi_offset 4, -8
+ 268              		.cfi_offset 14, -4
+ 269 0002 82B0     		sub	sp, sp, #8
+ 270              		.cfi_def_cfa_offset 16
+ 271 0004 0446     		mov	r4, r0
+  98:.\GY80.c      ****     uint8 b = 0x32|(1<<7);
+ 272              		.loc 1 98 0
+ 273 0006 B223     		movs	r3, #178
+ 274 0008 8DF80730 		strb	r3, [sp, #7]
+  99:.\GY80.c      ****     I2C_UDB_M_MasterClearStatus();
+ 275              		.loc 1 99 0
+ 276 000c FFF7FEFF 		bl	I2C_UDB_M_MasterClearStatus
+ 277              	.LVL17:
+ 100:.\GY80.c      ****     I2C_UDB_M_MasterReadBuf(L3G4200D_ADDR,L3G_READ ,
+ 278              		.loc 1 100 0
+ 279 0010 6920     		movs	r0, #105
+ 280 0012 1B49     		ldr	r1, .L29
+ 281 0014 0622     		movs	r2, #6
+ 282 0016 0023     		movs	r3, #0
+ 283 0018 FFF7FEFF 		bl	I2C_UDB_M_MasterReadBuf
+ 284              	.LVL18:
+ 285              	.L25:
+ 101:.\GY80.c      ****                             BUFFER_SIZE, I2C_UDB_M_MODE_COMPLETE_XFER);
+ 102:.\GY80.c      ****     while(0u == (I2C_UDB_M_MasterStatus() & I2C_UDB_M_MSTAT_RD_CMPLT))
+ 286              		.loc 1 102 0 discriminator 1
+ 287 001c FFF7FEFF 		bl	I2C_UDB_M_MasterStatus
+ 288              	.LVL19:
+ 289 0020 10F0010F 		tst	r0, #1
+ 290 0024 FAD0     		beq	.L25
+ 103:.\GY80.c      ****     {
+ 104:.\GY80.c      ****         /* Wait read to be completed */
+ 105:.\GY80.c      ****     }
+ 106:.\GY80.c      ****     
+ 107:.\GY80.c      ****     /* Clear I2C Master status */
+ 108:.\GY80.c      ****     I2C_UDB_M_MasterClearStatus();
+ 291              		.loc 1 108 0
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 8
+
+
+ 292 0026 FFF7FEFF 		bl	I2C_UDB_M_MasterClearStatus
+ 293              	.LVL20:
+ 109:.\GY80.c      ****     /* Read the data from the EZI2C */
+ 110:.\GY80.c      ****     I2C_UDB_M_MasterWriteBuf(ADXL345_ADDR,&b ,
+ 294              		.loc 1 110 0
+ 295 002a 5320     		movs	r0, #83
+ 296 002c 0DF10701 		add	r1, sp, #7
+ 297 0030 0122     		movs	r2, #1
+ 298 0032 0023     		movs	r3, #0
+ 299 0034 FFF7FEFF 		bl	I2C_UDB_M_MasterWriteBuf
+ 300              	.LVL21:
+ 301              	.L26:
+ 111:.\GY80.c      ****                             1, I2C_UDB_M_MODE_COMPLETE_XFER);
+ 112:.\GY80.c      **** 
+ 113:.\GY80.c      ****     while(0u == (I2C_UDB_M_MasterStatus() & I2C_UDB_M_MSTAT_WR_CMPLT))
+ 302              		.loc 1 113 0 discriminator 1
+ 303 0038 FFF7FEFF 		bl	I2C_UDB_M_MasterStatus
+ 304              	.LVL22:
+ 305 003c 10F0020F 		tst	r0, #2
+ 306 0040 FAD0     		beq	.L26
+ 114:.\GY80.c      ****     {
+ 115:.\GY80.c      ****         /* Wait read to be completed */
+ 116:.\GY80.c      ****     }
+ 117:.\GY80.c      ****     I2C_UDB_M_MasterClearStatus();
+ 307              		.loc 1 117 0
+ 308 0042 FFF7FEFF 		bl	I2C_UDB_M_MasterClearStatus
+ 309              	.LVL23:
+ 118:.\GY80.c      ****     I2C_UDB_M_MasterReadBuf(ADXL345_ADDR,ADXL_READ ,
+ 310              		.loc 1 118 0
+ 311 0046 5320     		movs	r0, #83
+ 312 0048 0E49     		ldr	r1, .L29+4
+ 313 004a 0622     		movs	r2, #6
+ 314 004c 0023     		movs	r3, #0
+ 315 004e FFF7FEFF 		bl	I2C_UDB_M_MasterReadBuf
+ 316              	.LVL24:
+ 317              	.L27:
+ 119:.\GY80.c      ****                             BUFFER_SIZE, I2C_UDB_M_MODE_COMPLETE_XFER);
+ 120:.\GY80.c      ****     while(0u == (I2C_UDB_M_MasterStatus() & I2C_UDB_M_MSTAT_RD_CMPLT))
+ 318              		.loc 1 120 0 discriminator 1
+ 319 0052 FFF7FEFF 		bl	I2C_UDB_M_MasterStatus
+ 320              	.LVL25:
+ 321 0056 10F0010F 		tst	r0, #1
+ 322 005a FAD0     		beq	.L27
+ 121:.\GY80.c      ****     {
+ 122:.\GY80.c      ****         /* Wait read to be completed */
+ 123:.\GY80.c      ****     } 
+ 124:.\GY80.c      ****     ACC[0] = (ADXL_READ[1]<<8) + ADXL_READ[0];
+ 323              		.loc 1 124 0
+ 324 005c 094B     		ldr	r3, .L29+4
+ 325 005e 5978     		ldrb	r1, [r3, #1]	@ zero_extendqisi2
+ 326 0060 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 327 0062 02EB0122 		add	r2, r2, r1, lsl #8
+ 328 0066 2280     		strh	r2, [r4]	@ movhi
+ 125:.\GY80.c      ****     ACC[1] = (ADXL_READ[3]<<8) + ADXL_READ[2];
+ 329              		.loc 1 125 0
+ 330 0068 D978     		ldrb	r1, [r3, #3]	@ zero_extendqisi2
+ 331 006a 9A78     		ldrb	r2, [r3, #2]	@ zero_extendqisi2
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 9
+
+
+ 332 006c 02EB0122 		add	r2, r2, r1, lsl #8
+ 333 0070 6280     		strh	r2, [r4, #2]	@ movhi
+ 126:.\GY80.c      ****     ACC[2] = (ADXL_READ[5]<<8) + ADXL_READ[4];
+ 334              		.loc 1 126 0
+ 335 0072 5A79     		ldrb	r2, [r3, #5]	@ zero_extendqisi2
+ 336 0074 1B79     		ldrb	r3, [r3, #4]	@ zero_extendqisi2
+ 337 0076 03EB0223 		add	r3, r3, r2, lsl #8
+ 338 007a A380     		strh	r3, [r4, #4]	@ movhi
+ 127:.\GY80.c      **** }
+ 339              		.loc 1 127 0
+ 340 007c 02B0     		add	sp, sp, #8
+ 341              		.cfi_def_cfa_offset 8
+ 342              		@ sp needed
+ 343 007e 10BD     		pop	{r4, pc}
+ 344              	.LVL26:
+ 345              	.L30:
+ 346              		.align	2
+ 347              	.L29:
+ 348 0080 00000000 		.word	L3G_READ
+ 349 0084 00000000 		.word	ADXL_READ
+ 350              		.cfi_endproc
+ 351              	.LFE66:
+ 352              		.size	get_raw_acc, .-get_raw_acc
+ 353              		.global	__aeabi_i2d
+ 354              		.global	__aeabi_d2iz
+ 355              		.global	__aeabi_ddiv
+ 356              		.global	__aeabi_dmul
+ 357              		.global	__aeabi_d2f
+ 358              		.section	.text.get_raw_euler2,"ax",%progbits
+ 359              		.align	2
+ 360              		.global	get_raw_euler2
+ 361              		.thumb
+ 362              		.thumb_func
+ 363              		.type	get_raw_euler2, %function
+ 364              	get_raw_euler2:
+ 365              	.LFB67:
+ 128:.\GY80.c      **** 
+ 129:.\GY80.c      **** //get the Euler Angle
+ 130:.\GY80.c      **** void get_raw_euler2(float* EULER, int16* acc)
+ 131:.\GY80.c      **** {
+ 366              		.loc 1 131 0
+ 367              		.cfi_startproc
+ 368              		@ args = 0, pretend = 0, frame = 0
+ 369              		@ frame_needed = 0, uses_anonymous_args = 0
+ 370              	.LVL27:
+ 371 0000 2DE97043 		push	{r4, r5, r6, r8, r9, lr}
+ 372              		.cfi_def_cfa_offset 24
+ 373              		.cfi_offset 4, -24
+ 374              		.cfi_offset 5, -20
+ 375              		.cfi_offset 6, -16
+ 376              		.cfi_offset 8, -12
+ 377              		.cfi_offset 9, -8
+ 378              		.cfi_offset 14, -4
+ 379 0004 0646     		mov	r6, r0
+ 380 0006 0C46     		mov	r4, r1
+ 132:.\GY80.c      ****     Total_ACC = sqrt(acc[0]*acc[0]+acc[1]*acc[1]+acc[2]*acc[2]);
+ 381              		.loc 1 132 0
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 10
+
+
+ 382 0008 B1F90050 		ldrsh	r5, [r1]
+ 383 000c B1F90230 		ldrsh	r3, [r1, #2]
+ 384 0010 03FB03F3 		mul	r3, r3, r3
+ 385 0014 05FB0533 		mla	r3, r5, r5, r3
+ 386 0018 B1F90450 		ldrsh	r5, [r1, #4]
+ 387 001c 05FB0535 		mla	r5, r5, r5, r3
+ 388 0020 2846     		mov	r0, r5
+ 389              	.LVL28:
+ 390 0022 FFF7FEFF 		bl	__aeabi_i2d
+ 391              	.LVL29:
+ 392 0026 FFF7FEFF 		bl	sqrt
+ 393              	.LVL30:
+ 394 002a 314D     		ldr	r5, .L33+8
+ 395 002c FFF7FEFF 		bl	__aeabi_d2iz
+ 396              	.LVL31:
+ 397 0030 2860     		str	r0, [r5]
+ 133:.\GY80.c      ****     //EULER[0] = acos((double)acc[0]/Total_ACC)*180/3.1416;
+ 134:.\GY80.c      ****     //EULER[1] = acos((double)acc[1]/Total_ACC)*180/3.1416;
+ 135:.\GY80.c      ****     EULER[0] = atan((double)acc[1]/acc[2])*180/3.1416;
+ 398              		.loc 1 135 0
+ 399 0032 B4F90200 		ldrsh	r0, [r4, #2]
+ 400 0036 FFF7FEFF 		bl	__aeabi_i2d
+ 401              	.LVL32:
+ 402 003a 8046     		mov	r8, r0
+ 403 003c 8946     		mov	r9, r1
+ 404 003e B4F90400 		ldrsh	r0, [r4, #4]
+ 405 0042 FFF7FEFF 		bl	__aeabi_i2d
+ 406              	.LVL33:
+ 407 0046 0246     		mov	r2, r0
+ 408 0048 0B46     		mov	r3, r1
+ 409 004a 4046     		mov	r0, r8
+ 410 004c 4946     		mov	r1, r9
+ 411 004e FFF7FEFF 		bl	__aeabi_ddiv
+ 412              	.LVL34:
+ 413 0052 FFF7FEFF 		bl	atan
+ 414              	.LVL35:
+ 415 0056 0022     		movs	r2, #0
+ 416 0058 264B     		ldr	r3, .L33+12
+ 417 005a FFF7FEFF 		bl	__aeabi_dmul
+ 418              	.LVL36:
+ 419 005e 22A3     		adr	r3, .L33
+ 420 0060 D3E90023 		ldrd	r2, [r3]
+ 421 0064 FFF7FEFF 		bl	__aeabi_ddiv
+ 422              	.LVL37:
+ 423 0068 FFF7FEFF 		bl	__aeabi_d2f
+ 424              	.LVL38:
+ 425 006c 3060     		str	r0, [r6]	@ float
+ 136:.\GY80.c      ****     EULER[1] = atan((double)acc[0]/acc[2])*180/3.1416;
+ 426              		.loc 1 136 0
+ 427 006e B4F90000 		ldrsh	r0, [r4]
+ 428 0072 FFF7FEFF 		bl	__aeabi_i2d
+ 429              	.LVL39:
+ 430 0076 8046     		mov	r8, r0
+ 431 0078 8946     		mov	r9, r1
+ 432 007a B4F90400 		ldrsh	r0, [r4, #4]
+ 433 007e FFF7FEFF 		bl	__aeabi_i2d
+ 434              	.LVL40:
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 11
+
+
+ 435 0082 0246     		mov	r2, r0
+ 436 0084 0B46     		mov	r3, r1
+ 437 0086 4046     		mov	r0, r8
+ 438 0088 4946     		mov	r1, r9
+ 439 008a FFF7FEFF 		bl	__aeabi_ddiv
+ 440              	.LVL41:
+ 441 008e FFF7FEFF 		bl	atan
+ 442              	.LVL42:
+ 443 0092 0022     		movs	r2, #0
+ 444 0094 174B     		ldr	r3, .L33+12
+ 445 0096 FFF7FEFF 		bl	__aeabi_dmul
+ 446              	.LVL43:
+ 447 009a 13A3     		adr	r3, .L33
+ 448 009c D3E90023 		ldrd	r2, [r3]
+ 449 00a0 FFF7FEFF 		bl	__aeabi_ddiv
+ 450              	.LVL44:
+ 451 00a4 FFF7FEFF 		bl	__aeabi_d2f
+ 452              	.LVL45:
+ 453 00a8 7060     		str	r0, [r6, #4]	@ float
+ 137:.\GY80.c      ****     EULER[2] = acos((double)acc[2]/Total_ACC)*180/3.1416;
+ 454              		.loc 1 137 0
+ 455 00aa B4F90400 		ldrsh	r0, [r4, #4]
+ 456 00ae FFF7FEFF 		bl	__aeabi_i2d
+ 457              	.LVL46:
+ 458 00b2 8046     		mov	r8, r0
+ 459 00b4 8946     		mov	r9, r1
+ 460 00b6 2868     		ldr	r0, [r5]
+ 461 00b8 FFF7FEFF 		bl	__aeabi_i2d
+ 462              	.LVL47:
+ 463 00bc 0246     		mov	r2, r0
+ 464 00be 0B46     		mov	r3, r1
+ 465 00c0 4046     		mov	r0, r8
+ 466 00c2 4946     		mov	r1, r9
+ 467 00c4 FFF7FEFF 		bl	__aeabi_ddiv
+ 468              	.LVL48:
+ 469 00c8 FFF7FEFF 		bl	acos
+ 470              	.LVL49:
+ 471 00cc 0022     		movs	r2, #0
+ 472 00ce 094B     		ldr	r3, .L33+12
+ 473 00d0 FFF7FEFF 		bl	__aeabi_dmul
+ 474              	.LVL50:
+ 475 00d4 04A3     		adr	r3, .L33
+ 476 00d6 D3E90023 		ldrd	r2, [r3]
+ 477 00da FFF7FEFF 		bl	__aeabi_ddiv
+ 478              	.LVL51:
+ 479 00de FFF7FEFF 		bl	__aeabi_d2f
+ 480              	.LVL52:
+ 481 00e2 B060     		str	r0, [r6, #8]	@ float
+ 482 00e4 BDE87083 		pop	{r4, r5, r6, r8, r9, pc}
+ 483              	.LVL53:
+ 484              	.L34:
+ 485              		.align	3
+ 486              	.L33:
+ 487 00e8 A7E8482E 		.word	776530087
+ 488 00ec FF210940 		.word	1074340351
+ 489 00f0 00000000 		.word	Total_ACC
+ 490 00f4 00806640 		.word	1080459264
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 12
+
+
+ 491              		.cfi_endproc
+ 492              	.LFE67:
+ 493              		.size	get_raw_euler2, .-get_raw_euler2
+ 494              		.section	.text.get_raw_euler,"ax",%progbits
+ 495              		.align	2
+ 496              		.global	get_raw_euler
+ 497              		.thumb
+ 498              		.thumb_func
+ 499              		.type	get_raw_euler, %function
+ 500              	get_raw_euler:
+ 501              	.LFB68:
+ 138:.\GY80.c      **** }
+ 139:.\GY80.c      **** 
+ 140:.\GY80.c      **** void get_raw_euler(float* EULER, int16* acc)
+ 141:.\GY80.c      **** {
+ 502              		.loc 1 141 0
+ 503              		.cfi_startproc
+ 504              		@ args = 0, pretend = 0, frame = 0
+ 505              		@ frame_needed = 0, uses_anonymous_args = 0
+ 506              	.LVL54:
+ 507 0000 2DE9F843 		push	{r3, r4, r5, r6, r7, r8, r9, lr}
+ 508              		.cfi_def_cfa_offset 32
+ 509              		.cfi_offset 3, -32
+ 510              		.cfi_offset 4, -28
+ 511              		.cfi_offset 5, -24
+ 512              		.cfi_offset 6, -20
+ 513              		.cfi_offset 7, -16
+ 514              		.cfi_offset 8, -12
+ 515              		.cfi_offset 9, -8
+ 516              		.cfi_offset 14, -4
+ 517 0004 0646     		mov	r6, r0
+ 518 0006 0C46     		mov	r4, r1
+ 142:.\GY80.c      ****     Total_ACC = sqrt(acc[0]*acc[0]+acc[1]*acc[1]+acc[2]*acc[2]);
+ 519              		.loc 1 142 0
+ 520 0008 B1F90050 		ldrsh	r5, [r1]
+ 521 000c B1F90230 		ldrsh	r3, [r1, #2]
+ 522 0010 03FB03F3 		mul	r3, r3, r3
+ 523 0014 05FB0533 		mla	r3, r5, r5, r3
+ 524 0018 B1F90450 		ldrsh	r5, [r1, #4]
+ 525 001c 05FB0535 		mla	r5, r5, r5, r3
+ 526 0020 2846     		mov	r0, r5
+ 527              	.LVL55:
+ 528 0022 FFF7FEFF 		bl	__aeabi_i2d
+ 529              	.LVL56:
+ 530 0026 FFF7FEFF 		bl	sqrt
+ 531              	.LVL57:
+ 532 002a FFF7FEFF 		bl	__aeabi_d2iz
+ 533              	.LVL58:
+ 534 002e 0746     		mov	r7, r0
+ 535 0030 2F4D     		ldr	r5, .L37+8
+ 536 0032 2860     		str	r0, [r5]
+ 143:.\GY80.c      ****     EULER[0] = acos((double)acc[0]/Total_ACC)*180/3.1416;
+ 537              		.loc 1 143 0
+ 538 0034 B4F90000 		ldrsh	r0, [r4]
+ 539 0038 FFF7FEFF 		bl	__aeabi_i2d
+ 540              	.LVL59:
+ 541 003c 8046     		mov	r8, r0
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 13
+
+
+ 542 003e 8946     		mov	r9, r1
+ 543 0040 3846     		mov	r0, r7
+ 544 0042 FFF7FEFF 		bl	__aeabi_i2d
+ 545              	.LVL60:
+ 546 0046 0246     		mov	r2, r0
+ 547 0048 0B46     		mov	r3, r1
+ 548 004a 4046     		mov	r0, r8
+ 549 004c 4946     		mov	r1, r9
+ 550 004e FFF7FEFF 		bl	__aeabi_ddiv
+ 551              	.LVL61:
+ 552 0052 FFF7FEFF 		bl	acos
+ 553              	.LVL62:
+ 554 0056 0022     		movs	r2, #0
+ 555 0058 264B     		ldr	r3, .L37+12
+ 556 005a FFF7FEFF 		bl	__aeabi_dmul
+ 557              	.LVL63:
+ 558 005e 22A3     		adr	r3, .L37
+ 559 0060 D3E90023 		ldrd	r2, [r3]
+ 560 0064 FFF7FEFF 		bl	__aeabi_ddiv
+ 561              	.LVL64:
+ 562 0068 FFF7FEFF 		bl	__aeabi_d2f
+ 563              	.LVL65:
+ 564 006c 3060     		str	r0, [r6]	@ float
+ 144:.\GY80.c      ****     EULER[1] = acos((double)acc[1]/Total_ACC)*180/3.1416;
+ 565              		.loc 1 144 0
+ 566 006e B4F90200 		ldrsh	r0, [r4, #2]
+ 567 0072 FFF7FEFF 		bl	__aeabi_i2d
+ 568              	.LVL66:
+ 569 0076 8046     		mov	r8, r0
+ 570 0078 8946     		mov	r9, r1
+ 571 007a 2868     		ldr	r0, [r5]
+ 572 007c FFF7FEFF 		bl	__aeabi_i2d
+ 573              	.LVL67:
+ 574 0080 0246     		mov	r2, r0
+ 575 0082 0B46     		mov	r3, r1
+ 576 0084 4046     		mov	r0, r8
+ 577 0086 4946     		mov	r1, r9
+ 578 0088 FFF7FEFF 		bl	__aeabi_ddiv
+ 579              	.LVL68:
+ 580 008c FFF7FEFF 		bl	acos
+ 581              	.LVL69:
+ 582 0090 0022     		movs	r2, #0
+ 583 0092 184B     		ldr	r3, .L37+12
+ 584 0094 FFF7FEFF 		bl	__aeabi_dmul
+ 585              	.LVL70:
+ 586 0098 13A3     		adr	r3, .L37
+ 587 009a D3E90023 		ldrd	r2, [r3]
+ 588 009e FFF7FEFF 		bl	__aeabi_ddiv
+ 589              	.LVL71:
+ 590 00a2 FFF7FEFF 		bl	__aeabi_d2f
+ 591              	.LVL72:
+ 592 00a6 7060     		str	r0, [r6, #4]	@ float
+ 145:.\GY80.c      ****     EULER[2] = acos((double)acc[2]/Total_ACC)*180/3.1416;
+ 593              		.loc 1 145 0
+ 594 00a8 B4F90400 		ldrsh	r0, [r4, #4]
+ 595 00ac FFF7FEFF 		bl	__aeabi_i2d
+ 596              	.LVL73:
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 14
+
+
+ 597 00b0 8046     		mov	r8, r0
+ 598 00b2 8946     		mov	r9, r1
+ 599 00b4 2868     		ldr	r0, [r5]
+ 600 00b6 FFF7FEFF 		bl	__aeabi_i2d
+ 601              	.LVL74:
+ 602 00ba 0246     		mov	r2, r0
+ 603 00bc 0B46     		mov	r3, r1
+ 604 00be 4046     		mov	r0, r8
+ 605 00c0 4946     		mov	r1, r9
+ 606 00c2 FFF7FEFF 		bl	__aeabi_ddiv
+ 607              	.LVL75:
+ 608 00c6 FFF7FEFF 		bl	acos
+ 609              	.LVL76:
+ 610 00ca 0022     		movs	r2, #0
+ 611 00cc 094B     		ldr	r3, .L37+12
+ 612 00ce FFF7FEFF 		bl	__aeabi_dmul
+ 613              	.LVL77:
+ 614 00d2 05A3     		adr	r3, .L37
+ 615 00d4 D3E90023 		ldrd	r2, [r3]
+ 616 00d8 FFF7FEFF 		bl	__aeabi_ddiv
+ 617              	.LVL78:
+ 618 00dc FFF7FEFF 		bl	__aeabi_d2f
+ 619              	.LVL79:
+ 620 00e0 B060     		str	r0, [r6, #8]	@ float
+ 621 00e2 BDE8F883 		pop	{r3, r4, r5, r6, r7, r8, r9, pc}
+ 622              	.LVL80:
+ 623              	.L38:
+ 624 00e6 00BF     		.align	3
+ 625              	.L37:
+ 626 00e8 A7E8482E 		.word	776530087
+ 627 00ec FF210940 		.word	1074340351
+ 628 00f0 00000000 		.word	Total_ACC
+ 629 00f4 00806640 		.word	1080459264
+ 630              		.cfi_endproc
+ 631              	.LFE68:
+ 632              		.size	get_raw_euler, .-get_raw_euler
+ 633              		.comm	Total_ACC,4,4
+ 634              		.comm	ADXL_READ,6,4
+ 635              		.comm	L3G_READ,6,4
+ 636              		.section	.rodata
+ 637              		.align	2
+ 638              		.set	.LANCHOR0,. + 0
+ 639              	.LC0:
+ 640 0000 A0       		.byte	-96
+ 641 0001 0F       		.byte	15
+ 642 0002 00       		.byte	0
+ 643 0003 08       		.byte	8
+ 644 0004 30       		.byte	48
+ 645 0005 00       		.byte	0
+ 646 0006 0000     		.space	2
+ 647              	.LC1:
+ 648 0008 B1       		.byte	-79
+ 649 0009 08       		.byte	8
+ 650 000a AD       		.byte	-83
+ 651 000b 08       		.byte	8
+ 652 000c 80       		.byte	-128
+ 653 000d 000000   		.text
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 15
+
+
+ 654              	.Letext0:
+ 655              		.file 2 "d:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 656              		.file 3 "d:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 657              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 658              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 659              		.file 6 "Generated_Source\\PSoC5/I2C_UDB_M.h"
+ 660              		.file 7 "d:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 661              		.section	.debug_info,"",%progbits
+ 662              	.Ldebug_info0:
+ 663 0000 F9040000 		.4byte	0x4f9
+ 664 0004 0400     		.2byte	0x4
+ 665 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 666 000a 04       		.byte	0x4
+ 667 000b 01       		.uleb128 0x1
+ 668 000c 45010000 		.4byte	.LASF36
+ 669 0010 01       		.byte	0x1
+ 670 0011 16000000 		.4byte	.LASF37
+ 671 0015 B9000000 		.4byte	.LASF38
+ 672 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 673 001d 00000000 		.4byte	0
+ 674 0021 00000000 		.4byte	.Ldebug_line0
+ 675 0025 02       		.uleb128 0x2
+ 676 0026 01       		.byte	0x1
+ 677 0027 06       		.byte	0x6
+ 678 0028 60020000 		.4byte	.LASF0
+ 679 002c 02       		.uleb128 0x2
+ 680 002d 01       		.byte	0x1
+ 681 002e 08       		.byte	0x8
+ 682 002f 64000000 		.4byte	.LASF1
+ 683 0033 02       		.uleb128 0x2
+ 684 0034 02       		.byte	0x2
+ 685 0035 05       		.byte	0x5
+ 686 0036 2A020000 		.4byte	.LASF2
+ 687 003a 02       		.uleb128 0x2
+ 688 003b 02       		.byte	0x2
+ 689 003c 07       		.byte	0x7
+ 690 003d 8A000000 		.4byte	.LASF3
+ 691 0041 03       		.uleb128 0x3
+ 692 0042 0C000000 		.4byte	.LASF9
+ 693 0046 02       		.byte	0x2
+ 694 0047 3F       		.byte	0x3f
+ 695 0048 4C000000 		.4byte	0x4c
+ 696 004c 02       		.uleb128 0x2
+ 697 004d 04       		.byte	0x4
+ 698 004e 05       		.byte	0x5
+ 699 004f 4B020000 		.4byte	.LASF4
+ 700 0053 02       		.uleb128 0x2
+ 701 0054 04       		.byte	0x4
+ 702 0055 07       		.byte	0x7
+ 703 0056 78000000 		.4byte	.LASF5
+ 704 005a 02       		.uleb128 0x2
+ 705 005b 08       		.byte	0x8
+ 706 005c 05       		.byte	0x5
+ 707 005d 17020000 		.4byte	.LASF6
+ 708 0061 02       		.uleb128 0x2
+ 709 0062 08       		.byte	0x8
+ 710 0063 07       		.byte	0x7
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 16
+
+
+ 711 0064 20010000 		.4byte	.LASF7
+ 712 0068 04       		.uleb128 0x4
+ 713 0069 04       		.byte	0x4
+ 714 006a 05       		.byte	0x5
+ 715 006b 696E7400 		.ascii	"int\000"
+ 716 006f 02       		.uleb128 0x2
+ 717 0070 04       		.byte	0x4
+ 718 0071 07       		.byte	0x7
+ 719 0072 13010000 		.4byte	.LASF8
+ 720 0076 03       		.uleb128 0x3
+ 721 0077 EE010000 		.4byte	.LASF10
+ 722 007b 03       		.byte	0x3
+ 723 007c 2C       		.byte	0x2c
+ 724 007d 41000000 		.4byte	0x41
+ 725 0081 05       		.uleb128 0x5
+ 726 0082 40020000 		.4byte	.LASF11
+ 727 0086 04       		.byte	0x4
+ 728 0087 9201     		.2byte	0x192
+ 729 0089 2C000000 		.4byte	0x2c
+ 730 008d 05       		.uleb128 0x5
+ 731 008e EC000000 		.4byte	.LASF12
+ 732 0092 04       		.byte	0x4
+ 733 0093 9301     		.2byte	0x193
+ 734 0095 3A000000 		.4byte	0x3a
+ 735 0099 05       		.uleb128 0x5
+ 736 009a 72000000 		.4byte	.LASF13
+ 737 009e 04       		.byte	0x4
+ 738 009f 9601     		.2byte	0x196
+ 739 00a1 33000000 		.4byte	0x33
+ 740 00a5 02       		.uleb128 0x2
+ 741 00a6 04       		.byte	0x4
+ 742 00a7 04       		.byte	0x4
+ 743 00a8 4F000000 		.4byte	.LASF14
+ 744 00ac 02       		.uleb128 0x2
+ 745 00ad 08       		.byte	0x8
+ 746 00ae 04       		.byte	0x4
+ 747 00af 3E000000 		.4byte	.LASF15
+ 748 00b3 02       		.uleb128 0x2
+ 749 00b4 01       		.byte	0x1
+ 750 00b5 08       		.byte	0x8
+ 751 00b6 25020000 		.4byte	.LASF16
+ 752 00ba 02       		.uleb128 0x2
+ 753 00bb 04       		.byte	0x4
+ 754 00bc 07       		.byte	0x7
+ 755 00bd F6010000 		.4byte	.LASF17
+ 756 00c1 02       		.uleb128 0x2
+ 757 00c2 08       		.byte	0x8
+ 758 00c3 04       		.byte	0x4
+ 759 00c4 54020000 		.4byte	.LASF18
+ 760 00c8 06       		.uleb128 0x6
+ 761 00c9 D3010000 		.4byte	.LASF19
+ 762 00cd 01       		.byte	0x1
+ 763 00ce 07       		.byte	0x7
+ 764 00cf 00000000 		.4byte	.LFB63
+ 765 00d3 34000000 		.4byte	.LFE63-.LFB63
+ 766 00d7 01       		.uleb128 0x1
+ 767 00d8 9C       		.byte	0x9c
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 17
+
+
+ 768 00d9 22010000 		.4byte	0x122
+ 769 00dd 07       		.uleb128 0x7
+ 770 00de 62756600 		.ascii	"buf\000"
+ 771 00e2 01       		.byte	0x1
+ 772 00e3 0A       		.byte	0xa
+ 773 00e4 22010000 		.4byte	0x122
+ 774 00e8 02       		.uleb128 0x2
+ 775 00e9 91       		.byte	0x91
+ 776 00ea 70       		.sleb128 -16
+ 777 00eb 08       		.uleb128 0x8
+ 778 00ec 08000000 		.4byte	.LVL0
+ 779 00f0 5D040000 		.4byte	0x45d
+ 780 00f4 09       		.uleb128 0x9
+ 781 00f5 20000000 		.4byte	.LVL1
+ 782 00f9 68040000 		.4byte	0x468
+ 783 00fd 18010000 		.4byte	0x118
+ 784 0101 0A       		.uleb128 0xa
+ 785 0102 01       		.uleb128 0x1
+ 786 0103 53       		.byte	0x53
+ 787 0104 01       		.uleb128 0x1
+ 788 0105 30       		.byte	0x30
+ 789 0106 0A       		.uleb128 0xa
+ 790 0107 01       		.uleb128 0x1
+ 791 0108 52       		.byte	0x52
+ 792 0109 01       		.uleb128 0x1
+ 793 010a 36       		.byte	0x36
+ 794 010b 0A       		.uleb128 0xa
+ 795 010c 01       		.uleb128 0x1
+ 796 010d 51       		.byte	0x51
+ 797 010e 02       		.uleb128 0x2
+ 798 010f 7D       		.byte	0x7d
+ 799 0110 00       		.sleb128 0
+ 800 0111 0A       		.uleb128 0xa
+ 801 0112 01       		.uleb128 0x1
+ 802 0113 50       		.byte	0x50
+ 803 0114 02       		.uleb128 0x2
+ 804 0115 08       		.byte	0x8
+ 805 0116 69       		.byte	0x69
+ 806 0117 00       		.byte	0
+ 807 0118 08       		.uleb128 0x8
+ 808 0119 24000000 		.4byte	.LVL2
+ 809 011d 92040000 		.4byte	0x492
+ 810 0121 00       		.byte	0
+ 811 0122 0B       		.uleb128 0xb
+ 812 0123 81000000 		.4byte	0x81
+ 813 0127 32010000 		.4byte	0x132
+ 814 012b 0C       		.uleb128 0xc
+ 815 012c BA000000 		.4byte	0xba
+ 816 0130 05       		.byte	0x5
+ 817 0131 00       		.byte	0
+ 818 0132 06       		.uleb128 0x6
+ 819 0133 E1010000 		.4byte	.LASF20
+ 820 0137 01       		.byte	0x1
+ 821 0138 16       		.byte	0x16
+ 822 0139 00000000 		.4byte	.LFB64
+ 823 013d 50000000 		.4byte	.LFE64-.LFB64
+ 824 0141 01       		.uleb128 0x1
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 18
+
+
+ 825 0142 9C       		.byte	0x9c
+ 826 0143 B9010000 		.4byte	0x1b9
+ 827 0147 07       		.uleb128 0x7
+ 828 0148 62756600 		.ascii	"buf\000"
+ 829 014c 01       		.byte	0x1
+ 830 014d 19       		.byte	0x19
+ 831 014e B9010000 		.4byte	0x1b9
+ 832 0152 02       		.uleb128 0x2
+ 833 0153 91       		.byte	0x91
+ 834 0154 70       		.sleb128 -16
+ 835 0155 08       		.uleb128 0x8
+ 836 0156 08000000 		.4byte	.LVL3
+ 837 015a 5D040000 		.4byte	0x45d
+ 838 015e 09       		.uleb128 0x9
+ 839 015f 22000000 		.4byte	.LVL4
+ 840 0163 68040000 		.4byte	0x468
+ 841 0167 82010000 		.4byte	0x182
+ 842 016b 0A       		.uleb128 0xa
+ 843 016c 01       		.uleb128 0x1
+ 844 016d 53       		.byte	0x53
+ 845 016e 01       		.uleb128 0x1
+ 846 016f 30       		.byte	0x30
+ 847 0170 0A       		.uleb128 0xa
+ 848 0171 01       		.uleb128 0x1
+ 849 0172 52       		.byte	0x52
+ 850 0173 01       		.uleb128 0x1
+ 851 0174 32       		.byte	0x32
+ 852 0175 0A       		.uleb128 0xa
+ 853 0176 01       		.uleb128 0x1
+ 854 0177 51       		.byte	0x51
+ 855 0178 02       		.uleb128 0x2
+ 856 0179 7D       		.byte	0x7d
+ 857 017a 00       		.sleb128 0
+ 858 017b 0A       		.uleb128 0xa
+ 859 017c 01       		.uleb128 0x1
+ 860 017d 50       		.byte	0x50
+ 861 017e 02       		.uleb128 0x2
+ 862 017f 08       		.byte	0x8
+ 863 0180 53       		.byte	0x53
+ 864 0181 00       		.byte	0
+ 865 0182 08       		.uleb128 0x8
+ 866 0183 26000000 		.4byte	.LVL5
+ 867 0187 92040000 		.4byte	0x492
+ 868 018b 09       		.uleb128 0x9
+ 869 018c 3A000000 		.4byte	.LVL6
+ 870 0190 68040000 		.4byte	0x468
+ 871 0194 AF010000 		.4byte	0x1af
+ 872 0198 0A       		.uleb128 0xa
+ 873 0199 01       		.uleb128 0x1
+ 874 019a 53       		.byte	0x53
+ 875 019b 01       		.uleb128 0x1
+ 876 019c 30       		.byte	0x30
+ 877 019d 0A       		.uleb128 0xa
+ 878 019e 01       		.uleb128 0x1
+ 879 019f 52       		.byte	0x52
+ 880 01a0 01       		.uleb128 0x1
+ 881 01a1 33       		.byte	0x33
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 19
+
+
+ 882 01a2 0A       		.uleb128 0xa
+ 883 01a3 01       		.uleb128 0x1
+ 884 01a4 51       		.byte	0x51
+ 885 01a5 02       		.uleb128 0x2
+ 886 01a6 91       		.byte	0x91
+ 887 01a7 72       		.sleb128 -14
+ 888 01a8 0A       		.uleb128 0xa
+ 889 01a9 01       		.uleb128 0x1
+ 890 01aa 50       		.byte	0x50
+ 891 01ab 02       		.uleb128 0x2
+ 892 01ac 08       		.byte	0x8
+ 893 01ad 53       		.byte	0x53
+ 894 01ae 00       		.byte	0
+ 895 01af 08       		.uleb128 0x8
+ 896 01b0 3E000000 		.4byte	.LVL7
+ 897 01b4 92040000 		.4byte	0x492
+ 898 01b8 00       		.byte	0
+ 899 01b9 0B       		.uleb128 0xb
+ 900 01ba 81000000 		.4byte	0x81
+ 901 01be C9010000 		.4byte	0x1c9
+ 902 01c2 0C       		.uleb128 0xc
+ 903 01c3 BA000000 		.4byte	0xba
+ 904 01c7 04       		.byte	0x4
+ 905 01c8 00       		.byte	0
+ 906 01c9 0D       		.uleb128 0xd
+ 907 01ca 34020000 		.4byte	.LASF21
+ 908 01ce 01       		.byte	0x1
+ 909 01cf 2C       		.byte	0x2c
+ 910 01d0 00000000 		.4byte	.LFB65
+ 911 01d4 94000000 		.4byte	.LFE65-.LFB65
+ 912 01d8 01       		.uleb128 0x1
+ 913 01d9 9C       		.byte	0x9c
+ 914 01da 74020000 		.4byte	0x274
+ 915 01de 0E       		.uleb128 0xe
+ 916 01df 47594F00 		.ascii	"GYO\000"
+ 917 01e3 01       		.byte	0x1
+ 918 01e4 2C       		.byte	0x2c
+ 919 01e5 74020000 		.4byte	0x274
+ 920 01e9 00000000 		.4byte	.LLST0
+ 921 01ed 07       		.uleb128 0x7
+ 922 01ee 6100     		.ascii	"a\000"
+ 923 01f0 01       		.byte	0x1
+ 924 01f1 2E       		.byte	0x2e
+ 925 01f2 81000000 		.4byte	0x81
+ 926 01f6 02       		.uleb128 0x2
+ 927 01f7 91       		.byte	0x91
+ 928 01f8 6F       		.sleb128 -17
+ 929 01f9 0F       		.uleb128 0xf
+ 930 01fa 47796F00 		.ascii	"Gyo\000"
+ 931 01fe 01       		.byte	0x1
+ 932 01ff 40       		.byte	0x40
+ 933 0200 7A020000 		.4byte	0x27a
+ 934 0204 08       		.uleb128 0x8
+ 935 0205 12000000 		.4byte	.LVL9
+ 936 0209 5D040000 		.4byte	0x45d
+ 937 020d 09       		.uleb128 0x9
+ 938 020e 1E000000 		.4byte	.LVL10
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 20
+
+
+ 939 0212 68040000 		.4byte	0x468
+ 940 0216 31020000 		.4byte	0x231
+ 941 021a 0A       		.uleb128 0xa
+ 942 021b 01       		.uleb128 0x1
+ 943 021c 53       		.byte	0x53
+ 944 021d 01       		.uleb128 0x1
+ 945 021e 30       		.byte	0x30
+ 946 021f 0A       		.uleb128 0xa
+ 947 0220 01       		.uleb128 0x1
+ 948 0221 52       		.byte	0x52
+ 949 0222 01       		.uleb128 0x1
+ 950 0223 31       		.byte	0x31
+ 951 0224 0A       		.uleb128 0xa
+ 952 0225 01       		.uleb128 0x1
+ 953 0226 51       		.byte	0x51
+ 954 0227 02       		.uleb128 0x2
+ 955 0228 75       		.byte	0x75
+ 956 0229 00       		.sleb128 0
+ 957 022a 0A       		.uleb128 0xa
+ 958 022b 01       		.uleb128 0x1
+ 959 022c 50       		.byte	0x50
+ 960 022d 02       		.uleb128 0x2
+ 961 022e 08       		.byte	0x8
+ 962 022f 69       		.byte	0x69
+ 963 0230 00       		.byte	0
+ 964 0231 08       		.uleb128 0x8
+ 965 0232 22000000 		.4byte	.LVL11
+ 966 0236 92040000 		.4byte	0x492
+ 967 023a 08       		.uleb128 0x8
+ 968 023b 2C000000 		.4byte	.LVL12
+ 969 023f 5D040000 		.4byte	0x45d
+ 970 0243 09       		.uleb128 0x9
+ 971 0244 38000000 		.4byte	.LVL13
+ 972 0248 9D040000 		.4byte	0x49d
+ 973 024c 6A020000 		.4byte	0x26a
+ 974 0250 0A       		.uleb128 0xa
+ 975 0251 01       		.uleb128 0x1
+ 976 0252 53       		.byte	0x53
+ 977 0253 01       		.uleb128 0x1
+ 978 0254 30       		.byte	0x30
+ 979 0255 0A       		.uleb128 0xa
+ 980 0256 01       		.uleb128 0x1
+ 981 0257 52       		.byte	0x52
+ 982 0258 01       		.uleb128 0x1
+ 983 0259 36       		.byte	0x36
+ 984 025a 0A       		.uleb128 0xa
+ 985 025b 01       		.uleb128 0x1
+ 986 025c 51       		.byte	0x51
+ 987 025d 05       		.uleb128 0x5
+ 988 025e 03       		.byte	0x3
+ 989 025f 00000000 		.4byte	L3G_READ
+ 990 0263 0A       		.uleb128 0xa
+ 991 0264 01       		.uleb128 0x1
+ 992 0265 50       		.byte	0x50
+ 993 0266 02       		.uleb128 0x2
+ 994 0267 08       		.byte	0x8
+ 995 0268 69       		.byte	0x69
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 21
+
+
+ 996 0269 00       		.byte	0
+ 997 026a 08       		.uleb128 0x8
+ 998 026b 3C000000 		.4byte	.LVL14
+ 999 026f 92040000 		.4byte	0x492
+ 1000 0273 00       		.byte	0
+ 1001 0274 10       		.uleb128 0x10
+ 1002 0275 04       		.byte	0x4
+ 1003 0276 99000000 		.4byte	0x99
+ 1004 027a 0B       		.uleb128 0xb
+ 1005 027b 8D000000 		.4byte	0x8d
+ 1006 027f 8A020000 		.4byte	0x28a
+ 1007 0283 0C       		.uleb128 0xc
+ 1008 0284 BA000000 		.4byte	0xba
+ 1009 0288 02       		.byte	0x2
+ 1010 0289 00       		.byte	0
+ 1011 028a 0D       		.uleb128 0xd
+ 1012 028b 00000000 		.4byte	.LASF22
+ 1013 028f 01       		.byte	0x1
+ 1014 0290 60       		.byte	0x60
+ 1015 0291 00000000 		.4byte	.LFB66
+ 1016 0295 88000000 		.4byte	.LFE66-.LFB66
+ 1017 0299 01       		.uleb128 0x1
+ 1018 029a 9C       		.byte	0x9c
+ 1019 029b 63030000 		.4byte	0x363
+ 1020 029f 0E       		.uleb128 0xe
+ 1021 02a0 41434300 		.ascii	"ACC\000"
+ 1022 02a4 01       		.byte	0x1
+ 1023 02a5 60       		.byte	0x60
+ 1024 02a6 74020000 		.4byte	0x274
+ 1025 02aa 2C000000 		.4byte	.LLST1
+ 1026 02ae 07       		.uleb128 0x7
+ 1027 02af 6200     		.ascii	"b\000"
+ 1028 02b1 01       		.byte	0x1
+ 1029 02b2 62       		.byte	0x62
+ 1030 02b3 81000000 		.4byte	0x81
+ 1031 02b7 02       		.uleb128 0x2
+ 1032 02b8 91       		.byte	0x91
+ 1033 02b9 77       		.sleb128 -9
+ 1034 02ba 08       		.uleb128 0x8
+ 1035 02bb 10000000 		.4byte	.LVL17
+ 1036 02bf 5D040000 		.4byte	0x45d
+ 1037 02c3 09       		.uleb128 0x9
+ 1038 02c4 1C000000 		.4byte	.LVL18
+ 1039 02c8 9D040000 		.4byte	0x49d
+ 1040 02cc EA020000 		.4byte	0x2ea
+ 1041 02d0 0A       		.uleb128 0xa
+ 1042 02d1 01       		.uleb128 0x1
+ 1043 02d2 53       		.byte	0x53
+ 1044 02d3 01       		.uleb128 0x1
+ 1045 02d4 30       		.byte	0x30
+ 1046 02d5 0A       		.uleb128 0xa
+ 1047 02d6 01       		.uleb128 0x1
+ 1048 02d7 52       		.byte	0x52
+ 1049 02d8 01       		.uleb128 0x1
+ 1050 02d9 36       		.byte	0x36
+ 1051 02da 0A       		.uleb128 0xa
+ 1052 02db 01       		.uleb128 0x1
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 22
+
+
+ 1053 02dc 51       		.byte	0x51
+ 1054 02dd 05       		.uleb128 0x5
+ 1055 02de 03       		.byte	0x3
+ 1056 02df 00000000 		.4byte	L3G_READ
+ 1057 02e3 0A       		.uleb128 0xa
+ 1058 02e4 01       		.uleb128 0x1
+ 1059 02e5 50       		.byte	0x50
+ 1060 02e6 02       		.uleb128 0x2
+ 1061 02e7 08       		.byte	0x8
+ 1062 02e8 69       		.byte	0x69
+ 1063 02e9 00       		.byte	0
+ 1064 02ea 08       		.uleb128 0x8
+ 1065 02eb 20000000 		.4byte	.LVL19
+ 1066 02ef 92040000 		.4byte	0x492
+ 1067 02f3 08       		.uleb128 0x8
+ 1068 02f4 2A000000 		.4byte	.LVL20
+ 1069 02f8 5D040000 		.4byte	0x45d
+ 1070 02fc 09       		.uleb128 0x9
+ 1071 02fd 38000000 		.4byte	.LVL21
+ 1072 0301 68040000 		.4byte	0x468
+ 1073 0305 20030000 		.4byte	0x320
+ 1074 0309 0A       		.uleb128 0xa
+ 1075 030a 01       		.uleb128 0x1
+ 1076 030b 53       		.byte	0x53
+ 1077 030c 01       		.uleb128 0x1
+ 1078 030d 30       		.byte	0x30
+ 1079 030e 0A       		.uleb128 0xa
+ 1080 030f 01       		.uleb128 0x1
+ 1081 0310 52       		.byte	0x52
+ 1082 0311 01       		.uleb128 0x1
+ 1083 0312 31       		.byte	0x31
+ 1084 0313 0A       		.uleb128 0xa
+ 1085 0314 01       		.uleb128 0x1
+ 1086 0315 51       		.byte	0x51
+ 1087 0316 02       		.uleb128 0x2
+ 1088 0317 91       		.byte	0x91
+ 1089 0318 77       		.sleb128 -9
+ 1090 0319 0A       		.uleb128 0xa
+ 1091 031a 01       		.uleb128 0x1
+ 1092 031b 50       		.byte	0x50
+ 1093 031c 02       		.uleb128 0x2
+ 1094 031d 08       		.byte	0x8
+ 1095 031e 53       		.byte	0x53
+ 1096 031f 00       		.byte	0
+ 1097 0320 08       		.uleb128 0x8
+ 1098 0321 3C000000 		.4byte	.LVL22
+ 1099 0325 92040000 		.4byte	0x492
+ 1100 0329 08       		.uleb128 0x8
+ 1101 032a 46000000 		.4byte	.LVL23
+ 1102 032e 5D040000 		.4byte	0x45d
+ 1103 0332 09       		.uleb128 0x9
+ 1104 0333 52000000 		.4byte	.LVL24
+ 1105 0337 9D040000 		.4byte	0x49d
+ 1106 033b 59030000 		.4byte	0x359
+ 1107 033f 0A       		.uleb128 0xa
+ 1108 0340 01       		.uleb128 0x1
+ 1109 0341 53       		.byte	0x53
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 23
+
+
+ 1110 0342 01       		.uleb128 0x1
+ 1111 0343 30       		.byte	0x30
+ 1112 0344 0A       		.uleb128 0xa
+ 1113 0345 01       		.uleb128 0x1
+ 1114 0346 52       		.byte	0x52
+ 1115 0347 01       		.uleb128 0x1
+ 1116 0348 36       		.byte	0x36
+ 1117 0349 0A       		.uleb128 0xa
+ 1118 034a 01       		.uleb128 0x1
+ 1119 034b 51       		.byte	0x51
+ 1120 034c 05       		.uleb128 0x5
+ 1121 034d 03       		.byte	0x3
+ 1122 034e 00000000 		.4byte	ADXL_READ
+ 1123 0352 0A       		.uleb128 0xa
+ 1124 0353 01       		.uleb128 0x1
+ 1125 0354 50       		.byte	0x50
+ 1126 0355 02       		.uleb128 0x2
+ 1127 0356 08       		.byte	0x8
+ 1128 0357 53       		.byte	0x53
+ 1129 0358 00       		.byte	0
+ 1130 0359 08       		.uleb128 0x8
+ 1131 035a 56000000 		.4byte	.LVL25
+ 1132 035e 92040000 		.4byte	0x492
+ 1133 0362 00       		.byte	0
+ 1134 0363 11       		.uleb128 0x11
+ 1135 0364 9D000000 		.4byte	.LASF23
+ 1136 0368 01       		.byte	0x1
+ 1137 0369 82       		.byte	0x82
+ 1138 036a 00000000 		.4byte	.LFB67
+ 1139 036e F8000000 		.4byte	.LFE67-.LFB67
+ 1140 0372 01       		.uleb128 0x1
+ 1141 0373 9C       		.byte	0x9c
+ 1142 0374 BB030000 		.4byte	0x3bb
+ 1143 0378 12       		.uleb128 0x12
+ 1144 0379 38000000 		.4byte	.LASF24
+ 1145 037d 01       		.byte	0x1
+ 1146 037e 82       		.byte	0x82
+ 1147 037f BB030000 		.4byte	0x3bb
+ 1148 0383 58000000 		.4byte	.LLST2
+ 1149 0387 0E       		.uleb128 0xe
+ 1150 0388 61636300 		.ascii	"acc\000"
+ 1151 038c 01       		.byte	0x1
+ 1152 038d 82       		.byte	0x82
+ 1153 038e 74020000 		.4byte	0x274
+ 1154 0392 84000000 		.4byte	.LLST3
+ 1155 0396 08       		.uleb128 0x8
+ 1156 0397 2A000000 		.4byte	.LVL30
+ 1157 039b C1040000 		.4byte	0x4c1
+ 1158 039f 08       		.uleb128 0x8
+ 1159 03a0 56000000 		.4byte	.LVL35
+ 1160 03a4 D6040000 		.4byte	0x4d6
+ 1161 03a8 08       		.uleb128 0x8
+ 1162 03a9 92000000 		.4byte	.LVL42
+ 1163 03ad D6040000 		.4byte	0x4d6
+ 1164 03b1 08       		.uleb128 0x8
+ 1165 03b2 CC000000 		.4byte	.LVL49
+ 1166 03b6 EB040000 		.4byte	0x4eb
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 24
+
+
+ 1167 03ba 00       		.byte	0
+ 1168 03bb 10       		.uleb128 0x10
+ 1169 03bc 04       		.byte	0x4
+ 1170 03bd A5000000 		.4byte	0xa5
+ 1171 03c1 11       		.uleb128 0x11
+ 1172 03c2 37010000 		.4byte	.LASF25
+ 1173 03c6 01       		.byte	0x1
+ 1174 03c7 8C       		.byte	0x8c
+ 1175 03c8 00000000 		.4byte	.LFB68
+ 1176 03cc F8000000 		.4byte	.LFE68-.LFB68
+ 1177 03d0 01       		.uleb128 0x1
+ 1178 03d1 9C       		.byte	0x9c
+ 1179 03d2 19040000 		.4byte	0x419
+ 1180 03d6 12       		.uleb128 0x12
+ 1181 03d7 38000000 		.4byte	.LASF24
+ 1182 03db 01       		.byte	0x1
+ 1183 03dc 8C       		.byte	0x8c
+ 1184 03dd BB030000 		.4byte	0x3bb
+ 1185 03e1 B0000000 		.4byte	.LLST4
+ 1186 03e5 0E       		.uleb128 0xe
+ 1187 03e6 61636300 		.ascii	"acc\000"
+ 1188 03ea 01       		.byte	0x1
+ 1189 03eb 8C       		.byte	0x8c
+ 1190 03ec 74020000 		.4byte	0x274
+ 1191 03f0 DC000000 		.4byte	.LLST5
+ 1192 03f4 08       		.uleb128 0x8
+ 1193 03f5 2A000000 		.4byte	.LVL57
+ 1194 03f9 C1040000 		.4byte	0x4c1
+ 1195 03fd 08       		.uleb128 0x8
+ 1196 03fe 56000000 		.4byte	.LVL62
+ 1197 0402 EB040000 		.4byte	0x4eb
+ 1198 0406 08       		.uleb128 0x8
+ 1199 0407 90000000 		.4byte	.LVL69
+ 1200 040b EB040000 		.4byte	0x4eb
+ 1201 040f 08       		.uleb128 0x8
+ 1202 0410 CA000000 		.4byte	.LVL76
+ 1203 0414 EB040000 		.4byte	0x4eb
+ 1204 0418 00       		.byte	0
+ 1205 0419 13       		.uleb128 0x13
+ 1206 041a AC000000 		.4byte	.LASF26
+ 1207 041e 05       		.byte	0x5
+ 1208 041f 9606     		.2byte	0x696
+ 1209 0421 25040000 		.4byte	0x425
+ 1210 0425 14       		.uleb128 0x14
+ 1211 0426 76000000 		.4byte	0x76
+ 1212 042a 15       		.uleb128 0x15
+ 1213 042b F3000000 		.4byte	.LASF27
+ 1214 042f 01       		.byte	0x1
+ 1215 0430 04       		.byte	0x4
+ 1216 0431 22010000 		.4byte	0x122
+ 1217 0435 05       		.uleb128 0x5
+ 1218 0436 03       		.byte	0x3
+ 1219 0437 00000000 		.4byte	L3G_READ
+ 1220 043b 15       		.uleb128 0x15
+ 1221 043c 55000000 		.4byte	.LASF28
+ 1222 0440 01       		.byte	0x1
+ 1223 0441 05       		.byte	0x5
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 25
+
+
+ 1224 0442 22010000 		.4byte	0x122
+ 1225 0446 05       		.uleb128 0x5
+ 1226 0447 03       		.byte	0x3
+ 1227 0448 00000000 		.4byte	ADXL_READ
+ 1228 044c 15       		.uleb128 0x15
+ 1229 044d 45000000 		.4byte	.LASF29
+ 1230 0451 01       		.byte	0x1
+ 1231 0452 06       		.byte	0x6
+ 1232 0453 68000000 		.4byte	0x68
+ 1233 0457 05       		.uleb128 0x5
+ 1234 0458 03       		.byte	0x3
+ 1235 0459 00000000 		.4byte	Total_ACC
+ 1236 045d 16       		.uleb128 0x16
+ 1237 045e 71020000 		.4byte	.LASF30
+ 1238 0462 06       		.byte	0x6
+ 1239 0463 A4       		.byte	0xa4
+ 1240 0464 81000000 		.4byte	0x81
+ 1241 0468 17       		.uleb128 0x17
+ 1242 0469 1F000000 		.4byte	.LASF32
+ 1243 046d 06       		.byte	0x6
+ 1244 046e A7       		.byte	0xa7
+ 1245 046f 81000000 		.4byte	0x81
+ 1246 0473 8C040000 		.4byte	0x48c
+ 1247 0477 18       		.uleb128 0x18
+ 1248 0478 81000000 		.4byte	0x81
+ 1249 047c 18       		.uleb128 0x18
+ 1250 047d 8C040000 		.4byte	0x48c
+ 1251 0481 18       		.uleb128 0x18
+ 1252 0482 81000000 		.4byte	0x81
+ 1253 0486 18       		.uleb128 0x18
+ 1254 0487 81000000 		.4byte	0x81
+ 1255 048b 00       		.byte	0
+ 1256 048c 10       		.uleb128 0x10
+ 1257 048d 04       		.byte	0x4
+ 1258 048e 81000000 		.4byte	0x81
+ 1259 0492 16       		.uleb128 0x16
+ 1260 0493 FC000000 		.4byte	.LASF31
+ 1261 0497 06       		.byte	0x6
+ 1262 0498 A3       		.byte	0xa3
+ 1263 0499 81000000 		.4byte	0x81
+ 1264 049d 17       		.uleb128 0x17
+ 1265 049e FF010000 		.4byte	.LASF33
+ 1266 04a2 06       		.byte	0x6
+ 1267 04a3 A9       		.byte	0xa9
+ 1268 04a4 81000000 		.4byte	0x81
+ 1269 04a8 C1040000 		.4byte	0x4c1
+ 1270 04ac 18       		.uleb128 0x18
+ 1271 04ad 81000000 		.4byte	0x81
+ 1272 04b1 18       		.uleb128 0x18
+ 1273 04b2 8C040000 		.4byte	0x48c
+ 1274 04b6 18       		.uleb128 0x18
+ 1275 04b7 81000000 		.4byte	0x81
+ 1276 04bb 18       		.uleb128 0x18
+ 1277 04bc 81000000 		.4byte	0x81
+ 1278 04c0 00       		.byte	0
+ 1279 04c1 17       		.uleb128 0x17
+ 1280 04c2 6C020000 		.4byte	.LASF34
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 26
+
+
+ 1281 04c6 07       		.byte	0x7
+ 1282 04c7 86       		.byte	0x86
+ 1283 04c8 AC000000 		.4byte	0xac
+ 1284 04cc D6040000 		.4byte	0x4d6
+ 1285 04d0 18       		.uleb128 0x18
+ 1286 04d1 AC000000 		.4byte	0xac
+ 1287 04d5 00       		.byte	0
+ 1288 04d6 17       		.uleb128 0x17
+ 1289 04d7 5F000000 		.4byte	.LASF35
+ 1290 04db 07       		.byte	0x7
+ 1291 04dc 6C       		.byte	0x6c
+ 1292 04dd AC000000 		.4byte	0xac
+ 1293 04e1 EB040000 		.4byte	0x4eb
+ 1294 04e5 18       		.uleb128 0x18
+ 1295 04e6 AC000000 		.4byte	0xac
+ 1296 04ea 00       		.byte	0
+ 1297 04eb 19       		.uleb128 0x19
+ 1298 04ec 46020000 		.4byte	.LASF39
+ 1299 04f0 07       		.byte	0x7
+ 1300 04f1 7C       		.byte	0x7c
+ 1301 04f2 AC000000 		.4byte	0xac
+ 1302 04f6 18       		.uleb128 0x18
+ 1303 04f7 AC000000 		.4byte	0xac
+ 1304 04fb 00       		.byte	0
+ 1305 04fc 00       		.byte	0
+ 1306              		.section	.debug_abbrev,"",%progbits
+ 1307              	.Ldebug_abbrev0:
+ 1308 0000 01       		.uleb128 0x1
+ 1309 0001 11       		.uleb128 0x11
+ 1310 0002 01       		.byte	0x1
+ 1311 0003 25       		.uleb128 0x25
+ 1312 0004 0E       		.uleb128 0xe
+ 1313 0005 13       		.uleb128 0x13
+ 1314 0006 0B       		.uleb128 0xb
+ 1315 0007 03       		.uleb128 0x3
+ 1316 0008 0E       		.uleb128 0xe
+ 1317 0009 1B       		.uleb128 0x1b
+ 1318 000a 0E       		.uleb128 0xe
+ 1319 000b 55       		.uleb128 0x55
+ 1320 000c 17       		.uleb128 0x17
+ 1321 000d 11       		.uleb128 0x11
+ 1322 000e 01       		.uleb128 0x1
+ 1323 000f 10       		.uleb128 0x10
+ 1324 0010 17       		.uleb128 0x17
+ 1325 0011 00       		.byte	0
+ 1326 0012 00       		.byte	0
+ 1327 0013 02       		.uleb128 0x2
+ 1328 0014 24       		.uleb128 0x24
+ 1329 0015 00       		.byte	0
+ 1330 0016 0B       		.uleb128 0xb
+ 1331 0017 0B       		.uleb128 0xb
+ 1332 0018 3E       		.uleb128 0x3e
+ 1333 0019 0B       		.uleb128 0xb
+ 1334 001a 03       		.uleb128 0x3
+ 1335 001b 0E       		.uleb128 0xe
+ 1336 001c 00       		.byte	0
+ 1337 001d 00       		.byte	0
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 27
+
+
+ 1338 001e 03       		.uleb128 0x3
+ 1339 001f 16       		.uleb128 0x16
+ 1340 0020 00       		.byte	0
+ 1341 0021 03       		.uleb128 0x3
+ 1342 0022 0E       		.uleb128 0xe
+ 1343 0023 3A       		.uleb128 0x3a
+ 1344 0024 0B       		.uleb128 0xb
+ 1345 0025 3B       		.uleb128 0x3b
+ 1346 0026 0B       		.uleb128 0xb
+ 1347 0027 49       		.uleb128 0x49
+ 1348 0028 13       		.uleb128 0x13
+ 1349 0029 00       		.byte	0
+ 1350 002a 00       		.byte	0
+ 1351 002b 04       		.uleb128 0x4
+ 1352 002c 24       		.uleb128 0x24
+ 1353 002d 00       		.byte	0
+ 1354 002e 0B       		.uleb128 0xb
+ 1355 002f 0B       		.uleb128 0xb
+ 1356 0030 3E       		.uleb128 0x3e
+ 1357 0031 0B       		.uleb128 0xb
+ 1358 0032 03       		.uleb128 0x3
+ 1359 0033 08       		.uleb128 0x8
+ 1360 0034 00       		.byte	0
+ 1361 0035 00       		.byte	0
+ 1362 0036 05       		.uleb128 0x5
+ 1363 0037 16       		.uleb128 0x16
+ 1364 0038 00       		.byte	0
+ 1365 0039 03       		.uleb128 0x3
+ 1366 003a 0E       		.uleb128 0xe
+ 1367 003b 3A       		.uleb128 0x3a
+ 1368 003c 0B       		.uleb128 0xb
+ 1369 003d 3B       		.uleb128 0x3b
+ 1370 003e 05       		.uleb128 0x5
+ 1371 003f 49       		.uleb128 0x49
+ 1372 0040 13       		.uleb128 0x13
+ 1373 0041 00       		.byte	0
+ 1374 0042 00       		.byte	0
+ 1375 0043 06       		.uleb128 0x6
+ 1376 0044 2E       		.uleb128 0x2e
+ 1377 0045 01       		.byte	0x1
+ 1378 0046 3F       		.uleb128 0x3f
+ 1379 0047 19       		.uleb128 0x19
+ 1380 0048 03       		.uleb128 0x3
+ 1381 0049 0E       		.uleb128 0xe
+ 1382 004a 3A       		.uleb128 0x3a
+ 1383 004b 0B       		.uleb128 0xb
+ 1384 004c 3B       		.uleb128 0x3b
+ 1385 004d 0B       		.uleb128 0xb
+ 1386 004e 11       		.uleb128 0x11
+ 1387 004f 01       		.uleb128 0x1
+ 1388 0050 12       		.uleb128 0x12
+ 1389 0051 06       		.uleb128 0x6
+ 1390 0052 40       		.uleb128 0x40
+ 1391 0053 18       		.uleb128 0x18
+ 1392 0054 9742     		.uleb128 0x2117
+ 1393 0056 19       		.uleb128 0x19
+ 1394 0057 01       		.uleb128 0x1
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 28
+
+
+ 1395 0058 13       		.uleb128 0x13
+ 1396 0059 00       		.byte	0
+ 1397 005a 00       		.byte	0
+ 1398 005b 07       		.uleb128 0x7
+ 1399 005c 34       		.uleb128 0x34
+ 1400 005d 00       		.byte	0
+ 1401 005e 03       		.uleb128 0x3
+ 1402 005f 08       		.uleb128 0x8
+ 1403 0060 3A       		.uleb128 0x3a
+ 1404 0061 0B       		.uleb128 0xb
+ 1405 0062 3B       		.uleb128 0x3b
+ 1406 0063 0B       		.uleb128 0xb
+ 1407 0064 49       		.uleb128 0x49
+ 1408 0065 13       		.uleb128 0x13
+ 1409 0066 02       		.uleb128 0x2
+ 1410 0067 18       		.uleb128 0x18
+ 1411 0068 00       		.byte	0
+ 1412 0069 00       		.byte	0
+ 1413 006a 08       		.uleb128 0x8
+ 1414 006b 898201   		.uleb128 0x4109
+ 1415 006e 00       		.byte	0
+ 1416 006f 11       		.uleb128 0x11
+ 1417 0070 01       		.uleb128 0x1
+ 1418 0071 31       		.uleb128 0x31
+ 1419 0072 13       		.uleb128 0x13
+ 1420 0073 00       		.byte	0
+ 1421 0074 00       		.byte	0
+ 1422 0075 09       		.uleb128 0x9
+ 1423 0076 898201   		.uleb128 0x4109
+ 1424 0079 01       		.byte	0x1
+ 1425 007a 11       		.uleb128 0x11
+ 1426 007b 01       		.uleb128 0x1
+ 1427 007c 31       		.uleb128 0x31
+ 1428 007d 13       		.uleb128 0x13
+ 1429 007e 01       		.uleb128 0x1
+ 1430 007f 13       		.uleb128 0x13
+ 1431 0080 00       		.byte	0
+ 1432 0081 00       		.byte	0
+ 1433 0082 0A       		.uleb128 0xa
+ 1434 0083 8A8201   		.uleb128 0x410a
+ 1435 0086 00       		.byte	0
+ 1436 0087 02       		.uleb128 0x2
+ 1437 0088 18       		.uleb128 0x18
+ 1438 0089 9142     		.uleb128 0x2111
+ 1439 008b 18       		.uleb128 0x18
+ 1440 008c 00       		.byte	0
+ 1441 008d 00       		.byte	0
+ 1442 008e 0B       		.uleb128 0xb
+ 1443 008f 01       		.uleb128 0x1
+ 1444 0090 01       		.byte	0x1
+ 1445 0091 49       		.uleb128 0x49
+ 1446 0092 13       		.uleb128 0x13
+ 1447 0093 01       		.uleb128 0x1
+ 1448 0094 13       		.uleb128 0x13
+ 1449 0095 00       		.byte	0
+ 1450 0096 00       		.byte	0
+ 1451 0097 0C       		.uleb128 0xc
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 29
+
+
+ 1452 0098 21       		.uleb128 0x21
+ 1453 0099 00       		.byte	0
+ 1454 009a 49       		.uleb128 0x49
+ 1455 009b 13       		.uleb128 0x13
+ 1456 009c 2F       		.uleb128 0x2f
+ 1457 009d 0B       		.uleb128 0xb
+ 1458 009e 00       		.byte	0
+ 1459 009f 00       		.byte	0
+ 1460 00a0 0D       		.uleb128 0xd
+ 1461 00a1 2E       		.uleb128 0x2e
+ 1462 00a2 01       		.byte	0x1
+ 1463 00a3 3F       		.uleb128 0x3f
+ 1464 00a4 19       		.uleb128 0x19
+ 1465 00a5 03       		.uleb128 0x3
+ 1466 00a6 0E       		.uleb128 0xe
+ 1467 00a7 3A       		.uleb128 0x3a
+ 1468 00a8 0B       		.uleb128 0xb
+ 1469 00a9 3B       		.uleb128 0x3b
+ 1470 00aa 0B       		.uleb128 0xb
+ 1471 00ab 27       		.uleb128 0x27
+ 1472 00ac 19       		.uleb128 0x19
+ 1473 00ad 11       		.uleb128 0x11
+ 1474 00ae 01       		.uleb128 0x1
+ 1475 00af 12       		.uleb128 0x12
+ 1476 00b0 06       		.uleb128 0x6
+ 1477 00b1 40       		.uleb128 0x40
+ 1478 00b2 18       		.uleb128 0x18
+ 1479 00b3 9742     		.uleb128 0x2117
+ 1480 00b5 19       		.uleb128 0x19
+ 1481 00b6 01       		.uleb128 0x1
+ 1482 00b7 13       		.uleb128 0x13
+ 1483 00b8 00       		.byte	0
+ 1484 00b9 00       		.byte	0
+ 1485 00ba 0E       		.uleb128 0xe
+ 1486 00bb 05       		.uleb128 0x5
+ 1487 00bc 00       		.byte	0
+ 1488 00bd 03       		.uleb128 0x3
+ 1489 00be 08       		.uleb128 0x8
+ 1490 00bf 3A       		.uleb128 0x3a
+ 1491 00c0 0B       		.uleb128 0xb
+ 1492 00c1 3B       		.uleb128 0x3b
+ 1493 00c2 0B       		.uleb128 0xb
+ 1494 00c3 49       		.uleb128 0x49
+ 1495 00c4 13       		.uleb128 0x13
+ 1496 00c5 02       		.uleb128 0x2
+ 1497 00c6 17       		.uleb128 0x17
+ 1498 00c7 00       		.byte	0
+ 1499 00c8 00       		.byte	0
+ 1500 00c9 0F       		.uleb128 0xf
+ 1501 00ca 34       		.uleb128 0x34
+ 1502 00cb 00       		.byte	0
+ 1503 00cc 03       		.uleb128 0x3
+ 1504 00cd 08       		.uleb128 0x8
+ 1505 00ce 3A       		.uleb128 0x3a
+ 1506 00cf 0B       		.uleb128 0xb
+ 1507 00d0 3B       		.uleb128 0x3b
+ 1508 00d1 0B       		.uleb128 0xb
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 30
+
+
+ 1509 00d2 49       		.uleb128 0x49
+ 1510 00d3 13       		.uleb128 0x13
+ 1511 00d4 00       		.byte	0
+ 1512 00d5 00       		.byte	0
+ 1513 00d6 10       		.uleb128 0x10
+ 1514 00d7 0F       		.uleb128 0xf
+ 1515 00d8 00       		.byte	0
+ 1516 00d9 0B       		.uleb128 0xb
+ 1517 00da 0B       		.uleb128 0xb
+ 1518 00db 49       		.uleb128 0x49
+ 1519 00dc 13       		.uleb128 0x13
+ 1520 00dd 00       		.byte	0
+ 1521 00de 00       		.byte	0
+ 1522 00df 11       		.uleb128 0x11
+ 1523 00e0 2E       		.uleb128 0x2e
+ 1524 00e1 01       		.byte	0x1
+ 1525 00e2 3F       		.uleb128 0x3f
+ 1526 00e3 19       		.uleb128 0x19
+ 1527 00e4 03       		.uleb128 0x3
+ 1528 00e5 0E       		.uleb128 0xe
+ 1529 00e6 3A       		.uleb128 0x3a
+ 1530 00e7 0B       		.uleb128 0xb
+ 1531 00e8 3B       		.uleb128 0x3b
+ 1532 00e9 0B       		.uleb128 0xb
+ 1533 00ea 27       		.uleb128 0x27
+ 1534 00eb 19       		.uleb128 0x19
+ 1535 00ec 11       		.uleb128 0x11
+ 1536 00ed 01       		.uleb128 0x1
+ 1537 00ee 12       		.uleb128 0x12
+ 1538 00ef 06       		.uleb128 0x6
+ 1539 00f0 40       		.uleb128 0x40
+ 1540 00f1 18       		.uleb128 0x18
+ 1541 00f2 9642     		.uleb128 0x2116
+ 1542 00f4 19       		.uleb128 0x19
+ 1543 00f5 01       		.uleb128 0x1
+ 1544 00f6 13       		.uleb128 0x13
+ 1545 00f7 00       		.byte	0
+ 1546 00f8 00       		.byte	0
+ 1547 00f9 12       		.uleb128 0x12
+ 1548 00fa 05       		.uleb128 0x5
+ 1549 00fb 00       		.byte	0
+ 1550 00fc 03       		.uleb128 0x3
+ 1551 00fd 0E       		.uleb128 0xe
+ 1552 00fe 3A       		.uleb128 0x3a
+ 1553 00ff 0B       		.uleb128 0xb
+ 1554 0100 3B       		.uleb128 0x3b
+ 1555 0101 0B       		.uleb128 0xb
+ 1556 0102 49       		.uleb128 0x49
+ 1557 0103 13       		.uleb128 0x13
+ 1558 0104 02       		.uleb128 0x2
+ 1559 0105 17       		.uleb128 0x17
+ 1560 0106 00       		.byte	0
+ 1561 0107 00       		.byte	0
+ 1562 0108 13       		.uleb128 0x13
+ 1563 0109 34       		.uleb128 0x34
+ 1564 010a 00       		.byte	0
+ 1565 010b 03       		.uleb128 0x3
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 31
+
+
+ 1566 010c 0E       		.uleb128 0xe
+ 1567 010d 3A       		.uleb128 0x3a
+ 1568 010e 0B       		.uleb128 0xb
+ 1569 010f 3B       		.uleb128 0x3b
+ 1570 0110 05       		.uleb128 0x5
+ 1571 0111 49       		.uleb128 0x49
+ 1572 0112 13       		.uleb128 0x13
+ 1573 0113 3F       		.uleb128 0x3f
+ 1574 0114 19       		.uleb128 0x19
+ 1575 0115 3C       		.uleb128 0x3c
+ 1576 0116 19       		.uleb128 0x19
+ 1577 0117 00       		.byte	0
+ 1578 0118 00       		.byte	0
+ 1579 0119 14       		.uleb128 0x14
+ 1580 011a 35       		.uleb128 0x35
+ 1581 011b 00       		.byte	0
+ 1582 011c 49       		.uleb128 0x49
+ 1583 011d 13       		.uleb128 0x13
+ 1584 011e 00       		.byte	0
+ 1585 011f 00       		.byte	0
+ 1586 0120 15       		.uleb128 0x15
+ 1587 0121 34       		.uleb128 0x34
+ 1588 0122 00       		.byte	0
+ 1589 0123 03       		.uleb128 0x3
+ 1590 0124 0E       		.uleb128 0xe
+ 1591 0125 3A       		.uleb128 0x3a
+ 1592 0126 0B       		.uleb128 0xb
+ 1593 0127 3B       		.uleb128 0x3b
+ 1594 0128 0B       		.uleb128 0xb
+ 1595 0129 49       		.uleb128 0x49
+ 1596 012a 13       		.uleb128 0x13
+ 1597 012b 3F       		.uleb128 0x3f
+ 1598 012c 19       		.uleb128 0x19
+ 1599 012d 02       		.uleb128 0x2
+ 1600 012e 18       		.uleb128 0x18
+ 1601 012f 00       		.byte	0
+ 1602 0130 00       		.byte	0
+ 1603 0131 16       		.uleb128 0x16
+ 1604 0132 2E       		.uleb128 0x2e
+ 1605 0133 00       		.byte	0
+ 1606 0134 3F       		.uleb128 0x3f
+ 1607 0135 19       		.uleb128 0x19
+ 1608 0136 03       		.uleb128 0x3
+ 1609 0137 0E       		.uleb128 0xe
+ 1610 0138 3A       		.uleb128 0x3a
+ 1611 0139 0B       		.uleb128 0xb
+ 1612 013a 3B       		.uleb128 0x3b
+ 1613 013b 0B       		.uleb128 0xb
+ 1614 013c 27       		.uleb128 0x27
+ 1615 013d 19       		.uleb128 0x19
+ 1616 013e 49       		.uleb128 0x49
+ 1617 013f 13       		.uleb128 0x13
+ 1618 0140 3C       		.uleb128 0x3c
+ 1619 0141 19       		.uleb128 0x19
+ 1620 0142 00       		.byte	0
+ 1621 0143 00       		.byte	0
+ 1622 0144 17       		.uleb128 0x17
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 32
+
+
+ 1623 0145 2E       		.uleb128 0x2e
+ 1624 0146 01       		.byte	0x1
+ 1625 0147 3F       		.uleb128 0x3f
+ 1626 0148 19       		.uleb128 0x19
+ 1627 0149 03       		.uleb128 0x3
+ 1628 014a 0E       		.uleb128 0xe
+ 1629 014b 3A       		.uleb128 0x3a
+ 1630 014c 0B       		.uleb128 0xb
+ 1631 014d 3B       		.uleb128 0x3b
+ 1632 014e 0B       		.uleb128 0xb
+ 1633 014f 27       		.uleb128 0x27
+ 1634 0150 19       		.uleb128 0x19
+ 1635 0151 49       		.uleb128 0x49
+ 1636 0152 13       		.uleb128 0x13
+ 1637 0153 3C       		.uleb128 0x3c
+ 1638 0154 19       		.uleb128 0x19
+ 1639 0155 01       		.uleb128 0x1
+ 1640 0156 13       		.uleb128 0x13
+ 1641 0157 00       		.byte	0
+ 1642 0158 00       		.byte	0
+ 1643 0159 18       		.uleb128 0x18
+ 1644 015a 05       		.uleb128 0x5
+ 1645 015b 00       		.byte	0
+ 1646 015c 49       		.uleb128 0x49
+ 1647 015d 13       		.uleb128 0x13
+ 1648 015e 00       		.byte	0
+ 1649 015f 00       		.byte	0
+ 1650 0160 19       		.uleb128 0x19
+ 1651 0161 2E       		.uleb128 0x2e
+ 1652 0162 01       		.byte	0x1
+ 1653 0163 3F       		.uleb128 0x3f
+ 1654 0164 19       		.uleb128 0x19
+ 1655 0165 03       		.uleb128 0x3
+ 1656 0166 0E       		.uleb128 0xe
+ 1657 0167 3A       		.uleb128 0x3a
+ 1658 0168 0B       		.uleb128 0xb
+ 1659 0169 3B       		.uleb128 0x3b
+ 1660 016a 0B       		.uleb128 0xb
+ 1661 016b 27       		.uleb128 0x27
+ 1662 016c 19       		.uleb128 0x19
+ 1663 016d 49       		.uleb128 0x49
+ 1664 016e 13       		.uleb128 0x13
+ 1665 016f 3C       		.uleb128 0x3c
+ 1666 0170 19       		.uleb128 0x19
+ 1667 0171 00       		.byte	0
+ 1668 0172 00       		.byte	0
+ 1669 0173 00       		.byte	0
+ 1670              		.section	.debug_loc,"",%progbits
+ 1671              	.Ldebug_loc0:
+ 1672              	.LLST0:
+ 1673 0000 00000000 		.4byte	.LVL8
+ 1674 0004 11000000 		.4byte	.LVL9-1
+ 1675 0008 0100     		.2byte	0x1
+ 1676 000a 50       		.byte	0x50
+ 1677 000b 11000000 		.4byte	.LVL9-1
+ 1678 000f 8E000000 		.4byte	.LVL15
+ 1679 0013 0100     		.2byte	0x1
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 33
+
+
+ 1680 0015 54       		.byte	0x54
+ 1681 0016 8E000000 		.4byte	.LVL15
+ 1682 001a 94000000 		.4byte	.LFE65
+ 1683 001e 0400     		.2byte	0x4
+ 1684 0020 F3       		.byte	0xf3
+ 1685 0021 01       		.uleb128 0x1
+ 1686 0022 50       		.byte	0x50
+ 1687 0023 9F       		.byte	0x9f
+ 1688 0024 00000000 		.4byte	0
+ 1689 0028 00000000 		.4byte	0
+ 1690              	.LLST1:
+ 1691 002c 00000000 		.4byte	.LVL16
+ 1692 0030 0F000000 		.4byte	.LVL17-1
+ 1693 0034 0100     		.2byte	0x1
+ 1694 0036 50       		.byte	0x50
+ 1695 0037 0F000000 		.4byte	.LVL17-1
+ 1696 003b 80000000 		.4byte	.LVL26
+ 1697 003f 0100     		.2byte	0x1
+ 1698 0041 54       		.byte	0x54
+ 1699 0042 80000000 		.4byte	.LVL26
+ 1700 0046 88000000 		.4byte	.LFE66
+ 1701 004a 0400     		.2byte	0x4
+ 1702 004c F3       		.byte	0xf3
+ 1703 004d 01       		.uleb128 0x1
+ 1704 004e 50       		.byte	0x50
+ 1705 004f 9F       		.byte	0x9f
+ 1706 0050 00000000 		.4byte	0
+ 1707 0054 00000000 		.4byte	0
+ 1708              	.LLST2:
+ 1709 0058 00000000 		.4byte	.LVL27
+ 1710 005c 22000000 		.4byte	.LVL28
+ 1711 0060 0100     		.2byte	0x1
+ 1712 0062 50       		.byte	0x50
+ 1713 0063 22000000 		.4byte	.LVL28
+ 1714 0067 E8000000 		.4byte	.LVL53
+ 1715 006b 0100     		.2byte	0x1
+ 1716 006d 56       		.byte	0x56
+ 1717 006e E8000000 		.4byte	.LVL53
+ 1718 0072 F8000000 		.4byte	.LFE67
+ 1719 0076 0400     		.2byte	0x4
+ 1720 0078 F3       		.byte	0xf3
+ 1721 0079 01       		.uleb128 0x1
+ 1722 007a 50       		.byte	0x50
+ 1723 007b 9F       		.byte	0x9f
+ 1724 007c 00000000 		.4byte	0
+ 1725 0080 00000000 		.4byte	0
+ 1726              	.LLST3:
+ 1727 0084 00000000 		.4byte	.LVL27
+ 1728 0088 25000000 		.4byte	.LVL29-1
+ 1729 008c 0100     		.2byte	0x1
+ 1730 008e 51       		.byte	0x51
+ 1731 008f 25000000 		.4byte	.LVL29-1
+ 1732 0093 E8000000 		.4byte	.LVL53
+ 1733 0097 0100     		.2byte	0x1
+ 1734 0099 54       		.byte	0x54
+ 1735 009a E8000000 		.4byte	.LVL53
+ 1736 009e F8000000 		.4byte	.LFE67
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 34
+
+
+ 1737 00a2 0400     		.2byte	0x4
+ 1738 00a4 F3       		.byte	0xf3
+ 1739 00a5 01       		.uleb128 0x1
+ 1740 00a6 51       		.byte	0x51
+ 1741 00a7 9F       		.byte	0x9f
+ 1742 00a8 00000000 		.4byte	0
+ 1743 00ac 00000000 		.4byte	0
+ 1744              	.LLST4:
+ 1745 00b0 00000000 		.4byte	.LVL54
+ 1746 00b4 22000000 		.4byte	.LVL55
+ 1747 00b8 0100     		.2byte	0x1
+ 1748 00ba 50       		.byte	0x50
+ 1749 00bb 22000000 		.4byte	.LVL55
+ 1750 00bf E6000000 		.4byte	.LVL80
+ 1751 00c3 0100     		.2byte	0x1
+ 1752 00c5 56       		.byte	0x56
+ 1753 00c6 E6000000 		.4byte	.LVL80
+ 1754 00ca F8000000 		.4byte	.LFE68
+ 1755 00ce 0400     		.2byte	0x4
+ 1756 00d0 F3       		.byte	0xf3
+ 1757 00d1 01       		.uleb128 0x1
+ 1758 00d2 50       		.byte	0x50
+ 1759 00d3 9F       		.byte	0x9f
+ 1760 00d4 00000000 		.4byte	0
+ 1761 00d8 00000000 		.4byte	0
+ 1762              	.LLST5:
+ 1763 00dc 00000000 		.4byte	.LVL54
+ 1764 00e0 25000000 		.4byte	.LVL56-1
+ 1765 00e4 0100     		.2byte	0x1
+ 1766 00e6 51       		.byte	0x51
+ 1767 00e7 25000000 		.4byte	.LVL56-1
+ 1768 00eb E6000000 		.4byte	.LVL80
+ 1769 00ef 0100     		.2byte	0x1
+ 1770 00f1 54       		.byte	0x54
+ 1771 00f2 E6000000 		.4byte	.LVL80
+ 1772 00f6 F8000000 		.4byte	.LFE68
+ 1773 00fa 0400     		.2byte	0x4
+ 1774 00fc F3       		.byte	0xf3
+ 1775 00fd 01       		.uleb128 0x1
+ 1776 00fe 51       		.byte	0x51
+ 1777 00ff 9F       		.byte	0x9f
+ 1778 0100 00000000 		.4byte	0
+ 1779 0104 00000000 		.4byte	0
+ 1780              		.section	.debug_aranges,"",%progbits
+ 1781 0000 44000000 		.4byte	0x44
+ 1782 0004 0200     		.2byte	0x2
+ 1783 0006 00000000 		.4byte	.Ldebug_info0
+ 1784 000a 04       		.byte	0x4
+ 1785 000b 00       		.byte	0
+ 1786 000c 0000     		.2byte	0
+ 1787 000e 0000     		.2byte	0
+ 1788 0010 00000000 		.4byte	.LFB63
+ 1789 0014 34000000 		.4byte	.LFE63-.LFB63
+ 1790 0018 00000000 		.4byte	.LFB64
+ 1791 001c 50000000 		.4byte	.LFE64-.LFB64
+ 1792 0020 00000000 		.4byte	.LFB65
+ 1793 0024 94000000 		.4byte	.LFE65-.LFB65
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 35
+
+
+ 1794 0028 00000000 		.4byte	.LFB66
+ 1795 002c 88000000 		.4byte	.LFE66-.LFB66
+ 1796 0030 00000000 		.4byte	.LFB67
+ 1797 0034 F8000000 		.4byte	.LFE67-.LFB67
+ 1798 0038 00000000 		.4byte	.LFB68
+ 1799 003c F8000000 		.4byte	.LFE68-.LFB68
+ 1800 0040 00000000 		.4byte	0
+ 1801 0044 00000000 		.4byte	0
+ 1802              		.section	.debug_ranges,"",%progbits
+ 1803              	.Ldebug_ranges0:
+ 1804 0000 00000000 		.4byte	.LFB63
+ 1805 0004 34000000 		.4byte	.LFE63
+ 1806 0008 00000000 		.4byte	.LFB64
+ 1807 000c 50000000 		.4byte	.LFE64
+ 1808 0010 00000000 		.4byte	.LFB65
+ 1809 0014 94000000 		.4byte	.LFE65
+ 1810 0018 00000000 		.4byte	.LFB66
+ 1811 001c 88000000 		.4byte	.LFE66
+ 1812 0020 00000000 		.4byte	.LFB67
+ 1813 0024 F8000000 		.4byte	.LFE67
+ 1814 0028 00000000 		.4byte	.LFB68
+ 1815 002c F8000000 		.4byte	.LFE68
+ 1816 0030 00000000 		.4byte	0
+ 1817 0034 00000000 		.4byte	0
+ 1818              		.section	.debug_line,"",%progbits
+ 1819              	.Ldebug_line0:
+ 1820 0000 1F020000 		.section	.debug_str,"MS",%progbits,1
+ 1820      02006201 
+ 1820      00000201 
+ 1820      FB0E0D00 
+ 1820      01010101 
+ 1821              	.LASF22:
+ 1822 0000 6765745F 		.ascii	"get_raw_acc\000"
+ 1822      7261775F 
+ 1822      61636300 
+ 1823              	.LASF9:
+ 1824 000c 5F5F696E 		.ascii	"__int32_t\000"
+ 1824      7433325F 
+ 1824      7400
+ 1825              	.LASF37:
+ 1826 0016 2E5C4759 		.ascii	".\\GY80.c\000"
+ 1826      38302E63 
+ 1826      00
+ 1827              	.LASF32:
+ 1828 001f 4932435F 		.ascii	"I2C_UDB_M_MasterWriteBuf\000"
+ 1828      5544425F 
+ 1828      4D5F4D61 
+ 1828      73746572 
+ 1828      57726974 
+ 1829              	.LASF24:
+ 1830 0038 45554C45 		.ascii	"EULER\000"
+ 1830      5200
+ 1831              	.LASF15:
+ 1832 003e 646F7562 		.ascii	"double\000"
+ 1832      6C6500
+ 1833              	.LASF29:
+ 1834 0045 546F7461 		.ascii	"Total_ACC\000"
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 36
+
+
+ 1834      6C5F4143 
+ 1834      4300
+ 1835              	.LASF14:
+ 1836 004f 666C6F61 		.ascii	"float\000"
+ 1836      7400
+ 1837              	.LASF28:
+ 1838 0055 4144584C 		.ascii	"ADXL_READ\000"
+ 1838      5F524541 
+ 1838      4400
+ 1839              	.LASF35:
+ 1840 005f 6174616E 		.ascii	"atan\000"
+ 1840      00
+ 1841              	.LASF1:
+ 1842 0064 756E7369 		.ascii	"unsigned char\000"
+ 1842      676E6564 
+ 1842      20636861 
+ 1842      7200
+ 1843              	.LASF13:
+ 1844 0072 696E7431 		.ascii	"int16\000"
+ 1844      3600
+ 1845              	.LASF5:
+ 1846 0078 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1846      20756E73 
+ 1846      69676E65 
+ 1846      6420696E 
+ 1846      7400
+ 1847              	.LASF3:
+ 1848 008a 73686F72 		.ascii	"short unsigned int\000"
+ 1848      7420756E 
+ 1848      7369676E 
+ 1848      65642069 
+ 1848      6E7400
+ 1849              	.LASF23:
+ 1850 009d 6765745F 		.ascii	"get_raw_euler2\000"
+ 1850      7261775F 
+ 1850      65756C65 
+ 1850      723200
+ 1851              	.LASF26:
+ 1852 00ac 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1852      52784275 
+ 1852      66666572 
+ 1852      00
+ 1853              	.LASF38:
+ 1854 00b9 443A5C44 		.ascii	"D:\\Doc\\PSoc_Projects\\UAV_Control\\UAV_Control.cy"
+ 1854      6F635C50 
+ 1854      536F635F 
+ 1854      50726F6A 
+ 1854      65637473 
+ 1855 00e8 64736E00 		.ascii	"dsn\000"
+ 1856              	.LASF12:
+ 1857 00ec 75696E74 		.ascii	"uint16\000"
+ 1857      313600
+ 1858              	.LASF27:
+ 1859 00f3 4C33475F 		.ascii	"L3G_READ\000"
+ 1859      52454144 
+ 1859      00
+ 1860              	.LASF31:
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 37
+
+
+ 1861 00fc 4932435F 		.ascii	"I2C_UDB_M_MasterStatus\000"
+ 1861      5544425F 
+ 1861      4D5F4D61 
+ 1861      73746572 
+ 1861      53746174 
+ 1862              	.LASF8:
+ 1863 0113 756E7369 		.ascii	"unsigned int\000"
+ 1863      676E6564 
+ 1863      20696E74 
+ 1863      00
+ 1864              	.LASF7:
+ 1865 0120 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1865      206C6F6E 
+ 1865      6720756E 
+ 1865      7369676E 
+ 1865      65642069 
+ 1866              	.LASF25:
+ 1867 0137 6765745F 		.ascii	"get_raw_euler\000"
+ 1867      7261775F 
+ 1867      65756C65 
+ 1867      7200
+ 1868              	.LASF36:
+ 1869 0145 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1869      4320342E 
+ 1869      392E3320 
+ 1869      32303135 
+ 1869      30333033 
+ 1870 0178 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1870      20726576 
+ 1870      6973696F 
+ 1870      6E203232 
+ 1870      31323230 
+ 1871 01ab 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1871      66756E63 
+ 1871      74696F6E 
+ 1871      2D736563 
+ 1871      74696F6E 
+ 1872              	.LASF19:
+ 1873 01d3 4C334734 		.ascii	"L3G4200D_init\000"
+ 1873      32303044 
+ 1873      5F696E69 
+ 1873      7400
+ 1874              	.LASF20:
+ 1875 01e1 4158444C 		.ascii	"AXDL345_init\000"
+ 1875      3334355F 
+ 1875      696E6974 
+ 1875      00
+ 1876              	.LASF10:
+ 1877 01ee 696E7433 		.ascii	"int32_t\000"
+ 1877      325F7400 
+ 1878              	.LASF17:
+ 1879 01f6 73697A65 		.ascii	"sizetype\000"
+ 1879      74797065 
+ 1879      00
+ 1880              	.LASF33:
+ 1881 01ff 4932435F 		.ascii	"I2C_UDB_M_MasterReadBuf\000"
+ 1881      5544425F 
+ARM GAS  C:\Users\admin\AppData\Local\Temp\ccOlWYIz.s 			page 38
+
+
+ 1881      4D5F4D61 
+ 1881      73746572 
+ 1881      52656164 
+ 1882              	.LASF6:
+ 1883 0217 6C6F6E67 		.ascii	"long long int\000"
+ 1883      206C6F6E 
+ 1883      6720696E 
+ 1883      7400
+ 1884              	.LASF16:
+ 1885 0225 63686172 		.ascii	"char\000"
+ 1885      00
+ 1886              	.LASF2:
+ 1887 022a 73686F72 		.ascii	"short int\000"
+ 1887      7420696E 
+ 1887      7400
+ 1888              	.LASF21:
+ 1889 0234 6765745F 		.ascii	"get_raw_gyo\000"
+ 1889      7261775F 
+ 1889      67796F00 
+ 1890              	.LASF11:
+ 1891 0240 75696E74 		.ascii	"uint8\000"
+ 1891      3800
+ 1892              	.LASF39:
+ 1893 0246 61636F73 		.ascii	"acos\000"
+ 1893      00
+ 1894              	.LASF4:
+ 1895 024b 6C6F6E67 		.ascii	"long int\000"
+ 1895      20696E74 
+ 1895      00
+ 1896              	.LASF18:
+ 1897 0254 6C6F6E67 		.ascii	"long double\000"
+ 1897      20646F75 
+ 1897      626C6500 
+ 1898              	.LASF0:
+ 1899 0260 7369676E 		.ascii	"signed char\000"
+ 1899      65642063 
+ 1899      68617200 
+ 1900              	.LASF34:
+ 1901 026c 73717274 		.ascii	"sqrt\000"
+ 1901      00
+ 1902              	.LASF30:
+ 1903 0271 4932435F 		.ascii	"I2C_UDB_M_MasterClearStatus\000"
+ 1903      5544425F 
+ 1903      4D5F4D61 
+ 1903      73746572 
+ 1903      436C6561 
+ 1904              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

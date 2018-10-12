@@ -1,0 +1,2334 @@
+Archive member included because of file (symbol)
+
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o (cyfitter_cfg)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (PWM_1_WriteCompare1)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (PWM_2_WriteCompare1)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (LCD_PrintString)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Timer_1_Start)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyBootAsmGnu.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o) (CyDelayCycles)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o (CyHalt)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o) (CyPmReadStatus)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (isr_Timer_1_StartEx)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (UART_Bluetooth_Init)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o) (UART_Bluetooth_IntClock_Start)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (USBUART_1_Start)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (USBUART_1_CDC_Init)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o) (USBUART_1_lastPacketSize)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o) (USBUART_1_EP_1_ISR)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o) (USBUART_1_DP_ISR)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o) (USBUART_1_ConfigReg)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o) (USBUART_1_HandleVendorRqst)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o) (USBUART_1_Dp_ClearInterrupt)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (isr_jyRX_StartEx)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (UART_JY901_Init)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o) (UART_JY901_IntClock_Start)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o) (CyFlash_SetWaitCycles)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o) (CySpcStart)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o) (USBUART_1_DispatchClassRqst)
+.\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o) (USBUART_1_idSerialNumberStringDescriptor)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubdf3.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (__aeabi_dsub)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivdf3.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (__aeabi_dmul)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixdfsi.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (__aeabi_d2iz)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (__aeabi_d2f)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (__aeabi_fsub)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_cmpsf2.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (__aeabi_fcmplt)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixsfsi.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (__aeabi_f2iz)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o (__errno)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (exit)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (__libc_init_array)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o) (memcpy)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (memset)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (sprintf)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o) (_svfprintf_r)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (_printf_i)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (memchr)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (memmove)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (_free_r)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (_malloc_r)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (_realloc_r)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                              d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o) (errno)
+
+Allocating common symbols
+Common symbol       size              file
+
+Yaw                 0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+Control_Yaw         0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+tmp                 0x1               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_interfaceSettingLast
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+int_Error_w_roll    0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+AccelY              0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+MagY                0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+DisplayBuffer       0x80              .\CortexM3\ARM_GCC_493\Debug\main.o
+Motor_v_3           0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+f_tmp               0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_cdcDataInEp
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+errno               0x4               d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+Temperature         0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_ep0Mode   0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+last_Error_roll     0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+float2int_tmp       0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+Height              0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+pitch_angle_offset  0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+Motor_v_4           0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_lastPacketSize
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+set_speed_3         0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+Desire_w_yaw        0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+BTRxBufLen          0x1               .\CortexM3\ARM_GCC_493\Debug\main.o
+sum                 0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+last_Error_w_yaw    0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+int_Error_w_pitch   0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+last_Error_w_roll   0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+last_Motor_v_3      0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+tmp2                0x1               .\CortexM3\ARM_GCC_493\Debug\main.o
+Desire_w_pitch      0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+Roll                0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+Error_w_yaw         0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+Motor_v_2           0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_configurationChanged
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+USBUART_1_configuration
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+tmpbuf              0xa               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_interfaceNumber
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+USBUART_1_deviceStatus
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+USBUART_1_cdcDataOutEp
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+Desire_w_roll       0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+USBUART_1_cdcCommInInterruptEp
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+Desire_angle_roll   0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+roll_angle_offset   0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+Motor_v_1           0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+MagX                0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_ep0Toggle
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+int_Error_pitch     0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+i                   0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+set_speed_1         0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+USBUART_1_serialStateBitmap
+                    0x4               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+LCDBuffer           0x10              .\CortexM3\ARM_GCC_493\Debug\main.o
+Control_Roll        0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+USBUART_1_linesChanged
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+last_Motor_v_2      0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+symbol              0x1               .\CortexM3\ARM_GCC_493\Debug\main.o
+MagZ                0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+JY901RxBuf          0x40              .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_interfaceClass
+                    0x4               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+USBUART_1_linesControlBitmap
+                    0x4               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+last_Error_w_pitch  0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+OmegaY              0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+last_Motor_v_4      0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_interfaceSetting
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+USBUART_1_currentTD
+                    0xc               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+set_speed_2         0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+OmegaX              0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+USBUART_1_ep0Count  0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+BTRxBuf             0x40              .\CortexM3\ARM_GCC_493\Debug\main.o
+decode_success      0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+AccelZ              0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+Error_pitch         0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+USBUART_1_EP        0x6c              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+AccelX              0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+last_Error_pitch    0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+USBUART_1_transferByteCount
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+USBUART_1_transferState
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+Control_Pitch       0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+Error_w_roll        0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+JY901RxBufLen       0x1               .\CortexM3\ARM_GCC_493\Debug\main.o
+int_Error_w_yaw     0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+USBUART_1_device    0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+dieTemperature      0x2               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+Pressure            0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+int_Error_roll      0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+USBUART_1_interfaceStatus
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+last_Motor_v_1      0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+set_speed_4         0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+USBUART_1_deviceAddress
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+USBUART_1_idSerialNumberStringDescriptor
+                    0x22              .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+Error_w_pitch       0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+Pitch               0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+Desire_angle_pitch  0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+Error_roll          0x4               .\CortexM3\ARM_GCC_493\Debug\Control.o
+OmegaZ              0x4               .\CortexM3\ARM_GCC_493\Debug\main.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .data          0x00000000        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .text          0x00000000       0x74 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text.Set_All_Motors_Speed
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text.Motor_Calibration
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text.Process_Bluetooth_Message
+                0x00000000      0x148 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text.Convert_Float2String
+                0x00000000       0xa8 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text.Bluetooth_RX_Interrupt_Handler
+                0x00000000       0x80 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text.Float28Str
+                0x00000000       0x88 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text.LCD_DisplayAngle
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text.JY901_Debug_Display
+                0x00000000      0x294 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .data          0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .text._exit    0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .text._sbrk    0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .text.SetAnalogRoutingPumps
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .text.PWM_1_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .text.PWM_1_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .text.PWM_1_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .text.PWM_1_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .text.PWM_1_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .text.PWM_1_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .text.PWM_1_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .text.PWM_1_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .text.PWM_2_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .text.PWM_2_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .text.PWM_2_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .text.PWM_2_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .text.PWM_2_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .text.PWM_2_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .text.PWM_2_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .text.PWM_2_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .text.LCD_PutChar
+                0x00000000        0x8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .text.LCD_Stop
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .text.LCD_PrintInt8
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .text.LCD_PrintInt16
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .text.LCD_PrintInt32
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .rodata        0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .text.Timer_1_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .text.Timer_1_SoftwareCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .text.Timer_1_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .text.Timer_1_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .text.Timer_1_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .text.Timer_1_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .bss           0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyUSB_PowerOnCheck
+                0x00000000       0x48 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyBusClk_Internal_SetDivider
+                0x00000000       0x48 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyPLL_OUT_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIMO_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIMO_EnableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIMO_DisableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyMasterClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyMasterClk_SetDivider
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyBusClk_SetDivider
+                0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyUsbClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyILO_Start1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyILO_Stop1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyILO_Start100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyILO_Stop100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyPLL_OUT_Start
+                0x00000000       0x78 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIMO_Start
+                0x00000000       0x60 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyILO_Enable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyILO_Disable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyILO_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyILO_SetPowerMode
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Stop
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_Start
+                0x00000000       0xac .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_EnableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_DisableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_ReadStatus
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_EnableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_DisableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_SetStartup
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_SetFbVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_SetWdVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyPLL_OUT_SetPQ
+                0x00000000       0x60 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyPLL_OUT_SetSource
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIMO_SetTrimValue
+                0x00000000       0xcc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIMO_SetFreq
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIMO_SetSource
+                0x00000000       0x58 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x00000000       0x84 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Start
+                0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyWdtStart
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyWdtClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyVdStickyStatus
+                0x00000000       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyVdLvDigitEnable
+                0x00000000       0x84 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyVdLvAnalogEnable
+                0x00000000       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyVdLvDigitDisable
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyVdLvAnalogDisable
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyVdHvAnalogEnable
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyVdHvAnalogDisable
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyVdRealTimeStatus
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyFlushCache
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x58 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .bss           0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmHibSlpSaveSet
+                0x00000000      0x1dc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmHibSlpRestore
+                0x00000000       0xd4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmHviLviSaveDisable
+                0x00000000       0xa0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmHibSaveSet
+                0x00000000       0x8c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmHviLviRestore
+                0x00000000       0x48 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmHibRestore
+                0x00000000       0x58 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmSaveClocks
+                0x00000000      0x218 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmRestoreClocks
+                0x00000000      0x24c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmAltAct
+                0x00000000       0x6c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmSleep
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmHibernateEx
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmHibernate
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmReadStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmCtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmOppsSet
+                0x00000000       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text.CyPmFtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .rodata        0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .text.isr_Timer_1_Interrupt
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .text.isr_Timer_1_GetVector
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .text.isr_Timer_1_GetPriority
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .text.isr_Timer_1_GetState
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .text.isr_Timer_1_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .text.isr_Timer_1_Stop
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .text.isr_Timer_1_SetPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .text.isr_Timer_1_ClearPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_Stop
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_ReadControlRegister
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_WriteControlRegister
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_SetRxInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_ReadRxData
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_ReadRxStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_GetChar
+                0x00000000       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_GetByte
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_GetRxBufferSize
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_ClearRxBuffer
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_SetRxAddressMode
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_SetRxAddress1
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text.UART_Bluetooth_SetRxAddress2
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_StopBlock
+                0x00000000       0x6c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_StandbyPower
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_GetDividerRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_SetModeRegister
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_ClearModeRegister
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_GetModeRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_GetSourceRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_SetDividerRegister
+                0x00000000       0xdc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text.UART_Bluetooth_IntClock_SetSourceRegister
+                0x00000000       0x5c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_Stop
+                0x00000000       0x94 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_CheckActivity
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_IsConfigurationChanged
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_GetInterfaceSetting
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_GetEPState
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_GetEPCount
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_LoadInEP
+                0x00000000       0x94 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_ReadOutEP
+                0x00000000       0x50 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_DisableOutEP
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_Force
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_GetEPAckState
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_SetPowerStatus
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_RWUEnabled
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_GetDeviceAddress
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_EnableSofInt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text.USBUART_1_DisableSofInt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_StrLen
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_PutData
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_PutString
+                0x00000000       0x9c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_PutChar
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_PutCRLF
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetCount
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_DataIsReady
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_CDCIsReady
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetData
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetAll
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetChar
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_IsLineChanged
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetDTERate
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetCharFormat
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetParityType
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetDataBits
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetLineControl
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_SendSerialState
+                0x00000000       0x64 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetSerialState
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_NotificationIsReady
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_SetComPort
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text.USBUART_1_GetComPort
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .rodata        0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .bss           0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .text.USBUART_1_SaveConfig
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .text.USBUART_1_RestoreConfig
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .text.USBUART_1_Suspend
+                0x00000000       0xc8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .text.USBUART_1_Resume
+                0x00000000       0xbc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .text.USBUART_1_EpStateInit
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .text.USBUART_1_TerminateEP
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .text.USBUART_1_Dp_Write
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .text.USBUART_1_Dp_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .text.USBUART_1_Dp_Read
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .text.USBUART_1_Dp_ReadDataReg
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .text.USBUART_1_Dp_SetInterruptMode
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .text.isr_jyRX_Interrupt
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .text.isr_jyRX_GetVector
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .text.isr_jyRX_GetPriority
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .text.isr_jyRX_GetState
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .text.isr_jyRX_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .text.isr_jyRX_Stop
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .text.isr_jyRX_SetPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .text.isr_jyRX_ClearPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_Stop
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_ReadControlRegister
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_WriteControlRegister
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_SetRxInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_ReadRxStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_GetChar
+                0x00000000       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_GetByte
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_GetRxBufferSize
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_ClearRxBuffer
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_SetRxAddressMode
+                0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_SetRxAddress1
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text.UART_JY901_SetRxAddress2
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_StopBlock
+                0x00000000       0x6c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_StandbyPower
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_GetDividerRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_SetModeRegister
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_ClearModeRegister
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_GetModeRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_GetSourceRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_SetDividerRegister
+                0x00000000       0xdc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text.UART_JY901_IntClock_SetSourceRegister
+                0x00000000       0x5c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .bss           0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyFlashGetSpcAlgorithm
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CySetTempInt
+                0x00000000       0x60 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyFlash_Start
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyFlash_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CySetTemp
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CySetFlashEEBuffer
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyWriteRowFull
+                0x00000000       0xf8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyWriteRowData
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyFlash_SetWaitCycles
+                0x00000000       0x7c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyEEPROM_Start
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyEEPROM_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyEEPROM_ReadReserve
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text.CyEEPROM_ReadRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ COMMON         0x00000000        0x2 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .bss           0x00000000        0x8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcStart
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcStop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcReadData
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcLoadMultiByte
+                0x00000000       0x78 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcLoadRow
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcLoadRowFull
+                0x00000000       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcWriteRow
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcEraseSector
+                0x00000000       0x3c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcGetTemp
+                0x00000000       0x3c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcLock
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcUnlock
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text.CySpcGetAlgorithm
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivdf3.o)
+ .text          0x00000000       0x50 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixdfsi.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixdfsi.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixdfsi.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_cmpsf2.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_cmpsf2.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixsfsi.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixsfsi.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text.__errno  0x00000000        0xc d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x00000000       0x60 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .rodata.str1.1
+                0x00000000        0x2 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .text._sprintf_r
+                0x00000000       0x40 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .text.sprintf  0x00000000       0x48 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .text.__ssputs_r
+                0x00000000       0xb2 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .text.__ssprint_r
+                0x00000000       0xfe d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .text._svfprintf_r
+                0x00000000      0x1e4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .rodata.str1.1
+                0x00000000       0x11 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .text._printf_common
+                0x00000000       0xea d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .text._printf_i
+                0x00000000      0x240 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .rodata.str1.1
+                0x00000000       0x22 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .text.memchr   0x00000000       0x1c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .text.memmove  0x00000000       0x36 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .text._free_r  0x00000000       0x88 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x00000000       0xac d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .bss.__malloc_sbrk_start
+                0x00000000        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .bss.__malloc_free_list
+                0x00000000        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .text._realloc_r
+                0x00000000       0x4c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x00000000       0x20 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .text._malloc_usable_size_r
+                0x00000000       0x14 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x00000000       0x1a d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x00000000       0xb4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ COMMON         0x00000000        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .text          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+ .data          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+ .bss           0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x1fff8000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+START GROUP
+LOAD .\CortexM3\ARM_GCC_493\Debug\main.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\Control.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a
+LOAD D:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+START GROUP
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc.a
+LOAD d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000020                CY_ECC_ROW_SIZE = 0x20
+                0x00000000                CY_EE_IN_BTLDR = 0x0
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000800                CY_EE_SIZE = 0x800
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                0x1fff8470                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x10000))
+                0x20007800                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((0x40000 - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                ecc_offset = ((appl_start / CY_FLASH_ROW_SIZE) * CY_ECC_ROW_SIZE)
+                0x00000000                ee_offset = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?((CY_EE_SIZE / CY_APPL_MAX) * (CY_APPL_NUM - 0x1)):0x0
+                0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
+                0x00000000                PROVIDE (CY_ECC_OFFSET, ecc_offset)
+
+.text           0x00000000     0x3806
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010       0x18 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.dma_init)
+                0x00000001                ASSERT ((((appl_start + .) <= 0x10000) || 0x1), DMA Init must be within the first 64k of flash)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000028       0x5c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .text.Set_Motor_1_Speed
+                0x00000084       0x18 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x00000084                Set_Motor_1_Speed
+ .text.Set_Motor_2_Speed
+                0x0000009c       0x18 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x0000009c                Set_Motor_2_Speed
+ .text.Set_Motor_3_Speed
+                0x000000b4       0x18 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000000b4                Set_Motor_3_Speed
+ .text.Set_Motor_4_Speed
+                0x000000cc       0x18 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000000cc                Set_Motor_4_Speed
+ .text.Timer_1_Interrupt_Handler
+                0x000000e4       0xac .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000000e4                Timer_1_Interrupt_Handler
+ .text.Initialize_All_PWM
+                0x00000190       0x24 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x00000190                Initialize_All_PWM
+ .text.Init_JY901_Data
+                0x000001b4       0x70 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000001b4                Init_JY901_Data
+ .text.Decode_JY901_Data
+                0x00000224      0x324 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x00000224                Decode_JY901_Data
+ .text.JY901_RX_Interrupt_Handler
+                0x00000548       0x9c .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x00000548                JY901_RX_Interrupt_Handler
+ .text.LCD_Disp
+                0x000005e4       0x14 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000005e4                LCD_Disp
+ .text.main     0x000005f8       0xc0 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000005f8                main
+ .text.Control_Func_InitVariable
+                0x000006b8       0xc8 .\CortexM3\ARM_GCC_493\Debug\Control.o
+                0x000006b8                Control_Func_InitVariable
+ .text.Control_Main
+                0x00000780      0x68c .\CortexM3\ARM_GCC_493\Debug\Control.o
+                0x00000780                Control_Main
+ .text.IntDefaultHandler
+                0x00000e0c        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000e0c                IntDefaultHandler
+ .text.Start_c  0x00000e10       0x4c .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000e10                Start_c
+ .text.initialize_psoc
+                0x00000e5c       0x74 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000e5c                initialize_psoc
+ .text.CyClockStartupError
+                0x00000ed0        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .text.cfg_write_bytes32
+                0x00000ed4       0x34 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .text.AnalogSetDefault
+                0x00000f08       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .text.ClockSetup
+                0x00000f30       0xd8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .text.CYMEMZERO
+                0x00001008        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPY
+                0x00001014        0x8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .text.cyfitter_cfg
+                0x0000101c      0x11c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+                0x0000101c                cyfitter_cfg
+ .text.PWM_1_Enable
+                0x00001138       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                0x00001138                PWM_1_Enable
+ .text.PWM_1_WriteCounter
+                0x00001148        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                0x00001148                PWM_1_WriteCounter
+ .text.PWM_1_WritePeriod
+                0x00001154        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                0x00001154                PWM_1_WritePeriod
+ .text.PWM_1_WriteCompare1
+                0x00001160        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                0x00001160                PWM_1_WriteCompare1
+ .text.PWM_1_WriteCompare2
+                0x0000116c        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                0x0000116c                PWM_1_WriteCompare2
+ .text.PWM_1_Init
+                0x00001178       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                0x00001178                PWM_1_Init
+ .text.PWM_1_Start
+                0x000011c4       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                0x000011c4                PWM_1_Start
+ .text.PWM_2_Enable
+                0x000011e0       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                0x000011e0                PWM_2_Enable
+ .text.PWM_2_WriteCounter
+                0x000011f0        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                0x000011f0                PWM_2_WriteCounter
+ .text.PWM_2_WritePeriod
+                0x000011fc        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                0x000011fc                PWM_2_WritePeriod
+ .text.PWM_2_WriteCompare1
+                0x00001208        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                0x00001208                PWM_2_WriteCompare1
+ .text.PWM_2_WriteCompare2
+                0x00001214        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                0x00001214                PWM_2_WriteCompare2
+ .text.PWM_2_Init
+                0x00001220       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                0x00001220                PWM_2_Init
+ .text.PWM_2_Start
+                0x0000126c       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                0x0000126c                PWM_2_Start
+ .text.LCD_WrCntrlNib
+                0x00001288       0x34 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .text.LCD_WrDatNib
+                0x000012bc       0x44 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .text.LCD_IsReady
+                0x00001300       0xe4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x00001300                LCD_IsReady
+ .text.LCD_WriteData
+                0x000013e4       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x000013e4                LCD_WriteData
+ .text.LCD_PrintString
+                0x000013fc       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x000013fc                LCD_PrintString
+ .text.LCD_WriteControl
+                0x00001418       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x00001418                LCD_WriteControl
+ .text.LCD_Init
+                0x00001430       0x6c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x00001430                LCD_Init
+ .text.LCD_Enable
+                0x0000149c       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x0000149c                LCD_Enable
+ .text.LCD_Start
+                0x000014b0       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x000014b0                LCD_Start
+ .text.LCD_Position
+                0x000014cc       0x3c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x000014cc                LCD_Position
+ .text.LCD_PrintU32Number
+                0x00001508       0x60 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x00001508                LCD_PrintU32Number
+ .text.Timer_1_Enable
+                0x00001568       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x00001568                Timer_1_Enable
+ .text.Timer_1_SetInterruptMode
+                0x00001578        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x00001578                Timer_1_SetInterruptMode
+ .text.Timer_1_ReadStatusRegister
+                0x00001584        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x00001584                Timer_1_ReadStatusRegister
+ .text.Timer_1_WritePeriod
+                0x00001590        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x00001590                Timer_1_WritePeriod
+ .text.Timer_1_ReadCapture
+                0x0000159c        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x0000159c                Timer_1_ReadCapture
+ .text.Timer_1_WriteCounter
+                0x000015a8        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x000015a8                Timer_1_WriteCounter
+ .text.Timer_1_ClearFIFO
+                0x000015b4       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x000015b4                Timer_1_ClearFIFO
+ .text.Timer_1_Init
+                0x000015c8       0x34 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x000015c8                Timer_1_Init
+ .text.Timer_1_Start
+                0x000015fc       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x000015fc                Timer_1_Start
+ .text          0x00001618       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyBootAsmGnu.o)
+                0x00001618                CyDelayCycles
+                0x00001628                CyEnterCriticalSection
+                0x00001630                CyExitCriticalSection
+ .text.CyHalt   0x00001638        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                0x00001638                CyHalt
+ .text.CyDelay  0x0000163c       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                0x0000163c                CyDelay
+ .text.CyDelayUs
+                0x00001668       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                0x00001668                CyDelayUs
+ .text.CyIntSetVector
+                0x0000167c       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                0x0000167c                CyIntSetVector
+ .text.CyIntSetPriority
+                0x000016a4       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                0x000016a4                CyIntSetPriority
+ .text.CyGetUniqueId
+                0x000016d4       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                0x000016d4                CyGetUniqueId
+ .text.isr_Timer_1_SetVector
+                0x00001744        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+                0x00001744                isr_Timer_1_SetVector
+ .text.isr_Timer_1_SetPriority
+                0x00001750       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+                0x00001750                isr_Timer_1_SetPriority
+ .text.isr_Timer_1_Enable
+                0x00001760        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+                0x00001760                isr_Timer_1_Enable
+ .text.isr_Timer_1_Disable
+                0x0000176c        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+                0x0000176c                isr_Timer_1_Disable
+ .text.isr_Timer_1_StartEx
+                0x00001778       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+                0x00001778                isr_Timer_1_StartEx
+ .text.UART_Bluetooth_Init
+                0x00001794       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+                0x00001794                UART_Bluetooth_Init
+ .text.UART_Bluetooth_Enable
+                0x000017a8       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+                0x000017a8                UART_Bluetooth_Enable
+ .text.UART_Bluetooth_Start
+                0x000017d4       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+                0x000017d4                UART_Bluetooth_Start
+ .text.UART_Bluetooth_IntClock_Start
+                0x000017f0       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+                0x000017f0                UART_Bluetooth_IntClock_Start
+ .text.USBUART_1_Init
+                0x0000180c      0x140 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+                0x0000180c                USBUART_1_Init
+ .text.USBUART_1_InitComponent
+                0x0000194c       0xb8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+                0x0000194c                USBUART_1_InitComponent
+ .text.USBUART_1_Start
+                0x00001a04       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+                0x00001a04                USBUART_1_Start
+ .text.USBUART_1_ReInitComponent
+                0x00001a28       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+                0x00001a28                USBUART_1_ReInitComponent
+ .text.USBUART_1_GetConfiguration
+                0x00001a74        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+                0x00001a74                USBUART_1_GetConfiguration
+ .text.USBUART_1_EnableOutEP
+                0x00001a80       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+                0x00001a80                USBUART_1_EnableOutEP
+ .text.USBUART_1_GetInterfaceComPort
+                0x00001aac       0x3c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+                0x00001aac                USBUART_1_GetInterfaceComPort
+ .text.USBUART_1_DispatchCDCClassRqst
+                0x00001ae8       0x98 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+                0x00001ae8                USBUART_1_DispatchCDCClassRqst
+ .text.USBUART_1_CDC_Init
+                0x00001b80       0x98 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+                0x00001b80                USBUART_1_CDC_Init
+ .text.USBUART_1_Cdc_EpInit
+                0x00001c18       0x50 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+                0x00001c18                USBUART_1_Cdc_EpInit
+ .text.USBUART_1_LoadEP0
+                0x00001c68       0x94 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001c68                USBUART_1_LoadEP0
+ .text.USBUART_1_InitZeroLengthControlTransfer
+                0x00001cfc       0x34 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001cfc                USBUART_1_InitZeroLengthControlTransfer
+ .text.USBUART_1_ControlReadDataStage
+                0x00001d30        0x8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001d30                USBUART_1_ControlReadDataStage
+ .text.USBUART_1_ControlWriteDataStage
+                0x00001d38       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001d38                USBUART_1_ControlWriteDataStage
+ .text.USBUART_1_InitNoDataControlTransfer
+                0x00001db8       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001db8                USBUART_1_InitNoDataControlTransfer
+ .text.USBUART_1_UpdateStatusBlock
+                0x00001de4       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001de4                USBUART_1_UpdateStatusBlock
+ .text.USBUART_1_HandleSetup
+                0x00001e08       0x5c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001e08                USBUART_1_HandleSetup
+ .text.USBUART_1_ControlReadStatusStage
+                0x00001e64       0x34 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001e64                USBUART_1_ControlReadStatusStage
+ .text.USBUART_1_HandleOUT
+                0x00001e98       0x38 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001e98                USBUART_1_HandleOUT
+ .text.USBUART_1_ControlWriteStatusStage
+                0x00001ed0       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001ed0                USBUART_1_ControlWriteStatusStage
+ .text.USBUART_1_NoDataControlStatusStage
+                0x00001ef0       0x40 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001ef0                USBUART_1_NoDataControlStatusStage
+ .text.USBUART_1_HandleIN
+                0x00001f30       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001f30                USBUART_1_HandleIN
+ .text.USBUART_1_EP_0_ISR
+                0x00001f5c       0xb8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00001f5c                USBUART_1_EP_0_ISR
+ .text.USBUART_1_InitializeStatusBlock
+                0x00002014       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00002014                USBUART_1_InitializeStatusBlock
+ .text.USBUART_1_InitControlRead
+                0x00002038       0x50 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00002038                USBUART_1_InitControlRead
+ .text.USBUART_1_InitControlWrite
+                0x00002088       0x48 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x00002088                USBUART_1_InitControlWrite
+ .text.USBUART_1_EP_1_ISR
+                0x000020d0       0x38 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+                0x000020d0                USBUART_1_EP_1_ISR
+ .text.USBUART_1_EP_2_ISR
+                0x00002108       0x3c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+                0x00002108                USBUART_1_EP_2_ISR
+ .text.USBUART_1_EP_3_ISR
+                0x00002144       0x44 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+                0x00002144                USBUART_1_EP_3_ISR
+ .text.USBUART_1_SOF_ISR
+                0x00002188        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+                0x00002188                USBUART_1_SOF_ISR
+ .text.USBUART_1_BUS_RESET_ISR
+                0x0000218c        0x8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+                0x0000218c                USBUART_1_BUS_RESET_ISR
+ .text.USBUART_1_DP_ISR
+                0x00002194        0x8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+                0x00002194                USBUART_1_DP_ISR
+ .text.USBUART_1_ReadDieID
+                0x0000219c       0x6c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x0000219c                USBUART_1_ReadDieID
+ .text.USBUART_1_ConfigReg
+                0x00002208       0xa4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x00002208                USBUART_1_ConfigReg
+ .text.USBUART_1_GetConfigTablePtr
+                0x000022ac       0x28 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x000022ac                USBUART_1_GetConfigTablePtr
+ .text.USBUART_1_ConfigAltChanged
+                0x000022d4      0x11c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x000022d4                USBUART_1_ConfigAltChanged
+ .text.USBUART_1_GetDeviceTablePtr
+                0x000023f0       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x000023f0                USBUART_1_GetDeviceTablePtr
+ .text.USBUART_1_GetInterfaceClassTablePtr
+                0x00002408       0x24 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x00002408                USBUART_1_GetInterfaceClassTablePtr
+ .text.USBUART_1_Config
+                0x0000242c      0x1e4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x0000242c                USBUART_1_Config
+ .text.USBUART_1_SetEndpointHalt
+                0x00002610       0x64 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x00002610                USBUART_1_SetEndpointHalt
+ .text.USBUART_1_ClearEndpointHalt
+                0x00002674       0xa8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x00002674                USBUART_1_ClearEndpointHalt
+ .text.USBUART_1_ValidateAlternateSetting
+                0x0000271c       0x4c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x0000271c                USBUART_1_ValidateAlternateSetting
+ .text.USBUART_1_HandleStandardRqst
+                0x00002768      0x350 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                0x00002768                USBUART_1_HandleStandardRqst
+ .text.USBUART_1_HandleVendorRqst
+                0x00002ab8       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+                0x00002ab8                USBUART_1_HandleVendorRqst
+ .text.USBUART_1_Dp_ClearInterrupt
+                0x00002ad0       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+                0x00002ad0                USBUART_1_Dp_ClearInterrupt
+ .text.isr_jyRX_SetVector
+                0x00002ae0        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+                0x00002ae0                isr_jyRX_SetVector
+ .text.isr_jyRX_SetPriority
+                0x00002aec       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+                0x00002aec                isr_jyRX_SetPriority
+ .text.isr_jyRX_Enable
+                0x00002afc        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+                0x00002afc                isr_jyRX_Enable
+ .text.isr_jyRX_Disable
+                0x00002b08        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+                0x00002b08                isr_jyRX_Disable
+ .text.isr_jyRX_StartEx
+                0x00002b14       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+                0x00002b14                isr_jyRX_StartEx
+ .text.UART_JY901_Init
+                0x00002b30       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+                0x00002b30                UART_JY901_Init
+ .text.UART_JY901_Enable
+                0x00002b44       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+                0x00002b44                UART_JY901_Enable
+ .text.UART_JY901_Start
+                0x00002b70       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+                0x00002b70                UART_JY901_Start
+ .text.UART_JY901_ReadRxData
+                0x00002b8c        0xc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+                0x00002b8c                UART_JY901_ReadRxData
+ .text.UART_JY901_IntClock_Start
+                0x00002b98       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+                0x00002b98                UART_JY901_IntClock_Start
+ .text.USBUART_1_DispatchClassRqst
+                0x00002bb4       0x58 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+                0x00002bb4                USBUART_1_DispatchClassRqst
+ .text          0x00002c0c      0x370 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubdf3.o)
+                0x00002c0c                __aeabi_drsub
+                0x00002c14                __aeabi_dsub
+                0x00002c14                __subdf3
+                0x00002c18                __aeabi_dadd
+                0x00002c18                __adddf3
+                0x00002e90                __floatunsidf
+                0x00002e90                __aeabi_ui2d
+                0x00002eb0                __floatsidf
+                0x00002eb0                __aeabi_i2d
+                0x00002ed4                __aeabi_f2d
+                0x00002ed4                __extendsfdf2
+                0x00002f10                __floatundidf
+                0x00002f10                __aeabi_ul2d
+                0x00002f20                __floatdidf
+                0x00002f20                __aeabi_l2d
+ .text          0x00002f7c      0x424 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivdf3.o)
+                0x00002f7c                __aeabi_dmul
+                0x00002f7c                __muldf3
+                0x000031d0                __divdf3
+                0x000031d0                __aeabi_ddiv
+ .text          0x000033a0       0xa0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+                0x000033a0                __truncdfsf2
+                0x000033a0                __aeabi_d2f
+ .text          0x00003440      0x21c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                0x00003440                __aeabi_frsub
+                0x00003448                __subsf3
+                0x00003448                __aeabi_fsub
+                0x0000344c                __aeabi_fadd
+                0x0000344c                __addsf3
+                0x000035ac                __aeabi_ui2f
+                0x000035ac                __floatunsisf
+                0x000035b4                __aeabi_i2f
+                0x000035b4                __floatsisf
+                0x000035d0                __aeabi_ul2f
+                0x000035d0                __floatundisf
+                0x000035e0                __aeabi_l2f
+                0x000035e0                __floatdisf
+ .text          0x0000365c       0xec d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_cmpsf2.o)
+                0x0000365c                __gesf2
+                0x0000365c                __gtsf2
+                0x00003664                __lesf2
+                0x00003664                __ltsf2
+                0x0000366c                __nesf2
+                0x0000366c                __eqsf2
+                0x0000366c                __cmpsf2
+                0x000036cc                __aeabi_cfrcmple
+                0x000036d4                __aeabi_cfcmpeq
+                0x000036d4                __aeabi_cfcmple
+                0x000036e4                __aeabi_fcmpeq
+                0x000036f8                __aeabi_fcmplt
+                0x0000370c                __aeabi_fcmple
+                0x00003720                __aeabi_fcmpge
+                0x00003734                __aeabi_fcmpgt
+ .text          0x00003748       0x4c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixsfsi.o)
+                0x00003748                __aeabi_f2iz
+                0x00003748                __fixsfsi
+ .text.__libc_init_array
+                0x00003794       0x4c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00003794                __libc_init_array
+ .text.memcpy   0x000037e0       0x16 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                0x000037e0                memcpy
+ .text.memset   0x000037f6       0x10 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x000037f6                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00003808        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00003808        0x0
+ .iplt          0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00003808        0x4
+ *(.eh_frame)
+ .eh_frame      0x00003808        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .eh_frame      0x00003808        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+                0x0000380c                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000380c                __exidx_end = .
+
+.rodata         0x0000380c      0x2ec
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x0000380c       0xe6 .\CortexM3\ARM_GCC_493\Debug\main.o
+                                 0xe8 (size before relaxing)
+ .rodata.str1.4
+                0x00000000       0xe6 .\CortexM3\ARM_GCC_493\Debug\Control.o
+                                  0x8 (size before relaxing)
+ *fill*         0x000038f2        0x2 
+ .rodata        0x000038f4       0x58 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .rodata.str1.4
+                0x0000394c       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .rodata        0x00003960      0x160 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+                0x00003960                USBUART_1_TABLE
+                0x00003968                USBUART_1_DEVICE0_TABLE
+                0x00003980                USBUART_1_DEVICE0_CONFIGURATION0_TABLE
+                0x000039a8                USBUART_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+                0x000039ac                USBUART_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+                0x000039c4                USBUART_1_SN_STRING_DESCRIPTOR
+                0x000039c8                USBUART_1_STRING_DESCRIPTORS
+                0x00003a68                USBUART_1_DEVICE0_CONFIGURATION0_DESCR
+                0x00003aac                USBUART_1_DEVICE0_DESCR
+                0x00003ac0                . = ALIGN (0x4)
+ *(.init)
+ .init          0x00003ac0        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x00003ac0                _init
+ .init          0x00003ac4        0x8 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x00003acc                . = ALIGN (0x4)
+                0x00003acc                __preinit_array_start = .
+ *(.preinit_array)
+                0x00003acc                __preinit_array_end = .
+                0x00003acc                . = ALIGN (0x4)
+                0x00003acc                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00003acc        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .init_array    0x00003ad0        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00003ad4                __init_array_end = .
+                0x00003ad4                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00003ad4        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x00003ad4                _fini
+ .fini          0x00003ad8        0x8 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x00003ae0                . = ALIGN (0x4)
+                0x00003ae0                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00003ae0        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00003ae4                __fini_array_end = .
+                0x00003ae4                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00003ae4                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00003ae4                . = ALIGN (0x4)
+                0x00003ae4                __cy_regions = .
+                0x00003ae4        0x4 LONG 0x3af8 __cy_region_init_ram
+                0x00003ae8        0x4 LONG 0x1fff8108 __cy_region_start_data
+                0x00003aec        0x4 LONG 0x30 __cy_region_init_size_ram
+                0x00003af0        0x4 LONG 0x338 __cy_region_zero_size_ram
+                0x00003af4                __cy_regions_end = .
+                0x00003af8                . = ALIGN (0x8)
+ *fill*         0x00003af4        0x4 
+                0x00003af8                _etext = .
+
+.cy_checksum_exclude
+                0x00003af8        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x1fff8000      0x100
+                0x1fff8000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x1fff8000      0x100 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x1fff8000                CyRamVectors
+
+.noinit         0x1fff8100        0x5
+ *(.noinit)
+ .noinit        0x1fff8100        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .noinit        0x1fff8104        0x1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                0x1fff8104                CyResetStatus
+
+.data           0x1fff8108       0x30 load address 0x00003af8
+                0x1fff8108                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x1fff8108        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .jcr           0x1fff8108        0x4 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x1fff810c       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                0x1fff810c                cydelay_32k_ms
+                0x1fff8110                cydelay_freq_khz
+                0x1fff8114                cydelay_freq_mhz
+                0x1fff8118                cydelay_freq_hz
+ .data          0x1fff811c       0x1c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+                0x1fff811c                USBUART_1_linesCoding
+                0x1fff8138                . = ALIGN (0x8)
+ *(.ram)
+                0x1fff8138                _edata = .
+
+.igot.plt       0x1fff8138        0x0 load address 0x00003b28
+ .igot.plt      0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.bss            0x1fff8138      0x338 load address 0x00003b28
+                0x1fff8138                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x1fff8138       0x1c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .bss           0x1fff8154       0x1c .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x1fff8154                BT_Throttle
+                0x1fff8158                BT_Yaw
+                0x1fff815c                BT_Roll
+                0x1fff8160                BT_Pitch
+                0x1fff8164                flag_55
+                0x1fff8168                flag_rec
+                0x1fff816c                flag
+ .bss           0x1fff8170        0x4 .\CortexM3\ARM_GCC_493\Debug\Control.o
+                0x1fff8170                tmpcount
+ .bss           0x1fff8174        0x1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                0x1fff8174                PWM_1_initVar
+ .bss           0x1fff8175        0x1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                0x1fff8175                PWM_2_initVar
+ .bss           0x1fff8176        0x2 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                0x1fff8176                LCD_enableState
+                0x1fff8177                LCD_initVar
+ .bss           0x1fff8178        0x1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                0x1fff8178                Timer_1_initVar
+ .bss           0x1fff8179        0x1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+                0x1fff8179                UART_Bluetooth_initVar
+ .bss           0x1fff817a        0x1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+                0x1fff817a                USBUART_1_initVar
+ .bss           0x1fff817b        0x1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .bss           0x1fff817c        0x4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .bss           0x1fff8180        0x1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+                0x1fff8180                UART_JY901_initVar
+ *(COMMON)
+ *fill*         0x1fff8181        0x3 
+ COMMON         0x1fff8184      0x1b4 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x1fff8184                Yaw
+                0x1fff8188                tmp
+                0x1fff818c                AccelY
+                0x1fff8190                MagY
+                0x1fff8194                DisplayBuffer
+                0x1fff8214                Motor_v_3
+                0x1fff8218                f_tmp
+                0x1fff821c                Temperature
+                0x1fff8220                float2int_tmp
+                0x1fff8224                Height
+                0x1fff8228                pitch_angle_offset
+                0x1fff822c                Motor_v_4
+                0x1fff8230                Desire_w_yaw
+                0x1fff8234                BTRxBufLen
+                0x1fff8238                sum
+                0x1fff823c                last_Motor_v_3
+                0x1fff8240                tmp2
+                0x1fff8244                Roll
+                0x1fff8248                Motor_v_2
+                0x1fff824c                tmpbuf
+                0x1fff8258                Desire_angle_roll
+                0x1fff825c                roll_angle_offset
+                0x1fff8260                Motor_v_1
+                0x1fff8264                MagX
+                0x1fff8268                i
+                0x1fff826c                LCDBuffer
+                0x1fff827c                last_Motor_v_2
+                0x1fff8280                symbol
+                0x1fff8284                MagZ
+                0x1fff8288                JY901RxBuf
+                0x1fff82c8                OmegaY
+                0x1fff82cc                last_Motor_v_4
+                0x1fff82d0                OmegaX
+                0x1fff82d4                BTRxBuf
+                0x1fff8314                decode_success
+                0x1fff8318                AccelZ
+                0x1fff831c                AccelX
+                0x1fff8320                JY901RxBufLen
+                0x1fff8324                Pressure
+                0x1fff8328                last_Motor_v_1
+                0x1fff832c                Pitch
+                0x1fff8330                Desire_angle_pitch
+                0x1fff8334                OmegaZ
+ COMMON         0x1fff8338       0x60 .\CortexM3\ARM_GCC_493\Debug\Control.o
+                0x1fff8338                Control_Yaw
+                0x1fff833c                int_Error_w_roll
+                0x1fff8340                last_Error_roll
+                0x1fff8344                set_speed_3
+                0x1fff8348                last_Error_w_yaw
+                0x1fff834c                int_Error_w_pitch
+                0x1fff8350                last_Error_w_roll
+                0x1fff8354                Desire_w_pitch
+                0x1fff8358                Error_w_yaw
+                0x1fff835c                Desire_w_roll
+                0x1fff8360                int_Error_pitch
+                0x1fff8364                set_speed_1
+                0x1fff8368                Control_Roll
+                0x1fff836c                last_Error_w_pitch
+                0x1fff8370                set_speed_2
+                0x1fff8374                Error_pitch
+                0x1fff8378                last_Error_pitch
+                0x1fff837c                Control_Pitch
+                0x1fff8380                Error_w_roll
+                0x1fff8384                int_Error_w_yaw
+                0x1fff8388                int_Error_roll
+                0x1fff838c                set_speed_4
+                0x1fff8390                Error_w_pitch
+                0x1fff8394                Error_roll
+ COMMON         0x1fff8398       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+                0x1fff8398                USBUART_1_cdcDataInEp
+                0x1fff839c                USBUART_1_cdcDataOutEp
+                0x1fff83a0                USBUART_1_cdcCommInInterruptEp
+                0x1fff83a4                USBUART_1_serialStateBitmap
+                0x1fff83a8                USBUART_1_linesChanged
+                0x1fff83ac                USBUART_1_linesControlBitmap
+ COMMON         0x1fff83b0       0x97 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                0x1fff83b0                USBUART_1_interfaceSettingLast
+                0x1fff83b2                USBUART_1_ep0Mode
+                0x1fff83b3                USBUART_1_lastPacketSize
+                0x1fff83b4                USBUART_1_configurationChanged
+                0x1fff83b5                USBUART_1_configuration
+                0x1fff83b6                USBUART_1_interfaceNumber
+                0x1fff83b7                USBUART_1_deviceStatus
+                0x1fff83b8                USBUART_1_ep0Toggle
+                0x1fff83bc                USBUART_1_interfaceClass
+                0x1fff83c0                USBUART_1_interfaceSetting
+                0x1fff83c4                USBUART_1_currentTD
+                0x1fff83d0                USBUART_1_ep0Count
+                0x1fff83d4                USBUART_1_EP
+                0x1fff8440                USBUART_1_transferByteCount
+                0x1fff8442                USBUART_1_transferState
+                0x1fff8443                USBUART_1_device
+                0x1fff8444                USBUART_1_interfaceStatus
+                0x1fff8446                USBUART_1_deviceAddress
+ *fill*         0x1fff8447        0x1 
+ COMMON         0x1fff8448       0x22 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+                0x1fff8448                USBUART_1_idSerialNumberStringDescriptor
+                0x1fff8470                . = ALIGN (0x8)
+ *fill*         0x1fff846a        0x6 
+ *(.ram.b)
+                0x1fff8470                _end = .
+                0x1fff8470                __end = .
+                0x1fff8470                PROVIDE (end, .)
+                0x1fff8470                PROVIDE (__bss_end__, .)
+                0x00003af8                __cy_region_init_ram = LOADADDR (.data)
+                0x00000030                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000338                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x1fff8470       0x80 load address 0x00003b28
+                0x1fff8470                . = _end
+                0x1fff84f0                . = (. + 0x80)
+ *fill*         0x1fff8470       0x80 
+                0x1fff84f0                __cy_heap_limit = .
+
+.stack          0x20007800      0x800
+                0x20007800                __cy_stack_limit = .
+                0x20008000                . = (. + 0x800)
+ *fill*         0x20007800      0x800 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+
+.cyloadermeta
+ *(.cyloadermeta)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyconfigecc    0x80000000      0x73c
+ *(.cyconfigecc)
+ .cyconfigecc   0x80000000      0x73c .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x80000000                cy_meta_configecc
+
+.cycustnvl      0x90000000        0x4
+ *(.cycustnvl)
+ .cycustnvl     0x90000000        0x4 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90000000                cy_meta_custnvl
+
+.cywolatch      0x90100000        0x4
+ *(.cywolatch)
+ .cywolatch     0x90100000        0x4 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90100000                cy_meta_wonvl
+
+.cyeeprom       0x90200000        0x0
+ *(.cyeeprom)
+                0x00000001                ASSERT ((. <= ((0x90200000 + ee_offset) + ee_size)), .cyeeprom data will not fit in EEPROM)
+
+.cyflashprotect
+                0x90400000      0x100
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000      0x100 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.rel.dyn        0x00003b28        0x0 load address 0x9050000c
+ .rel.iplt      0x00000000        0x0 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xf18
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0xb0 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_aranges
+                0x000000b0       0x28 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .debug_aranges
+                0x000000d8       0x18 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_aranges
+                0x000000f0       0x48 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_aranges
+                0x00000138       0x58 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .debug_aranges
+                0x00000190       0x90 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .debug_aranges
+                0x00000220       0x90 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .debug_aranges
+                0x000002b0       0x98 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .debug_aranges
+                0x00000348       0x90 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .debug_aranges
+                0x000003d8       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x000003f8      0x298 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .debug_aranges
+                0x00000690       0x98 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .debug_aranges
+                0x00000728       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .debug_aranges
+                0x000007a8       0x98 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .debug_aranges
+                0x00000840       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .debug_aranges
+                0x000008b0       0xc8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .debug_aranges
+                0x00000978       0xe8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .debug_aranges
+                0x00000a60       0x98 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .debug_aranges
+                0x00000af8       0x40 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .debug_aranges
+                0x00000b38       0x40 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .debug_aranges
+                0x00000b78       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .debug_aranges
+                0x00000bf8       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .debug_aranges
+                0x00000c18       0x48 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .debug_aranges
+                0x00000c60       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .debug_aranges
+                0x00000ce0       0x98 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .debug_aranges
+                0x00000d78       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .debug_aranges
+                0x00000de8       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .debug_aranges
+                0x00000e68       0x78 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .debug_aranges
+                0x00000ee0       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .debug_aranges
+                0x00000f00       0x18 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x9e6a
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x1225 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_info    0x00001225      0x491 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .debug_info    0x000016b6      0x13f .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_info    0x000017f5      0x39f .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_info    0x00001b94      0x5d7 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .debug_info    0x0000216b      0x2e2 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .debug_info    0x0000244d      0x2e2 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .debug_info    0x0000272f      0x716 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .debug_info    0x00002e45      0x2eb .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .debug_info    0x00003130       0x7a .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyBootAsmGnu.o)
+ .debug_info    0x000031aa     0x136f .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .debug_info    0x00004519      0xa57 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .debug_info    0x00004f70      0x2cb .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .debug_info    0x0000523b      0x39e .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .debug_info    0x000055d9      0x283 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .debug_info    0x0000585c      0x9b0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .debug_info    0x0000620c      0xb16 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .debug_info    0x00006d22      0x649 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .debug_info    0x0000736b      0x244 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .debug_info    0x000075af      0x2ef .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .debug_info    0x0000789e      0xb35 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .debug_info    0x000083d3       0xe6 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .debug_info    0x000084b9      0x174 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .debug_info    0x0000862d      0x2cb .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .debug_info    0x000088f8      0x39e .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .debug_info    0x00008c96      0x283 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .debug_info    0x00008f19      0x608 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .debug_info    0x00009521      0x4ea .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .debug_info    0x00009a0b      0x1d2 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .debug_info    0x00009bdd      0x28d .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+
+.debug_abbrev   0x00000000     0x2b31
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x248 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_abbrev  0x00000248      0x105 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .debug_abbrev  0x0000034d       0x77 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_abbrev  0x000003c4      0x200 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_abbrev  0x000005c4      0x212 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000007d6      0x12d .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .debug_abbrev  0x00000903      0x12d .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .debug_abbrev  0x00000a30      0x171 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .debug_abbrev  0x00000ba1      0x145 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .debug_abbrev  0x00000ce6       0x14 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00000cfa      0x296 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .debug_abbrev  0x00000f90      0x1ed .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .debug_abbrev  0x0000117d      0x173 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .debug_abbrev  0x000012f0      0x16d .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .debug_abbrev  0x0000145d      0x139 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .debug_abbrev  0x00001596      0x25e .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .debug_abbrev  0x000017f4      0x28b .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .debug_abbrev  0x00001a7f      0x18b .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .debug_abbrev  0x00001c0a      0x11b .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .debug_abbrev  0x00001d25      0x146 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .debug_abbrev  0x00001e6b      0x23d .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .debug_abbrev  0x000020a8       0x9b .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .debug_abbrev  0x00002143       0x90 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .debug_abbrev  0x000021d3      0x173 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .debug_abbrev  0x00002346      0x16d .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .debug_abbrev  0x000024b3      0x139 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .debug_abbrev  0x000025ec      0x1ed .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .debug_abbrev  0x000027d9      0x1c1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .debug_abbrev  0x0000299a       0xe3 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .debug_abbrev  0x00002a7d       0xb4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+
+.debug_line     0x00000000     0x3d2b
+ *(.debug_line)
+ .debug_line    0x00000000      0x5d9 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_line    0x000005d9      0x335 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .debug_line    0x0000090e       0x53 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x00000961      0x249 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_line    0x00000baa      0x202 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .debug_line    0x00000dac      0x163 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .debug_line    0x00000f0f      0x163 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .debug_line    0x00001072      0x1de .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .debug_line    0x00001250      0x174 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .debug_line    0x000013c4       0x68 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyBootAsmGnu.o)
+ .debug_line    0x0000142c      0x806 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .debug_line    0x00001c32      0x366 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .debug_line    0x00001f98      0x151 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .debug_line    0x000020e9      0x1be .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .debug_line    0x000022a7      0x19f .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .debug_line    0x00002446      0x2d0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .debug_line    0x00002716      0x2fa .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .debug_line    0x00002a10      0x229 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .debug_line    0x00002c39       0xee .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .debug_line    0x00002d27      0x118 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .debug_line    0x00002e3f      0x3ea .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .debug_line    0x00003229       0x79 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .debug_line    0x000032a2       0xbf .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .debug_line    0x00003361      0x14e .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .debug_line    0x000034af      0x1b6 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .debug_line    0x00003665      0x19b .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .debug_line    0x00003800      0x1ec .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .debug_line    0x000039ec      0x23e .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .debug_line    0x00003c2a       0x9a .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .debug_line    0x00003cc4       0x67 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+
+.debug_frame    0x00000000     0x2890
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x258 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_frame   0x00000258       0x58 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .debug_frame   0x000002b0       0xac .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_frame   0x0000035c       0xe0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .debug_frame   0x0000043c      0x118 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .debug_frame   0x00000554      0x118 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .debug_frame   0x0000066c      0x1e4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .debug_frame   0x00000850      0x124 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .debug_frame   0x00000974      0x728 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .debug_frame   0x0000109c      0x1f8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .debug_frame   0x00001294      0x104 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .debug_frame   0x00001398      0x14c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .debug_frame   0x000014e4       0xe0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .debug_frame   0x000015c4      0x1dc .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .debug_frame   0x000017a0      0x278 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .debug_frame   0x00001a18      0x194 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .debug_frame   0x00001bac       0x6c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .debug_frame   0x00001c18       0xa0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .debug_frame   0x00001cb8      0x17c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .debug_frame   0x00001e34       0x20 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .debug_frame   0x00001e54       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .debug_frame   0x00001ec4      0x104 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .debug_frame   0x00001fc8      0x14c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .debug_frame   0x00002114       0xe0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .debug_frame   0x000021f4      0x174 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .debug_frame   0x00002368      0x160 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .debug_frame   0x000024c8       0x2c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .debug_frame   0x000024f4       0x20 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00002514       0x28 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000253c       0x2c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00002568       0x28 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00002590       0x20 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x000025b0       0x70 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x00002620       0x8c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x000026ac       0x58 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00002704       0x28 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .debug_frame   0x0000272c       0x28 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x00002754       0x2c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00002780       0x2c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x000027ac       0x3c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x000027e8       0x2c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00002814       0x20 d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00002834       0x5c d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+
+.debug_str      0x00000000     0x3943
+ *(.debug_str)
+ .debug_str     0x00000000      0x653 .\CortexM3\ARM_GCC_493\Debug\main.o
+                                0x6e8 (size before relaxing)
+ .debug_str     0x00000653      0x145 .\CortexM3\ARM_GCC_493\Debug\Control.o
+                                0x3f3 (size before relaxing)
+ .debug_str     0x00000798       0xa1 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                                0x1d4 (size before relaxing)
+ .debug_str     0x00000839      0x14d .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                                0x2e8 (size before relaxing)
+ .debug_str     0x00000986      0x184 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+                                0x322 (size before relaxing)
+ .debug_str     0x00000b0a      0x132 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+                                0x2d5 (size before relaxing)
+ .debug_str     0x00000c3c      0x107 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+                                0x2d5 (size before relaxing)
+ .debug_str     0x00000d43      0x143 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+                                0x309 (size before relaxing)
+ .debug_str     0x00000e86      0x18d .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+                                0x33d (size before relaxing)
+ .debug_str     0x00001013      0x7e1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+                                0xa0d (size before relaxing)
+ .debug_str     0x000017f4      0x35b .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+                                0x705 (size before relaxing)
+ .debug_str     0x00001b4f      0x128 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+                                0x2d8 (size before relaxing)
+ .debug_str     0x00001c77      0x223 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+                                0x418 (size before relaxing)
+ .debug_str     0x00001e9a      0x1e9 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+                                0x398 (size before relaxing)
+ .debug_str     0x00002083      0x43c .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+                                0x689 (size before relaxing)
+ .debug_str     0x000024bf      0x538 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+                                0x819 (size before relaxing)
+ .debug_str     0x000029f7      0x2c3 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+                                0x67a (size before relaxing)
+ .debug_str     0x00002cba       0x8e .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+                                0x2d3 (size before relaxing)
+ .debug_str     0x00002d48       0xf8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+                                0x2ed (size before relaxing)
+ .debug_str     0x00002e40      0x27d .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+                                0x7ef (size before relaxing)
+ .debug_str     0x000030bd       0x29 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+                                0x1d1 (size before relaxing)
+ .debug_str     0x000030e6       0xb2 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+                                0x239 (size before relaxing)
+ .debug_str     0x00003198      0x101 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+                                0x2ae (size before relaxing)
+ .debug_str     0x00003299      0x1ab .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+                                0x3c8 (size before relaxing)
+ .debug_str     0x00003444      0x176 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+                                0x368 (size before relaxing)
+ .debug_str     0x000035ba      0x19e .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+                                0x37f (size before relaxing)
+ .debug_str     0x00003758       0xae .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+                                0x308 (size before relaxing)
+ .debug_str     0x00003806       0x29 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+                                0x298 (size before relaxing)
+ .debug_str     0x0000382f      0x114 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+                                0x351 (size before relaxing)
+
+.debug_loc      0x00000000     0x3a8a
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x485 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_loc     0x00000485      0x144 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_loc     0x000005c9      0x289 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .debug_loc     0x00000852       0x13 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .debug_loc     0x00000865       0x13 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .debug_loc     0x00000878      0x3c6 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .debug_loc     0x00000c3e       0x13 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .debug_loc     0x00000c51      0xa11 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .debug_loc     0x00001662      0x1e4 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .debug_loc     0x00001846       0x56 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .debug_loc     0x0000189c       0x87 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .debug_loc     0x00001923      0x128 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .debug_loc     0x00001a4b      0x3e1 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .debug_loc     0x00001e2c      0x56b .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .debug_loc     0x00002397      0x171 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .debug_loc     0x00002508       0x26 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .debug_loc     0x0000252e      0x93f .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .debug_loc     0x00002e6d       0x84 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .debug_loc     0x00002ef1       0x56 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .debug_loc     0x00002f47       0x87 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .debug_loc     0x00002fce      0x128 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .debug_loc     0x000030f6      0x300 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .debug_loc     0x000033f6      0x64d .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .debug_loc     0x00003a43       0x47 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0xd30
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0xa0 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_ranges  0x000000a0       0x18 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .debug_ranges  0x000000b8       0x38 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_ranges  0x000000f0       0x48 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .debug_ranges  0x00000138       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .debug_ranges  0x000001b8       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .debug_ranges  0x00000238       0x88 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .debug_ranges  0x000002c0       0x80 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .debug_ranges  0x00000340      0x288 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .debug_ranges  0x000005c8       0x88 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .debug_ranges  0x00000650       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .debug_ranges  0x000006c0       0x88 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .debug_ranges  0x00000748       0x60 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .debug_ranges  0x000007a8       0xd0 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .debug_ranges  0x00000878       0xd8 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .debug_ranges  0x00000950       0x88 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .debug_ranges  0x000009d8       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .debug_ranges  0x00000a08       0x30 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .debug_ranges  0x00000a38       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .debug_ranges  0x00000aa8       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .debug_ranges  0x00000ab8       0x38 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .debug_ranges  0x00000af0       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .debug_ranges  0x00000b60       0x88 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .debug_ranges  0x00000be8       0x60 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .debug_ranges  0x00000c48       0x70 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .debug_ranges  0x00000cb8       0x68 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .debug_ranges  0x00000d20       0x10 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .ARM.attributes
+                0x0000001d       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x33 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .ARM.attributes
+                0x00000098       0x33 .\CortexM3\ARM_GCC_493\Debug\Control.o
+ .ARM.attributes
+                0x000000cb       0x33 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .ARM.attributes
+                0x000000fe       0x33 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .ARM.attributes
+                0x00000131       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyfitter_cfg.o)
+ .ARM.attributes
+                0x00000164       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_1.o)
+ .ARM.attributes
+                0x00000197       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(PWM_2.o)
+ .ARM.attributes
+                0x000001ca       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(LCD.o)
+ .ARM.attributes
+                0x000001fd       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(Timer_1.o)
+ .ARM.attributes
+                0x00000230       0x21 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x00000251       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyLib.o)
+ .ARM.attributes
+                0x00000284       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(cyPm.o)
+ .ARM.attributes
+                0x000002b7       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_Timer_1.o)
+ .ARM.attributes
+                0x000002ea       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth.o)
+ .ARM.attributes
+                0x0000031d       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_Bluetooth_IntClock.o)
+ .ARM.attributes
+                0x00000350       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1.o)
+ .ARM.attributes
+                0x00000383       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cdc.o)
+ .ARM.attributes
+                0x000003b6       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_drv.o)
+ .ARM.attributes
+                0x000003e9       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_episr.o)
+ .ARM.attributes
+                0x0000041c       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_pm.o)
+ .ARM.attributes
+                0x0000044f       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_std.o)
+ .ARM.attributes
+                0x00000482       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_vnd.o)
+ .ARM.attributes
+                0x000004b5       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_Dp.o)
+ .ARM.attributes
+                0x000004e8       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(isr_jyRX.o)
+ .ARM.attributes
+                0x0000051b       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901.o)
+ .ARM.attributes
+                0x0000054e       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(UART_JY901_IntClock.o)
+ .ARM.attributes
+                0x00000581       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CyFlash.o)
+ .ARM.attributes
+                0x000005b4       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(CySpc.o)
+ .ARM.attributes
+                0x000005e7       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_cls.o)
+ .ARM.attributes
+                0x0000061a       0x33 .\CortexM3\ARM_GCC_493\Debug\UAV_Control.a(USBUART_1_descr.o)
+ .ARM.attributes
+                0x0000064d       0x1d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000066a       0x1d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000687       0x1d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x000006a4       0x1d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x000006c1       0x1d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x000006de       0x1d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_cmpsf2.o)
+ .ARM.attributes
+                0x000006fb       0x1d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixsfsi.o)
+ .ARM.attributes
+                0x00000718       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000745       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000772       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000079f       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x000007cc       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000007f9       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000826       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .ARM.attributes
+                0x00000853       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .ARM.attributes
+                0x00000880       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .ARM.attributes
+                0x000008ad       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .ARM.attributes
+                0x000008da       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000907       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x00000934       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x00000961       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .ARM.attributes
+                0x0000098e       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x000009bb       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .ARM.attributes
+                0x000009e8       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000a15       0x2d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .ARM.attributes
+                0x00000a42       0x1d d:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(.\CortexM3\ARM_GCC_493\Debug\UAV_Control.elf elf32-littlearm)
