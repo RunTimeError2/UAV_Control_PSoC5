@@ -24,19 +24,19 @@ float int_Error_w_roll, int_Error_w_pitch; //角速度误差的积分
 float Control_Roll, Control_Pitch, Control_Yaw;
 
 //PID相关参数
-#define angle_P_roll  10.0 //PID参数有待调整
+#define angle_P_roll  2.0 //PID参数有待调整
 #define angle_I_roll  0.0
 #define angle_D_roll  0.0
-#define angle_P_pitch 10.0
+#define angle_P_pitch 2.0
 #define angle_I_pitch 0.0
 #define angle_D_pitch 0.0
-#define Omega_P_roll  10.0
+#define Omega_P_roll  2.0
 #define Omega_I_roll  0.0
 #define Omega_D_roll  0.0
-#define Omega_P_pitch 10.0
+#define Omega_P_pitch 2.0
 #define Omega_I_pitch 0.0
 #define Omega_D_pitch 0.0
-#define Omega_P_yaw   0.0
+#define Omega_P_yaw   3.0
 #define Omega_I_yaw   0.0
 #define Omega_D_yaw   0.0
 
@@ -76,8 +76,10 @@ void Control_Main() {
     set_speed_4 = BT_Throttle * 900 / 1024;
     
     //解码蓝牙传输的设定角度
-    Desire_angle_pitch = -((float)BT_Pitch - 512.0) * 30.0 / 512.0;
-    Desire_angle_roll = ((float)BT_Roll - 512.0) * 30.0 / 512.0;
+    //Desire_angle_pitch = -((float)BT_Pitch - 512.0) * 30.0 / 512.0;
+    //Desire_angle_roll = ((float)BT_Roll - 512.0) * 30.0 / 512.0;
+    Desire_angle_pitch = ((float)BT_Roll - 512.0) * 30.0 / 512.0;
+    Desire_angle_roll = ((float)BT_Pitch - 512.0) * 30.0 / 512.0;
     Desire_w_yaw = ((float)BT_Yaw - 512.0) * 40.0 / 512.0;
     
     //应用角度偏置

@@ -73,6 +73,7 @@ int flag = 0;
 
 CY_ISR(Bluetooth_RX_Interrupt_Handler) {
     tmp = UART_Bluetooth_ReadRxData();
+    //LCD_Disp("Ha", 1, 14);
     if(tmp == 0xa5 && flag == 0) { //遇到起始位，开始接收
         BTRxBuf[0] = 0xa5;
         BTRxBufLen = 1;
@@ -85,7 +86,7 @@ CY_ISR(Bluetooth_RX_Interrupt_Handler) {
         }
         else
             if(flag == 1 && BTRxBufLen == 15) {
-                LCD_Disp("GetData!", 1, 2); //输出提示信息
+                //LCD_Disp("GetData!", 1, 8); //输出提示信息
                 Process_Bluetooth_Message(BTRxBuf, BTRxBufLen); //转入解码函数
                 BTRxBufLen = 0; //清空缓冲区
                 flag = 0;
@@ -254,7 +255,7 @@ int main()
     BTRxBufLen = 0;
     UART_Bluetooth_Start();
     UART_Bluetooth_Init();
-    //isr_RX_StartEx(Bluetooth_RX_Interrupt_Handler); //=================
+    isr_RX_StartEx(Bluetooth_RX_Interrupt_Handler);
     
     //JY901串口相关
     JY901RxBufLen = 0;
@@ -272,13 +273,45 @@ int main()
     
     LCD_Disp("Start    ", 0, 0);
     Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
+    
+    int velocity = 200;
+    
+    BT_Throttle = 0;
+    BT_Pitch = 512;
+    BT_Roll = 512;
+    BT_Yaw = 512;
+    CyDelay(10000);
+    LCD_Disp("Ready    ", 0, 0);
+    
+    //仅供测试
+    /*Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
+    Motor_v_1 = velocity;
+    LCD_Disp("Run 1    ", 0, 0);
+    CyDelay(1000);
+    
+    Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
+    Motor_v_2 = velocity;
+    LCD_Disp("Run 2    ", 0, 0);
+    CyDelay(1000);
+    
+    Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
+    Motor_v_3 = velocity;
+    LCD_Disp("Run 3    ", 0, 0);
+    CyDelay(1000);
+    
+    Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
+    Motor_v_4 = velocity;
+    LCD_Disp("Run 4    ", 0, 0);
+    CyDelay(1000);*/
+    
+    Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
 
     //设置电机停转
     for(;;) {
-        BT_Throttle = 300;
+        /*BT_Throttle = 300;
         BT_Pitch = 512;
         BT_Roll = 512;
-        BT_Yaw = 512;
+        BT_Yaw = 512;*/
         //JY901_Debug_Display(); //每隔1秒通过串口向上位机输出JY901数据
         //Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
         //CyDelay(500);

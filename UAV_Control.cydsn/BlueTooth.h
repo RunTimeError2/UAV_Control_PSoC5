@@ -26,6 +26,9 @@ void Process_Bluetooth_Message(uint8 buf[], uint8 buflen) {
     roll_angle_offset = (buf[12] - 120) / 15.01;          //滚转角偏置
     pitch_angle_offset = -(buf[11] - 120) / 15.01;        //俯仰角偏置
     
+    /*LCD_Position(1, 8);
+    LCD_PrintDecUint16(BT_Throttle);*/
+    
     /*
     //设定油门大小
     set_speed_1 = BT_Throttle * 900 / 1024;
