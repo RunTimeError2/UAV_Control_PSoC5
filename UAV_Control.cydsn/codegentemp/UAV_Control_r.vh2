@@ -1,5 +1,5 @@
 -- Project:   UAV_Control
--- Generated: 10/11/2018 16:56:59
+-- Generated: 10/26/2018 11:00:37
 -- PSoC Creator  3.3 CP3
 
 ENTITY UAV_Control IS
@@ -41,9 +41,9 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     SIGNAL ClockBlock_XTAL : bit;
     SIGNAL ClockBlock_XTAL_32KHZ : bit;
     SIGNAL MODIN3_0 : bit;
-    ATTRIBUTE placement_force OF MODIN3_0 : SIGNAL IS "U(1,2,A)1";
+    ATTRIBUTE placement_force OF MODIN3_0 : SIGNAL IS "U(1,1,A)1";
     SIGNAL MODIN3_1 : bit;
-    ATTRIBUTE placement_force OF MODIN3_1 : SIGNAL IS "U(1,2,A)0";
+    ATTRIBUTE placement_force OF MODIN3_1 : SIGNAL IS "U(1,1,A)0";
     SIGNAL MODIN6_3 : bit;
     SIGNAL MODIN6_4 : bit;
     SIGNAL MODIN6_5 : bit;
@@ -55,7 +55,7 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     SIGNAL Net_2161 : bit;
     ATTRIBUTE placement_force OF Net_2161 : SIGNAL IS "U(2,2,A)1";
     SIGNAL Net_2173 : bit;
-    ATTRIBUTE placement_force OF Net_2173 : SIGNAL IS "U(2,1,A)1";
+    ATTRIBUTE placement_force OF Net_2173 : SIGNAL IS "U(3,0,A)1";
     SIGNAL Net_2205 : bit;
     ATTRIBUTE placement_force OF Net_2205 : SIGNAL IS "U(2,2,A)2";
     SIGNAL Net_2258 : bit;
@@ -66,9 +66,8 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     SIGNAL Net_2398 : bit;
     SIGNAL Net_2398_SYNCOUT : bit;
     SIGNAL Net_2412 : bit;
-    SIGNAL Net_2457 : bit;
     SIGNAL Net_775 : bit;
-    ATTRIBUTE placement_force OF Net_775 : SIGNAL IS "U(2,1,A)2";
+    ATTRIBUTE placement_force OF Net_775 : SIGNAL IS "U(3,0,A)2";
     SIGNAL Pin_PWM_1(0)__PA : bit;
     SIGNAL Pin_PWM_2(0)__PA : bit;
     SIGNAL Pin_PWM_3(0)__PA : bit;
@@ -93,7 +92,7 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     SIGNAL \PWM_1:PWMUDB:control_6\ : bit;
     SIGNAL \PWM_1:PWMUDB:control_7\ : bit;
     SIGNAL \PWM_1:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \PWM_1:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,1,A)0";
+    ATTRIBUTE placement_force OF \PWM_1:PWMUDB:runmode_enable\ : SIGNAL IS "U(3,0,A)0";
     SIGNAL \PWM_2:PWMUDB:sP16:pwmdp:u0.ce0__sig\ : bit;
     SIGNAL \PWM_1:PWMUDB:tc_i\ : bit;
     SIGNAL \PWM_2:PWMUDB:cmp1_less\ : bit;
@@ -123,7 +122,7 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     SIGNAL \Timer_1:TimerUDB:status_2\ : bit;
     SIGNAL \Timer_1:TimerUDB:status_3\ : bit;
     SIGNAL \Timer_1:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \Timer_1:TimerUDB:status_tc\ : SIGNAL IS "U(3,0,A)0";
+    ATTRIBUTE placement_force OF \Timer_1:TimerUDB:status_tc\ : SIGNAL IS "U(2,1,A)0";
     SIGNAL \Timer_Control:TimerUDB:control_0\ : bit;
     SIGNAL \Timer_Control:TimerUDB:control_1\ : bit;
     SIGNAL \Timer_Control:TimerUDB:control_2\ : bit;
@@ -139,37 +138,37 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     SIGNAL \Timer_Control:TimerUDB:status_tc\ : bit;
     ATTRIBUTE placement_force OF \Timer_Control:TimerUDB:status_tc\ : SIGNAL IS "U(0,0,A)0";
     SIGNAL \UART_Bluetooth:BUART:rx_bitclk_enable\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_bitclk_enable\ : SIGNAL IS "U(1,1,B)0";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_bitclk_enable\ : SIGNAL IS "U(1,1,A)2";
     SIGNAL \UART_Bluetooth:BUART:rx_count7_tc\ : bit;
     SIGNAL \UART_Bluetooth:BUART:rx_count_0\ : bit;
     SIGNAL \UART_Bluetooth:BUART:rx_count_1\ : bit;
     SIGNAL \UART_Bluetooth:BUART:rx_count_2\ : bit;
     SIGNAL \UART_Bluetooth:BUART:rx_counter_load\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_counter_load\ : SIGNAL IS "U(1,0,A)0";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_counter_load\ : SIGNAL IS "U(1,1,B)3";
     SIGNAL \UART_Bluetooth:BUART:rx_fifofull\ : bit;
     SIGNAL \UART_Bluetooth:BUART:rx_fifonotempty\ : bit;
     SIGNAL \UART_Bluetooth:BUART:rx_last\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_last\ : SIGNAL IS "U(1,2,A)3";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_last\ : SIGNAL IS "U(1,0,A)0";
     SIGNAL \UART_Bluetooth:BUART:rx_load_fifo\ : bit;
     ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_load_fifo\ : SIGNAL IS "U(1,1,B)2";
     SIGNAL \UART_Bluetooth:BUART:rx_postpoll\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_postpoll\ : SIGNAL IS "U(1,2,B)0";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_postpoll\ : SIGNAL IS "U(1,0,B)0";
     SIGNAL \UART_Bluetooth:BUART:rx_state_0\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_0\ : SIGNAL IS "U(1,2,B)3";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_0\ : SIGNAL IS "U(1,0,B)1";
     SIGNAL \UART_Bluetooth:BUART:rx_state_1\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_1\ : SIGNAL IS "U(1,0,A)1";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_1\ : SIGNAL IS "U(1,0,A)3";
     SIGNAL \UART_Bluetooth:BUART:rx_state_2\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_2\ : SIGNAL IS "U(1,1,A)0";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_2\ : SIGNAL IS "U(1,0,A)1";
     SIGNAL \UART_Bluetooth:BUART:rx_state_3\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_3\ : SIGNAL IS "U(1,1,B)3";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_3\ : SIGNAL IS "U(1,0,A)2";
     SIGNAL \UART_Bluetooth:BUART:rx_state_stop1_reg\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_stop1_reg\ : SIGNAL IS "U(1,0,B)1";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_state_stop1_reg\ : SIGNAL IS "U(1,1,B)1";
     SIGNAL \UART_Bluetooth:BUART:rx_status_3\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_status_3\ : SIGNAL IS "U(1,2,A)2";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_status_3\ : SIGNAL IS "U(1,1,A)3";
     SIGNAL \UART_Bluetooth:BUART:rx_status_4\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_status_4\ : SIGNAL IS "U(1,1,A)1";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_status_4\ : SIGNAL IS "U(1,2,A)1";
     SIGNAL \UART_Bluetooth:BUART:rx_status_5\ : bit;
-    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_status_5\ : SIGNAL IS "U(1,0,B)3";
+    ATTRIBUTE placement_force OF \UART_Bluetooth:BUART:rx_status_5\ : SIGNAL IS "U(1,1,B)0";
     SIGNAL \UART_Bluetooth:Net_9\ : bit;
     ATTRIBUTE udbclken_assigned OF \UART_Bluetooth:Net_9\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \UART_Bluetooth:Net_9\ : SIGNAL IS true;
@@ -179,7 +178,7 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     SIGNAL \UART_JY901:BUART:pollcount_1\ : bit;
     ATTRIBUTE placement_force OF \UART_JY901:BUART:pollcount_1\ : SIGNAL IS "U(1,3,A)0";
     SIGNAL \UART_JY901:BUART:rx_bitclk_enable\ : bit;
-    ATTRIBUTE placement_force OF \UART_JY901:BUART:rx_bitclk_enable\ : SIGNAL IS "U(1,3,A)2";
+    ATTRIBUTE placement_force OF \UART_JY901:BUART:rx_bitclk_enable\ : SIGNAL IS "U(0,2,B)0";
     SIGNAL \UART_JY901:BUART:rx_count7_tc\ : bit;
     SIGNAL \UART_JY901:BUART:rx_count_0\ : bit;
     SIGNAL \UART_JY901:BUART:rx_count_1\ : bit;
@@ -211,7 +210,7 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     SIGNAL \UART_JY901:BUART:rx_status_3\ : bit;
     ATTRIBUTE placement_force OF \UART_JY901:BUART:rx_status_3\ : SIGNAL IS "U(0,3,B)0";
     SIGNAL \UART_JY901:BUART:rx_status_4\ : bit;
-    ATTRIBUTE placement_force OF \UART_JY901:BUART:rx_status_4\ : SIGNAL IS "U(0,2,A)1";
+    ATTRIBUTE placement_force OF \UART_JY901:BUART:rx_status_4\ : SIGNAL IS "U(0,2,A)3";
     SIGNAL \UART_JY901:BUART:rx_status_5\ : bit;
     ATTRIBUTE placement_force OF \UART_JY901:BUART:rx_status_5\ : SIGNAL IS "U(0,2,A)2";
     SIGNAL \UART_JY901:Net_9\ : bit;
@@ -344,17 +343,17 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     ATTRIBUTE lib_model OF \USBUART_1:Dp(0)\ : LABEL IS "iocell15";
     ATTRIBUTE Location OF \USBUART_1:Dp(0)\ : LABEL IS "P15[6]";
     ATTRIBUTE Location OF Rx_JY901(0)_SYNC : LABEL IS "U(1,3)";
-    ATTRIBUTE Location OF Rx_bluetooth(0)_SYNC : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF Rx_bluetooth(0)_SYNC : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:status_tc\ : LABEL IS "macrocell1";
-    ATTRIBUTE Location OF \Timer_1:TimerUDB:status_tc\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:status_tc\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_counter_load\ : LABEL IS "macrocell2";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_counter_load\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_counter_load\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_postpoll\ : LABEL IS "macrocell3";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_postpoll\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_postpoll\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_status_4\ : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_status_4\ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_status_4\ : LABEL IS "U(1,2)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_status_5\ : LABEL IS "macrocell5";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_status_5\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_status_5\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_JY901:BUART:rx_counter_load\ : LABEL IS "macrocell6";
     ATTRIBUTE Location OF \UART_JY901:BUART:rx_counter_load\ : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \UART_JY901:BUART:rx_postpoll\ : LABEL IS "macrocell7";
@@ -366,11 +365,11 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     ATTRIBUTE lib_model OF \Timer_Control:TimerUDB:status_tc\ : LABEL IS "macrocell10";
     ATTRIBUTE Location OF \Timer_Control:TimerUDB:status_tc\ : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF \PWM_1:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell1";
-    ATTRIBUTE Location OF \PWM_1:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \PWM_1:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \PWM_1:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell1";
-    ATTRIBUTE Location OF \PWM_1:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \PWM_1:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \PWM_1:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell2";
-    ATTRIBUTE Location OF \PWM_1:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \PWM_1:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \PWM_2:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell2";
     ATTRIBUTE Location OF \PWM_2:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \PWM_2:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell3";
@@ -379,18 +378,18 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     ATTRIBUTE Location OF \PWM_2:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(2,2)";
     ATTRIBUTE Location OF isr_Timer_1 : LABEL IS "[IntrContainer=(0)][IntrId=(5)]";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell3";
-    ATTRIBUTE Location OF \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell1";
-    ATTRIBUTE Location OF \Timer_1:TimerUDB:rstSts:stsreg\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:rstSts:stsreg\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell5";
-    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT16:timerdp:u1\ : LABEL IS "datapathcell6";
-    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:sRX:RxShifter:u0\ : LABEL IS "datapathcell7";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:sRX:RxShifter:u0\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:sRX:RxShifter:u0\ : LABEL IS "U(1,0)";
     ATTRIBUTE Location OF \UART_Bluetooth:BUART:sRX:RxBitCounter\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:sRX:RxSts\ : LABEL IS "statusicell2";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:sRX:RxSts\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:sRX:RxSts\ : LABEL IS "U(1,2)";
     ATTRIBUTE Location OF isr_RX : LABEL IS "[IntrContainer=(0)][IntrId=(4)]";
     ATTRIBUTE Location OF isr_jyRX : LABEL IS "[IntrContainer=(0)][IntrId=(6)]";
     ATTRIBUTE lib_model OF \UART_JY901:BUART:sRX:RxShifter:u0\ : LABEL IS "datapathcell8";
@@ -409,7 +408,7 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     ATTRIBUTE Location OF \USBUART_1:sof_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(21)]";
     ATTRIBUTE Location OF isr_Ctrl : LABEL IS "[IntrContainer=(0)][IntrId=(3)]";
     ATTRIBUTE lib_model OF \Timer_Control:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell4";
-    ATTRIBUTE Location OF \Timer_Control:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(0,0)";
+    ATTRIBUTE Location OF \Timer_Control:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Timer_Control:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell4";
     ATTRIBUTE Location OF \Timer_Control:TimerUDB:rstSts:stsreg\ : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF \Timer_Control:TimerUDB:sT24:timerdp:u0\ : LABEL IS "datapathcell9";
@@ -419,11 +418,11 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     ATTRIBUTE lib_model OF \Timer_Control:TimerUDB:sT24:timerdp:u2\ : LABEL IS "datapathcell11";
     ATTRIBUTE Location OF \Timer_Control:TimerUDB:sT24:timerdp:u2\ : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF \PWM_1:PWMUDB:runmode_enable\ : LABEL IS "macrocell11";
-    ATTRIBUTE Location OF \PWM_1:PWMUDB:runmode_enable\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \PWM_1:PWMUDB:runmode_enable\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF Net_775 : LABEL IS "macrocell12";
-    ATTRIBUTE Location OF Net_775 : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF Net_775 : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF Net_2173 : LABEL IS "macrocell13";
-    ATTRIBUTE Location OF Net_2173 : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF Net_2173 : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \PWM_2:PWMUDB:runmode_enable\ : LABEL IS "macrocell14";
     ATTRIBUTE Location OF \PWM_2:PWMUDB:runmode_enable\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF Net_2161 : LABEL IS "macrocell15";
@@ -433,25 +432,25 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_state_1\ : LABEL IS "macrocell17";
     ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_state_1\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_state_0\ : LABEL IS "macrocell18";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_state_0\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_state_0\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_load_fifo\ : LABEL IS "macrocell19";
     ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_load_fifo\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_state_3\ : LABEL IS "macrocell20";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_state_3\ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_state_3\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_state_2\ : LABEL IS "macrocell21";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_state_2\ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_state_2\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_bitclk_enable\ : LABEL IS "macrocell22";
     ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_bitclk_enable\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell23";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_state_stop1_reg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_state_stop1_reg\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF MODIN3_1 : LABEL IS "macrocell24";
-    ATTRIBUTE Location OF MODIN3_1 : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF MODIN3_1 : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF MODIN3_0 : LABEL IS "macrocell25";
-    ATTRIBUTE Location OF MODIN3_0 : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF MODIN3_0 : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_status_3\ : LABEL IS "macrocell26";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_status_3\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_status_3\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_Bluetooth:BUART:rx_last\ : LABEL IS "macrocell27";
-    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_last\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \UART_Bluetooth:BUART:rx_last\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \UART_JY901:BUART:rx_state_1\ : LABEL IS "macrocell28";
     ATTRIBUTE Location OF \UART_JY901:BUART:rx_state_1\ : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \UART_JY901:BUART:rx_state_0\ : LABEL IS "macrocell29";
@@ -463,7 +462,7 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     ATTRIBUTE lib_model OF \UART_JY901:BUART:rx_state_2\ : LABEL IS "macrocell32";
     ATTRIBUTE Location OF \UART_JY901:BUART:rx_state_2\ : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \UART_JY901:BUART:rx_bitclk_enable\ : LABEL IS "macrocell33";
-    ATTRIBUTE Location OF \UART_JY901:BUART:rx_bitclk_enable\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \UART_JY901:BUART:rx_bitclk_enable\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \UART_JY901:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell34";
     ATTRIBUTE Location OF \UART_JY901:BUART:rx_state_stop1_reg\ : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \UART_JY901:BUART:pollcount_1\ : LABEL IS "macrocell35";
@@ -828,10 +827,10 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => Net_120,
-            dclk_0 => Net_120_local,
-            dclk_glb_1 => \UART_JY901:Net_9\,
-            dclk_1 => \UART_JY901:Net_9_local\,
+            dclk_glb_0 => \UART_JY901:Net_9\,
+            dclk_0 => \UART_JY901:Net_9_local\,
+            dclk_glb_1 => Net_120,
+            dclk_1 => Net_120_local,
             dclk_glb_2 => \UART_Bluetooth:Net_9\,
             dclk_2 => \UART_Bluetooth:Net_9_local\);
 
@@ -2521,7 +2520,7 @@ BEGIN
         GENERIC MAP(
             int_type => "10")
         PORT MAP(
-            interrupt => Net_2457,
+            interrupt => Net_2258,
             clock => ClockBlock_BUS_CLK);
 
     \Timer_Control:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\:controlcell
@@ -2560,8 +2559,7 @@ BEGIN
             status_3 => \Timer_Control:TimerUDB:status_3\,
             status_2 => \Timer_Control:TimerUDB:status_2\,
             status_1 => open,
-            status_0 => \Timer_Control:TimerUDB:status_tc\,
-            interrupt => Net_2457);
+            status_0 => \Timer_Control:TimerUDB:status_tc\);
 
     \Timer_Control:TimerUDB:sT24:timerdp:u0\:datapathcell
         GENERIC MAP(

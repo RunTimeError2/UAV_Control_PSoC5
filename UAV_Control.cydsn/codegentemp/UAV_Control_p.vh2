@@ -1,5 +1,5 @@
 -- Project:   UAV_Control
--- Generated: 10/11/2018 16:56:58
+-- Generated: 10/26/2018 11:00:35
 -- PSoC Creator  3.3 CP3
 
 ENTITY UAV_Control IS
@@ -61,7 +61,6 @@ ARCHITECTURE __DEFAULT__ OF UAV_Control IS
     SIGNAL Net_2398 : bit;
     SIGNAL Net_2398_SYNCOUT : bit;
     SIGNAL Net_2412 : bit;
-    SIGNAL Net_2457 : bit;
     SIGNAL Net_775 : bit;
     SIGNAL Pin_PWM_1(0)__PA : bit;
     SIGNAL Pin_PWM_2(0)__PA : bit;
@@ -739,10 +738,10 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => Net_120,
-            dclk_0 => Net_120_local,
-            dclk_glb_1 => \UART_JY901:Net_9\,
-            dclk_1 => \UART_JY901:Net_9_local\,
+            dclk_glb_0 => \UART_JY901:Net_9\,
+            dclk_0 => \UART_JY901:Net_9_local\,
+            dclk_glb_1 => Net_120,
+            dclk_1 => Net_120_local,
             dclk_glb_2 => \UART_Bluetooth:Net_9\,
             dclk_2 => \UART_Bluetooth:Net_9_local\);
 
@@ -2432,7 +2431,7 @@ BEGIN
         GENERIC MAP(
             int_type => "10")
         PORT MAP(
-            interrupt => Net_2457,
+            interrupt => Net_2258,
             clock => ClockBlock_BUS_CLK);
 
     \Timer_Control:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\:controlcell
@@ -2471,8 +2470,7 @@ BEGIN
             status_3 => \Timer_Control:TimerUDB:status_3\,
             status_2 => \Timer_Control:TimerUDB:status_2\,
             status_1 => open,
-            status_0 => \Timer_Control:TimerUDB:status_tc\,
-            interrupt => Net_2457);
+            status_0 => \Timer_Control:TimerUDB:status_tc\);
 
     \Timer_Control:TimerUDB:sT24:timerdp:u0\:datapathcell
         GENERIC MAP(

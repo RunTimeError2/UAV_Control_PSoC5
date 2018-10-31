@@ -1,4 +1,6 @@
 /*
+ * 电机顺序设定
+ * PSoC板上有LCD屏的一面是前方
  *     4         3
  *      \       /
  *       \     /
@@ -56,6 +58,7 @@ void Initialize_All_PWM() {
     PWM_2_WriteCompare2(0);
 }
 
+//电机校准，似乎不是必要的
 void Motor_Calibration() {
     Set_Motor_1_Speed(1000);
     Set_Motor_2_Speed(1000);

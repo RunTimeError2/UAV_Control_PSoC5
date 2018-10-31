@@ -32,47 +32,18 @@ void Init_JY901_Data() {
 int Decode_JY901_Data(uint8 *buf, int len) {
     if(len != 11 || buf[0] != 0x55)
         return 0; //无效数据错误
-    /*if(buf[1] == 0x51) {
-    for(i = 0; i < 8; i++) {
-        LCD_Position(0, i*2);
-        LCD_PrintHexUint8(buf[i]);
-    }
-    for(i = 0; i < 3; i++) {
-        LCD_Position(1, i*2);
-        LCD_PrintHexUint8(buf[i + 8]);
-    }
-    }*/
     sum = 0;
     for(i = 0; i < 10; i++)
         sum += buf[i];
     if(buf[10] != (sum & 0xff))
         return 1; //校验无效错误
     
-    /*if(buf[1] == 0x52) {
-        LCD_Position(0, 0);
-        LCD_PrintHexUint8(buf[2]);
-        LCD_Position(0, 2);
-        LCD_PrintHexUint8(buf[3]);
-        LCD_Position(0, 5);
-        LCD_PrintHexUint8(buf[4]);
-        LCD_Position(0, 7);
-        LCD_PrintHexUint8(buf[5]);
-        LCD_Position(0, 10);
-        LCD_PrintHexUint8(buf[6]);
-        LCD_Position(0, 12);
-        LCD_PrintHexUint8(buf[7]);
-    }*/
-    
     switch(buf[1]) {
         case 0x51: {
             AccelX = (float)((short)((buf[3] << 8) | buf[2]))/32768.0*16.0;
             AccelY = (float)((short)((buf[5] << 8) | buf[4]))/32768.0*16.0;
             AccelZ = (float)((short)((buf[7] << 8) | buf[6]))/32768.0*16.0;
-            Temperature = ((buf[9] << 8) | buf[8])/100.0;
-            /*LCD_Position(1, 0);
-            LCD_PrintString("          ");
-            LCD_Position(1, 0);
-            LCD_PrintDecUint16((int)(AccelZ*1000.0));*/     
+            Temperature = ((buf[9] << 8) | buf[8])/100.0;    
             return 0x51;
             break;
         }
@@ -81,14 +52,6 @@ int Decode_JY901_Data(uint8 *buf, int len) {
             OmegaY = (float)((short)((buf[5] << 8) | buf[4]))/32768.0*2000.0;
             OmegaZ = (float)((short)((buf[7] << 8) | buf[6]))/32768.0*2000.0;
             Temperature = ((buf[9] << 8) | buf[8])/100.0;
-            
-            /*LCD_Position(1, 0);
-                    LCD_PrintDecUint16((int)(ABS(OmegaX)*10.0));
-                    LCD_Position(1, 5);
-                    LCD_PrintDecUint16((int)(ABS(OmegaY)*10.0));
-                    LCD_Position(1, 10);
-                    LCD_PrintDecUint16((int)(ABS(OmegaZ)*10.0));*/
-            
             return 0x52;
             break;
         }
@@ -99,13 +62,13 @@ int Decode_JY901_Data(uint8 *buf, int len) {
             Temperature = ((buf[9] << 8) | buf[8])/100.0;
             
             /*LCD_Position(0, 0);
-            LCD_PrintDecUint16((int)Roll);
+            LCD_PrintDecUint16((short)ABS(Roll));
             LCD_PrintString("     ");
             LCD_Position(0, 5);
-            LCD_PrintDecUint16((int)Pitch);
+            LCD_PrintDecUint16((short)ABS(Pitch));
             LCD_PrintString("     ");
             LCD_Position(0, 10);
-            LCD_PrintDecUint16((int)Yaw);
+            LCD_PrintDecUint16((short)ABS(Yaw));
             LCD_PrintString("     ");*/
                     
             return 0x53;

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
   30:.\Generated_Source\PSoC5/cyPm.c **** 
   31:.\Generated_Source\PSoC5/cyPm.c **** static CY_PM_BACKUP_STRUCT          cyPmBackup;
   32:.\Generated_Source\PSoC5/cyPm.c **** static CY_PM_CLOCK_BACKUP_STRUCT    cyPmClockBackup;
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 2
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 2
 
 
   33:.\Generated_Source\PSoC5/cyPm.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
   87:.\Generated_Source\PSoC5/cyPm.c ****     cyPmClockBackup.imoUsbClk = CY_PM_FASTCLK_IMO_CR_REG & CY_PM_FASTCLK_IMO_CR_USB;
   88:.\Generated_Source\PSoC5/cyPm.c **** 
   89:.\Generated_Source\PSoC5/cyPm.c ****     /* IMO doubler - save enable state */
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 3
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 3
 
 
   90:.\Generated_Source\PSoC5/cyPm.c ****     if(0u != (CY_PM_FASTCLK_IMO_CR_REG & CY_PM_FASTCLK_IMO_CR_F2XON))
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  144:.\Generated_Source\PSoC5/cyPm.c ****     if(0u != (CY_PM_ACT_CFG0_IMO & CY_PM_ACT_CFG0_REG))
  145:.\Generated_Source\PSoC5/cyPm.c ****     {
  146:.\Generated_Source\PSoC5/cyPm.c ****         /* IMO - save enabled state */
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 4
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 4
 
 
  147:.\Generated_Source\PSoC5/cyPm.c ****         cyPmClockBackup.imoEnable = CY_PM_ENABLED;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  201:.\Generated_Source\PSoC5/cyPm.c ****     /* Master clock source - set it to IMO if not yet. */
  202:.\Generated_Source\PSoC5/cyPm.c ****     if(CY_MASTER_SOURCE_IMO != cyPmClockBackup.masterClkSrc)
  203:.\Generated_Source\PSoC5/cyPm.c ****     {
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 5
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 5
 
 
  204:.\Generated_Source\PSoC5/cyPm.c ****         CyMasterClk_SetSource(CY_MASTER_SOURCE_IMO);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  258:.\Generated_Source\PSoC5/cyPm.c **** *
  259:.\Generated_Source\PSoC5/cyPm.c **** *  PSoC 3 and PSoC 5LP:
  260:.\Generated_Source\PSoC5/cyPm.c **** *  The merge region could be used to process state when the megahertz crystal is
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 6
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 6
 
 
  261:.\Generated_Source\PSoC5/cyPm.c **** *  not ready after a hold-off timeout.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  315:.\Generated_Source\PSoC5/cyPm.c ****                 status = CYRET_SUCCESS;
  316:.\Generated_Source\PSoC5/cyPm.c ****                 break;
  317:.\Generated_Source\PSoC5/cyPm.c ****             }
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 7
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 7
 
 
  318:.\Generated_Source\PSoC5/cyPm.c ****         }
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  372:.\Generated_Source\PSoC5/cyPm.c ****         {
  373:.\Generated_Source\PSoC5/cyPm.c ****             CY_PM_FASTCLK_IMO_CR_REG &= ((uint8)(~CY_PM_FASTCLK_IMO_CR_USB));
  374:.\Generated_Source\PSoC5/cyPm.c ****         }
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 8
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 8
 
 
  375:.\Generated_Source\PSoC5/cyPm.c ****     }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  429:.\Generated_Source\PSoC5/cyPm.c ****                 status = CYRET_SUCCESS;
  430:.\Generated_Source\PSoC5/cyPm.c ****                 break;
  431:.\Generated_Source\PSoC5/cyPm.c ****             }
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 9
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 9
 
 
  432:.\Generated_Source\PSoC5/cyPm.c ****         }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  486:.\Generated_Source\PSoC5/cyPm.c **** }
  487:.\Generated_Source\PSoC5/cyPm.c **** 
  488:.\Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 10
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 10
 
 
  489:.\Generated_Source\PSoC5/cyPm.c **** /*******************************************************************************
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  543:.\Generated_Source\PSoC5/cyPm.c **** *  enabled interrupt occurs the CPU will be started. These two actions will
  544:.\Generated_Source\PSoC5/cyPm.c **** *  occur together provided that the event that occurs is an enabled wakeup
  545:.\Generated_Source\PSoC5/cyPm.c **** *  source and also generates an interrupt. If just the wakeup event occurs then
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 11
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 11
 
 
  546:.\Generated_Source\PSoC5/cyPm.c **** *  the device will be in Active mode, but the CPU will remain halted waiting for
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  600:.\Generated_Source\PSoC5/cyPm.c **** *
  601:.\Generated_Source\PSoC5/cyPm.c **** *  \param *Note : FTW and HVI/LVI wakeup signals are in the same mask bit.
  602:.\Generated_Source\PSoC5/cyPm.c **** *  \param **Note: CTW and One PPS wakeup signals are in the same mask bit.
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 12
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 12
 
 
  603:.\Generated_Source\PSoC5/cyPm.c **** *
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  657:.\Generated_Source\PSoC5/cyPm.c ****             /* Include associated timer to wakeupSource */
  658:.\Generated_Source\PSoC5/cyPm.c ****             wakeupSource |= PM_ALT_ACT_SRC_CTW;
  659:.\Generated_Source\PSoC5/cyPm.c ****         }
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 13
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 13
 
 
  660:.\Generated_Source\PSoC5/cyPm.c **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  714:.\Generated_Source\PSoC5/cyPm.c **** *
  715:.\Generated_Source\PSoC5/cyPm.c **** *  Puts the part into the Sleep state.
  716:.\Generated_Source\PSoC5/cyPm.c **** *
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 14
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 14
 
 
  717:.\Generated_Source\PSoC5/cyPm.c **** *  Note Before calling this function, you must manually configure the power
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  771:.\Generated_Source\PSoC5/cyPm.c **** *  \param wakeUpSource:    Specifies a bitwise mask of wakeup sources. In addition, if
  772:.\Generated_Source\PSoC5/cyPm.c **** *                   a wakeupTime has been specified the associated timer will be
  773:.\Generated_Source\PSoC5/cyPm.c **** *                   included as a wakeup source.
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 15
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 15
 
 
  774:.\Generated_Source\PSoC5/cyPm.c **** *
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  828:.\Generated_Source\PSoC5/cyPm.c ****     /* Save current global interrupt enable and disable it */
  829:.\Generated_Source\PSoC5/cyPm.c ****     interruptState = CyEnterCriticalSection();
  830:.\Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 16
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 16
 
 
  831:.\Generated_Source\PSoC5/cyPm.c **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  885:.\Generated_Source\PSoC5/cyPm.c ****                 if (0u == (CY_PM_PWRSYS_WAKE_TR2_REG & CY_PM_PWRSYS_WAKE_TR2_EN_BUZZ))
  886:.\Generated_Source\PSoC5/cyPm.c ****                 {
  887:.\Generated_Source\PSoC5/cyPm.c ****                     cyPmBackup.hardwareBuzz = CY_PM_DISABLED;
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 17
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 17
 
 
  888:.\Generated_Source\PSoC5/cyPm.c ****                     CY_PM_PWRSYS_WAKE_TR2_REG |= CY_PM_PWRSYS_WAKE_TR2_EN_BUZZ;
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  942:.\Generated_Source\PSoC5/cyPm.c ****             wakeupSource |= PM_SLEEP_SRC_ONE_PPS;
  943:.\Generated_Source\PSoC5/cyPm.c ****         }
  944:.\Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 18
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 18
 
 
  945:.\Generated_Source\PSoC5/cyPm.c ****     #endif /* (CY_PSOC3) */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  999:.\Generated_Source\PSoC5/cyPm.c ****     /* Two recommended NOPs to get into mode. */
 1000:.\Generated_Source\PSoC5/cyPm.c ****     CY_NOP;
 1001:.\Generated_Source\PSoC5/cyPm.c ****     CY_NOP;
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 19
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 19
 
 
 1002:.\Generated_Source\PSoC5/cyPm.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1056:.\Generated_Source\PSoC5/cyPm.c ****     CyExitCriticalSection(interruptState);
 1057:.\Generated_Source\PSoC5/cyPm.c **** }
 1058:.\Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 20
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 20
 
 
 1059:.\Generated_Source\PSoC5/cyPm.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1113:.\Generated_Source\PSoC5/cyPm.c **** *  If using PICU as the wake up source, make sure you have at least one pin
 1114:.\Generated_Source\PSoC5/cyPm.c **** *  configured to generate a PICU interrupt. For pin Px.y, the register
 1115:.\Generated_Source\PSoC5/cyPm.c **** *  "PICU_INTTYPE_PICUx_INTTYPEy" controls  the PICU behavior. In the TRM, this
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 21
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 21
 
 
 1116:.\Generated_Source\PSoC5/cyPm.c **** *  register is "PICU[0..15]_INTTYPE[0..7]." In the Pins component datasheet,
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1170:.\Generated_Source\PSoC5/cyPm.c ****         {
 1171:.\Generated_Source\PSoC5/cyPm.c ****             /* Disable hold off - no action on restore */
 1172:.\Generated_Source\PSoC5/cyPm.c ****             CY_PM_PWRSYS_SLP_TR_REG &= CY_PM_PWRSYS_SLP_TR_HIBSLP_HOLDOFF_MASK;
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 22
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 22
 
 
 1173:.\Generated_Source\PSoC5/cyPm.c ****         }
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1227:.\Generated_Source\PSoC5/cyPm.c ****     CY_NOP;
 1228:.\Generated_Source\PSoC5/cyPm.c ****     CY_NOP;
 1229:.\Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 23
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 23
 
 
 1230:.\Generated_Source\PSoC5/cyPm.c ****     /* Execute WFI instruction (for ARM-based devices only) */
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1284:.\Generated_Source\PSoC5/cyPm.c **** *******************************************************************************/
 1285:.\Generated_Source\PSoC5/cyPm.c **** uint8 CyPmReadStatus(uint8 mask) 
 1286:.\Generated_Source\PSoC5/cyPm.c **** {
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 24
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 24
 
 
 1287:.\Generated_Source\PSoC5/cyPm.c ****     static uint8 interruptStatus;
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1341:.\Generated_Source\PSoC5/cyPm.c **** 
 1342:.\Generated_Source\PSoC5/cyPm.c **** 
 1343:.\Generated_Source\PSoC5/cyPm.c ****     /* Save current ILO power mode and ensure low power mode */
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 25
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 25
 
 
 1344:.\Generated_Source\PSoC5/cyPm.c ****     cyPmBackup.iloPowerMode = CyILO_SetPowerMode(CY_PM_POWERDOWN_MODE);
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1398:.\Generated_Source\PSoC5/cyPm.c **** *  - Restores LVI/HVI configuration - calsl CyPmHviLviRestore()
 1399:.\Generated_Source\PSoC5/cyPm.c **** *  - CyPmHibSlpSaveRestore() function is called
 1400:.\Generated_Source\PSoC5/cyPm.c **** *  - Restores ILO power down mode state and enables it
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 26
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 26
 
 
 1401:.\Generated_Source\PSoC5/cyPm.c **** *  - Restores the state of 1 kHz and 100 kHz ILO and disables them
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1455:.\Generated_Source\PSoC5/cyPm.c **** *  \param ctwInterval: the CTW interval to be set.
 1456:.\Generated_Source\PSoC5/cyPm.c **** *
 1457:.\Generated_Source\PSoC5/cyPm.c **** * \sideeffect
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 27
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 27
 
 
 1458:.\Generated_Source\PSoC5/cyPm.c **** *  Enables ILO 1 KHz clock and leaves it enabled.
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1512:.\Generated_Source\PSoC5/cyPm.c ****         CyXTAL_32KHZ_Start();
 1513:.\Generated_Source\PSoC5/cyPm.c ****     }
 1514:.\Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 28
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 28
 
 
 1515:.\Generated_Source\PSoC5/cyPm.c ****     /* Disable 1PPS interrupt enable */
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1569:.\Generated_Source\PSoC5/cyPm.c ****     }
 1570:.\Generated_Source\PSoC5/cyPm.c **** }
 1571:.\Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 29
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 29
 
 
 1572:.\Generated_Source\PSoC5/cyPm.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
   57 0024 1A73     		strb	r2, [r3, #12]
 1595:.\Generated_Source\PSoC5/cyPm.c ****     cyPmBackup.scctData[4u]   = CY_GET_REG8(CYREG_SC0_SW6 );
   58              		.loc 1 1595 0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 30
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 30
 
 
   59 0026 524A     		ldr	r2, .L5+12
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  101 0066 DA75     		strb	r2, [r3, #23]
 1608:.\Generated_Source\PSoC5/cyPm.c ****     cyPmBackup.scctData[15u]  = CY_GET_REG8(CYREG_SC2_SW2 );
  102              		.loc 1 1608 0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 31
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 31
 
 
  103 0068 4C4A     		ldr	r2, .L5+56
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1620:.\Generated_Source\PSoC5/cyPm.c ****     cyPmBackup.scctData[26u]  = CY_GET_REG8(CYREG_SC3_SW8 );
  146              		.loc 1 1620 0
  147 00c0 3D49     		ldr	r1, .L5+84
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 32
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 32
 
 
  148 00c2 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  187 00fe 0232     		adds	r2, r2, #2
  188 0100 1370     		strb	r3, [r2]
 1636:.\Generated_Source\PSoC5/cyPm.c ****     CY_SET_REG8(CYREG_SC1_SW8 , 0u);
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 33
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 33
 
 
  189              		.loc 1 1636 0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  226 0134 1370     		strb	r3, [r2]
 1654:.\Generated_Source\PSoC5/cyPm.c **** 
 1655:.\Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 34
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 34
 
 
 1656:.\Generated_Source\PSoC5/cyPm.c ****     #if(CY_PSOC3)
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1694:.\Generated_Source\PSoC5/cyPm.c ****     else
 1695:.\Generated_Source\PSoC5/cyPm.c ****     {
 1696:.\Generated_Source\PSoC5/cyPm.c ****         cyPmBackup.boostRefExt = CY_PM_DISABLED;
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 35
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 35
 
 
  243              		.loc 1 1696 0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1703:.\Generated_Source\PSoC5/cyPm.c **** ****************************************************************************//**
 1704:.\Generated_Source\PSoC5/cyPm.c **** *
 1705:.\Generated_Source\PSoC5/cyPm.c **** *  This API is used for restoring the device configurations after wakeup from
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 36
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 36
 
 
 1706:.\Generated_Source\PSoC5/cyPm.c **** *  the Sleep and Hibernate low power modes:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  327 002e 0632     		adds	r2, r2, #6
  328 0030 1170     		strb	r1, [r2]
 1724:.\Generated_Source\PSoC5/cyPm.c ****     CY_SET_REG8(CYREG_SC1_SW2 , cyPmBackup.scctData[8u] );
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 37
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 37
 
 
  329              		.loc 1 1724 0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  372 0072 1170     		strb	r1, [r2]
 1736:.\Generated_Source\PSoC5/cyPm.c ****     CY_SET_REG8(CYREG_SC2_SW8 , cyPmBackup.scctData[19u]);
  373              		.loc 1 1736 0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 38
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 38
 
 
  374 0074 197F     		ldrb	r1, [r3, #28]	@ zero_extendqisi2
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1756:.\Generated_Source\PSoC5/cyPm.c **** 
 1757:.\Generated_Source\PSoC5/cyPm.c ****             /* Enable SWV clocks */
 1758:.\Generated_Source\PSoC5/cyPm.c ****             CY_PM_MLOGIC_DBG_REG |= CY_PM_MLOGIC_DBG_SWV_CLK_EN;
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 39
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 39
 
 
 1759:.\Generated_Source\PSoC5/cyPm.c ****         }
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  438              		@ args = 0, pretend = 0, frame = 0
  439              		@ frame_needed = 0, uses_anonymous_args = 0
  440 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 40
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 40
 
 
  441              		.cfi_def_cfa_offset 8
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  477 003c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  478 003e 13F0020F 		tst	r3, #2
  479 0042 10D0     		beq	.L14
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 41
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 41
 
 
 1801:.\Generated_Source\PSoC5/cyPm.c ****     {
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
 1819:.\Generated_Source\PSoC5/cyPm.c ****         CyVdHvAnalogDisable();
  515              		.loc 1 1819 0
  516 0080 FFF7FEFF 		bl	CyVdHvAnalogDisable
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 42
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 42
 
 
  517              	.LVL2:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  563 0018 FFF7FEFF 		bl	CyILO_SetPowerMode
  564              	.LVL3:
  565 001c 164B     		ldr	r3, .L26+4
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 43
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 43
 
 
  566 001e 1870     		strb	r0, [r3]
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  607              		.loc 1 1385 0
  608 005c 094A     		ldr	r2, .L26+16
  609 005e 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 44
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 44
 
 
  610 0060 0549     		ldr	r1, .L26+4
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  645              		@ frame_needed = 0, uses_anonymous_args = 0
  646 0000 08B5     		push	{r3, lr}
  647              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 45
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 45
 
 
  648              		.cfi_offset 3, -8
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  688              		.cfi_endproc
  689              	.LFE15:
  690              		.size	CyPmHviLviRestore, .-CyPmHviLviRestore
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 46
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 46
 
 
  691              		.section	.text.CyPmHibRestore,"ax",%progbits
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  736 002a E378     		ldrb	r3, [r4, #3]	@ zero_extendqisi2
  737 002c 23B9     		cbnz	r3, .L38
 1434:.\Generated_Source\PSoC5/cyPm.c ****     }
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 47
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 47
 
 
  738              		.loc 1 1434 0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  787 0010 764B     		ldr	r3, .L69+8
  788 0012 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
  789 0014 84F83110 		strb	r1, [r4, #49]
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 48
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 48
 
 
   78:.\Generated_Source\PSoC5/cyPm.c ****     CY_PM_ACT_CFG2_REG &= ((uint8)(~CY_PM_ACT_EN_CLK_D_MASK));
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  834 0070 5D4A     		ldr	r2, .L69+4
  835 0072 82F83230 		strb	r3, [r2, #50]
  105:.\Generated_Source\PSoC5/cyPm.c ****     {
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 49
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 49
 
 
  836              		.loc 1 105 0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  131:.\Generated_Source\PSoC5/cyPm.c ****         CyPLL_OUT_Stop();
  881              		.loc 1 131 0
  882 00b8 0122     		movs	r2, #1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 50
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 50
 
 
  883 00ba 4B4B     		ldr	r3, .L69+4
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  927              		.loc 1 166 0
  928 0104 4FF04023 		mov	r3, #1073758208
  929 0108 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 51
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 51
 
 
  165:.\Generated_Source\PSoC5/cyPm.c ****             (0u == (CY_PM_CLKDIST_CR_REG & CY_PM_CLKDIST_IMO2X_SRC)) ? CY_IMO_SOURCE_DSI : CY_IMO_S
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  195:.\Generated_Source\PSoC5/cyPm.c ****     if(CY_PM_DIV_BY_ONE != cyPmClockBackup.clkSyncDiv)
  975              		.loc 1 195 0
  976 0158 294B     		ldr	r3, .L69+28
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 52
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 52
 
 
  977 015a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1022              	.LVL28:
  219:.\Generated_Source\PSoC5/cyPm.c ****     {
  1023              		.loc 1 219 0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 53
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 53
 
 
  1024 01a4 1A4B     		ldr	r3, .L69+44
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1072 0210 10420040 		.word	1073758736
  1073 0214 0B400040 		.word	1073758219
  1074              		.cfi_endproc
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 54
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 54
 
 
  1075              	.LFE0:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1123 003e 43F00403 		orr	r3, r3, #4
  1124 0042 1370     		strb	r3, [r2]
  1125              	.L72:
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 55
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 55
 
 
  291:.\Generated_Source\PSoC5/cyPm.c ****     {
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1171 0084 3720     		movs	r0, #55
  1172 0086 FFF7FEFF 		bl	CyFlash_SetWaitCycles
  1173              	.LVL39:
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 56
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 56
 
 
  341:.\Generated_Source\PSoC5/cyPm.c ****        (CY_PM_MASTER_CLK_SRC_DSI  == cyPmClockBackup.masterClkSrc))
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1219              		.loc 1 365 0
  1220 00dc 504C     		ldr	r4, .L93+4
  1221 00de 94F83330 		ldrb	r3, [r4, #51]	@ zero_extendqisi2
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 57
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 57
 
 
  1222 00e2 02AA     		add	r2, sp, #8
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1267 0136 012B     		cmp	r3, #1
  1268 0138 01D1     		bne	.L82
  391:.\Generated_Source\PSoC5/cyPm.c ****     }
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 58
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 58
 
 
  1269              		.loc 1 391 0
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1314              		.loc 1 426 0
  1315 0184 2C4B     		ldr	r3, .L93+28
  1316 0186 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 59
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 59
 
 
  1317 0188 13F0010F 		tst	r3, #1
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1362 01ca 93F83630 		ldrb	r3, [r3, #54]	@ zero_extendqisi2
  1363 01ce 33B9     		cbnz	r3, .L90
  466:.\Generated_Source\PSoC5/cyPm.c ****     {
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 60
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 60
 
 
  1364              		.loc 1 466 0 discriminator 1
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1407 0210 93F83120 		ldrb	r2, [r3, #49]	@ zero_extendqisi2
  1408 0214 0C4B     		ldr	r3, .L93+44
  1409 0216 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 61
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 61
 
 
  486:.\Generated_Source\PSoC5/cyPm.c **** 
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1460              	.L96:
  677:.\Generated_Source\PSoC5/cyPm.c ****     CY_PM_WAKEUP_CFG0_REG = (uint8) (wakeupSource >> 4u);
  1461              		.loc 1 677 0 is_stmt 1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 62
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 62
 
 
  1462 000c 124D     		ldr	r5, .L98
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  705:.\Generated_Source\PSoC5/cyPm.c ****     CY_PM_WAKEUP_CFG1_REG = cyPmBackup.wakeupCfg1;
  1506              		.loc 1 705 0
  1507              		.thumb
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 63
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 63
 
 
  1508 0048 1A79     		ldrb	r2, [r3, #4]	@ zero_extendqisi2
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1557 0010 13F0080F 		tst	r3, #8
  1558 0014 06D1     		bne	.L101
  841:.\Generated_Source\PSoC5/cyPm.c ****     }
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 64
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 64
 
 
  1559              		.loc 1 841 0
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  960:.\Generated_Source\PSoC5/cyPm.c **** 
  1603              		.loc 1 960 0
  1604 0054 C4F30034 		ubfx	r4, r4, #12, #1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 65
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 65
 
 
  1605 0058 1470     		strb	r4, [r2]
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1649              		.loc 1 1004 0
  1650              	@ 1004 ".\Generated_Source\PSoC5\cyPm.c" 1
  1651 009e 30BF     		WFI 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 66
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 66
 
 
  1652              	
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1697 00e4 98430040 		.word	1073759128
  1698 00e8 00000000 		.word	.LANCHOR0
  1699 00ec 00420040 		.word	1073758720
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 67
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 67
 
 
  1700 00f0 9A430040 		.word	1073759130
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1747              		.loc 1 1191 0
  1748 002a C4F30713 		ubfx	r3, r4, #4, #8
  1749 002e 03F00403 		and	r3, r3, #4
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 68
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 68
 
 
  1750 0032 DBB2     		uxtb	r3, r3
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1794 007a 81F82C20 		strb	r2, [r1, #44]
 1216:.\Generated_Source\PSoC5/cyPm.c ****     }
  1795              		.loc 1 1216 0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 69
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 69
 
 
  1796 007e 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1840              		.loc 1 1246 0
  1841 00b8 FFF7FEFF 		bl	CyPmHibRestore
  1842              	.LVL80:
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 70
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 70
 
 
 1249:.\Generated_Source\PSoC5/cyPm.c ****     CY_PM_WAKEUP_CFG1_REG = cyPmBackup.wakeupCfg1;
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1891 0002 4020     		movs	r0, #64
  1892 0004 FFF7FEFF 		bl	CyPmHibernateEx
  1893              	.LVL82:
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 71
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 71
 
 
  1894 0008 08BD     		pop	{r3, pc}
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1941              		.align	2
  1942              	.L126:
  1943 0028 90430040 		.word	1073759120
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 72
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 72
 
 
  1944 002c 00000000 		.word	.LANCHOR0
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  1991 002c 0A4A     		ldr	r2, .L133+4
  1992 002e 1570     		strb	r5, [r2]
 1478:.\Generated_Source\PSoC5/cyPm.c ****         }   /* Required interval is already set */
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 73
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 73
 
 
  1993              		.loc 1 1478 0
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2042 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  2043 0006 13F0010F 		tst	r3, #1
  2044 000a 01D1     		bne	.L136
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 74
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 74
 
 
 1512:.\Generated_Source\PSoC5/cyPm.c ****     }
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2093 000e FFF7FEFF 		bl	CyILO_Start100K
  2094              	.LVL92:
 1547:.\Generated_Source\PSoC5/cyPm.c ****     {
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 75
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 75
 
 
  2095              		.loc 1 1547 0
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2142              		.size	CyPmFtwSetInterval, .-CyPmFtwSetInterval
  2143              		.section	.rodata
  2144              		.align	2
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 76
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 76
 
 
  2145              		.set	.LANCHOR1,. + 0
@@ -4558,13 +4558,13 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2191 0006 00000000 		.4byte	.Ldebug_abbrev0
  2192 000a 04       		.byte	0x4
  2193 000b 01       		.uleb128 0x1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 77
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 77
 
 
- 2194 000c B3050000 		.4byte	.LASF114
+ 2194 000c 97050000 		.4byte	.LASF114
  2195 0010 01       		.byte	0x1
  2196 0011 AE010000 		.4byte	.LASF115
- 2197 0015 6A030000 		.4byte	.LASF116
+ 2197 0015 2C060000 		.4byte	.LASF116
  2198 0019 00000000 		.4byte	.Ldebug_ranges0+0
  2199 001d 00000000 		.4byte	0
  2200 0021 00000000 		.4byte	.Ldebug_line0
@@ -4575,15 +4575,15 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2205 002c 02       		.uleb128 0x2
  2206 002d 01       		.byte	0x1
  2207 002e 08       		.byte	0x8
- 2208 002f 7A040000 		.4byte	.LASF1
+ 2208 002f 6A040000 		.4byte	.LASF1
  2209 0033 02       		.uleb128 0x2
  2210 0034 02       		.byte	0x2
  2211 0035 05       		.byte	0x5
- 2212 0036 B3040000 		.4byte	.LASF2
+ 2212 0036 A3040000 		.4byte	.LASF2
  2213 003a 02       		.uleb128 0x2
  2214 003b 02       		.byte	0x2
  2215 003c 07       		.byte	0x7
- 2216 003d C1020000 		.4byte	.LASF3
+ 2216 003d CF020000 		.4byte	.LASF3
  2217 0041 02       		.uleb128 0x2
  2218 0042 04       		.byte	0x4
  2219 0043 05       		.byte	0x5
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2248 007c 02       		.byte	0x2
  2249 007d 9301     		.2byte	0x193
  2250 007f 3A000000 		.4byte	0x3a
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 78
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 78
 
 
  2251 0083 04       		.uleb128 0x4
@@ -4629,7 +4629,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2256 008f 02       		.uleb128 0x2
  2257 0090 04       		.byte	0x4
  2258 0091 04       		.byte	0x4
- 2259 0092 1B040000 		.4byte	.LASF12
+ 2259 0092 0B040000 		.4byte	.LASF12
  2260 0096 02       		.uleb128 0x2
  2261 0097 08       		.byte	0x8
  2262 0098 04       		.byte	0x4
@@ -4637,14 +4637,14 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2264 009d 02       		.uleb128 0x2
  2265 009e 01       		.byte	0x1
  2266 009f 08       		.byte	0x8
- 2267 00a0 DD040000 		.4byte	.LASF14
+ 2267 00a0 CD040000 		.4byte	.LASF14
  2268 00a4 04       		.uleb128 0x4
- 2269 00a5 97060000 		.4byte	.LASF15
+ 2269 00a5 98060000 		.4byte	.LASF15
  2270 00a9 02       		.byte	0x2
  2271 00aa 3402     		.2byte	0x234
  2272 00ac 48000000 		.4byte	0x48
  2273 00b0 04       		.uleb128 0x4
- 2274 00b1 62040000 		.4byte	.LASF16
+ 2274 00b1 52040000 		.4byte	.LASF16
  2275 00b5 02       		.byte	0x2
  2276 00b6 3C02     		.2byte	0x23c
  2277 00b8 BC000000 		.4byte	0xbc
@@ -4653,7 +4653,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2280 00c1 02       		.uleb128 0x2
  2281 00c2 04       		.byte	0x4
  2282 00c3 07       		.byte	0x7
- 2283 00c4 94030000 		.4byte	.LASF17
+ 2283 00c4 84030000 		.4byte	.LASF17
  2284 00c8 06       		.uleb128 0x6
  2285 00c9 4B020000 		.4byte	.LASF34
  2286 00cd 12       		.byte	0x12
@@ -4661,13 +4661,13 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2288 00cf F8       		.byte	0xf8
  2289 00d0 93010000 		.4byte	0x193
  2290 00d4 07       		.uleb128 0x7
- 2291 00d5 C0030000 		.4byte	.LASF18
+ 2291 00d5 B0030000 		.4byte	.LASF18
  2292 00d9 03       		.byte	0x3
  2293 00da FB       		.byte	0xfb
  2294 00db 6B000000 		.4byte	0x6b
  2295 00df 00       		.byte	0
  2296 00e0 07       		.uleb128 0x7
- 2297 00e1 C7030000 		.4byte	.LASF19
+ 2297 00e1 B7030000 		.4byte	.LASF19
  2298 00e5 03       		.byte	0x3
  2299 00e6 FC       		.byte	0xfc
  2300 00e7 6B000000 		.4byte	0x6b
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2305 00f2 FD       		.byte	0xfd
  2306 00f3 6B000000 		.4byte	0x6b
  2307 00f7 02       		.byte	0x2
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 79
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 79
 
 
  2308 00f8 07       		.uleb128 0x7
@@ -4694,25 +4694,25 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2318 010b 6B000000 		.4byte	0x6b
  2319 010f 04       		.byte	0x4
  2320 0110 08       		.uleb128 0x8
- 2321 0111 A0060000 		.4byte	.LASF23
+ 2321 0111 A1060000 		.4byte	.LASF23
  2322 0115 03       		.byte	0x3
  2323 0116 0001     		.2byte	0x100
  2324 0118 6B000000 		.4byte	0x6b
  2325 011c 05       		.byte	0x5
  2326 011d 08       		.uleb128 0x8
- 2327 011e EB060000 		.4byte	.LASF24
+ 2327 011e EC060000 		.4byte	.LASF24
  2328 0122 03       		.byte	0x3
  2329 0123 0101     		.2byte	0x101
  2330 0125 6B000000 		.4byte	0x6b
  2331 0129 06       		.byte	0x6
  2332 012a 08       		.uleb128 0x8
- 2333 012b 11040000 		.4byte	.LASF25
+ 2333 012b 01040000 		.4byte	.LASF25
  2334 012f 03       		.byte	0x3
  2335 0130 0201     		.2byte	0x102
  2336 0132 6B000000 		.4byte	0x6b
  2337 0136 07       		.byte	0x7
  2338 0137 08       		.uleb128 0x8
- 2339 0138 44030000 		.4byte	.LASF26
+ 2339 0138 52030000 		.4byte	.LASF26
  2340 013c 03       		.byte	0x3
  2341 013d 0301     		.2byte	0x103
  2342 013f 6B000000 		.4byte	0x6b
@@ -4736,9 +4736,9 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2360 0166 77000000 		.4byte	0x77
  2361 016a 0C       		.byte	0xc
  2362 016b 08       		.uleb128 0x8
- 2363 016c 98040000 		.4byte	.LASF30
+ 2363 016c 88040000 		.4byte	.LASF30
  2364 0170 03       		.byte	0x3
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 80
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 80
 
 
  2365 0171 0701     		.2byte	0x107
@@ -4751,19 +4751,19 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2372 0180 6B000000 		.4byte	0x6b
  2373 0184 0F       		.byte	0xf
  2374 0185 08       		.uleb128 0x8
- 2375 0186 8C050000 		.4byte	.LASF32
+ 2375 0186 70050000 		.4byte	.LASF32
  2376 018a 03       		.byte	0x3
  2377 018b 0901     		.2byte	0x109
  2378 018d 6B000000 		.4byte	0x6b
  2379 0191 10       		.byte	0x10
  2380 0192 00       		.byte	0
  2381 0193 04       		.uleb128 0x4
- 2382 0194 A7020000 		.4byte	.LASF33
+ 2382 0194 B5020000 		.4byte	.LASF33
  2383 0198 03       		.byte	0x3
  2384 0199 0B01     		.2byte	0x10b
  2385 019b C8000000 		.4byte	0xc8
  2386 019f 09       		.uleb128 0x9
- 2387 01a0 78020000 		.4byte	.LASF35
+ 2387 01a0 86020000 		.4byte	.LASF35
  2388 01a4 2F       		.byte	0x2f
  2389 01a5 03       		.byte	0x3
  2390 01a6 0E01     		.2byte	0x10e
@@ -4775,40 +4775,40 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2396 01b4 6B000000 		.4byte	0x6b
  2397 01b8 00       		.byte	0
  2398 01b9 08       		.uleb128 0x8
- 2399 01ba A7040000 		.4byte	.LASF37
+ 2399 01ba 97040000 		.4byte	.LASF37
  2400 01be 03       		.byte	0x3
  2401 01bf 1101     		.2byte	0x111
  2402 01c1 6B000000 		.4byte	0x6b
  2403 01c5 01       		.byte	0x1
  2404 01c6 08       		.uleb128 0x8
- 2405 01c7 CF040000 		.4byte	.LASF38
+ 2405 01c7 BF040000 		.4byte	.LASF38
  2406 01cb 03       		.byte	0x3
  2407 01cc 1201     		.2byte	0x112
  2408 01ce 6B000000 		.4byte	0x6b
  2409 01d2 02       		.byte	0x2
  2410 01d3 08       		.uleb128 0x8
- 2411 01d4 3E050000 		.4byte	.LASF39
+ 2411 01d4 78030000 		.4byte	.LASF39
  2412 01d8 03       		.byte	0x3
  2413 01d9 1401     		.2byte	0x114
  2414 01db 6B000000 		.4byte	0x6b
  2415 01df 03       		.byte	0x3
  2416 01e0 08       		.uleb128 0x8
- 2417 01e1 0A030000 		.4byte	.LASF40
+ 2417 01e1 18030000 		.4byte	.LASF40
  2418 01e5 03       		.byte	0x3
  2419 01e6 1E01     		.2byte	0x11e
  2420 01e8 6B000000 		.4byte	0x6b
  2421 01ec 04       		.byte	0x4
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 81
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 81
 
 
  2422 01ed 08       		.uleb128 0x8
- 2423 01ee 15030000 		.4byte	.LASF41
+ 2423 01ee 23030000 		.4byte	.LASF41
  2424 01f2 03       		.byte	0x3
  2425 01f3 1F01     		.2byte	0x11f
  2426 01f5 6B000000 		.4byte	0x6b
  2427 01f9 05       		.byte	0x5
  2428 01fa 08       		.uleb128 0x8
- 2429 01fb 20030000 		.4byte	.LASF42
+ 2429 01fb 2E030000 		.4byte	.LASF42
  2430 01ff 03       		.byte	0x3
  2431 0200 2001     		.2byte	0x120
  2432 0202 6B000000 		.4byte	0x6b
@@ -4838,13 +4838,13 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2456 0236 6B000000 		.4byte	0x6b
  2457 023a 25       		.byte	0x25
  2458 023b 08       		.uleb128 0x8
- 2459 023c E2060000 		.4byte	.LASF47
+ 2459 023c E3060000 		.4byte	.LASF47
  2460 0240 03       		.byte	0x3
  2461 0241 2901     		.2byte	0x129
  2462 0243 6B000000 		.4byte	0x6b
  2463 0247 26       		.byte	0x26
  2464 0248 08       		.uleb128 0x8
- 2465 0249 41060000 		.4byte	.LASF48
+ 2465 0249 25060000 		.4byte	.LASF48
  2466 024d 03       		.byte	0x3
  2467 024e 2A01     		.2byte	0x12a
  2468 0250 6B000000 		.4byte	0x6b
@@ -4858,20 +4858,20 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2476 0262 08       		.uleb128 0x8
  2477 0263 FF000000 		.4byte	.LASF50
  2478 0267 03       		.byte	0x3
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 82
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 82
 
 
  2479 0268 2C01     		.2byte	0x12c
  2480 026a 6B000000 		.4byte	0x6b
  2481 026e 29       		.byte	0x29
  2482 026f 08       		.uleb128 0x8
- 2483 0270 41040000 		.4byte	.LASF51
+ 2483 0270 31040000 		.4byte	.LASF51
  2484 0274 03       		.byte	0x3
  2485 0275 2D01     		.2byte	0x12d
  2486 0277 6B000000 		.4byte	0x6b
  2487 027b 2A       		.byte	0x2a
  2488 027c 08       		.uleb128 0x8
- 2489 027d B0060000 		.4byte	.LASF52
+ 2489 027d B1060000 		.4byte	.LASF52
  2490 0281 03       		.byte	0x3
  2491 0282 2E01     		.2byte	0x12e
  2492 0284 6B000000 		.4byte	0x6b
@@ -4883,13 +4883,13 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2498 0291 6B000000 		.4byte	0x6b
  2499 0295 2C       		.byte	0x2c
  2500 0296 08       		.uleb128 0x8
- 2501 0297 0A050000 		.4byte	.LASF54
+ 2501 0297 FA040000 		.4byte	.LASF54
  2502 029b 03       		.byte	0x3
  2503 029c 3101     		.2byte	0x131
  2504 029e 6B000000 		.4byte	0x6b
  2505 02a2 2D       		.byte	0x2d
  2506 02a3 08       		.uleb128 0x8
- 2507 02a4 38030000 		.4byte	.LASF55
+ 2507 02a4 46030000 		.4byte	.LASF55
  2508 02a8 03       		.byte	0x3
  2509 02a9 3301     		.2byte	0x133
  2510 02ab 6B000000 		.4byte	0x6b
@@ -4908,7 +4908,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2523 02c7 3501     		.2byte	0x135
  2524 02c9 9F010000 		.4byte	0x19f
  2525 02cd 0C       		.uleb128 0xc
- 2526 02ce BD040000 		.4byte	.LASF57
+ 2526 02ce AD040000 		.4byte	.LASF57
  2527 02d2 01       		.byte	0x1
  2528 02d3 3406     		.2byte	0x634
  2529 02d5 00000000 		.4byte	.LFB12
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2533 02df 0C       		.uleb128 0xc
  2534 02e0 27000000 		.4byte	.LASF58
  2535 02e4 01       		.byte	0x1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 83
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 83
 
 
  2536 02e5 B006     		.2byte	0x6b0
@@ -4946,7 +4946,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2558 031e DF080000 		.4byte	0x8df
  2559 0322 00       		.byte	0
  2560 0323 0D       		.uleb128 0xd
- 2561 0324 6A060000 		.4byte	.LASF60
+ 2561 0324 6B060000 		.4byte	.LASF60
  2562 0328 01       		.byte	0x1
  2563 0329 2A05     		.2byte	0x52a
  2564 032b 00000000 		.4byte	.LFB7
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2590 0367 00000000 		.4byte	.LFB15
  2591 036b 48000000 		.4byte	.LFE15-.LFB15
  2592 036f 01       		.uleb128 0x1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 84
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 84
 
 
  2593 0370 9C       		.byte	0x9c
@@ -5019,7 +5019,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2628 03d0 E6080000 		.4byte	0x8e6
  2629 03d4 00       		.byte	0
  2630 03d5 11       		.uleb128 0x11
- 2631 03d6 4E030000 		.4byte	.LASF63
+ 2631 03d6 5C030000 		.4byte	.LASF63
  2632 03da 01       		.byte	0x1
  2633 03db 49       		.byte	0x49
  2634 03dc 00000000 		.4byte	.LFB0
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2647 03fb 08       		.byte	0x8
  2648 03fc 37       		.byte	0x37
  2649 03fd 00       		.byte	0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 85
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 85
 
 
  2650 03fe 0F       		.uleb128 0xf
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2704 0467 F4000000 		.4byte	.LVL21
  2705 046b 87090000 		.4byte	0x987
  2706 046f 79040000 		.4byte	0x479
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 86
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 86
 
 
  2707 0473 10       		.uleb128 0x10
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2761 04dc 01       		.uleb128 0x1
  2762 04dd 50       		.byte	0x50
  2763 04de 01       		.uleb128 0x1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 87
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 87
 
 
  2764 04df 30       		.byte	0x30
@@ -5180,7 +5180,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2780 0505 9C       		.byte	0x9c
  2781 0506 2F060000 		.4byte	0x62f
  2782 050a 13       		.uleb128 0x13
- 2783 050b AC050000 		.4byte	.LASF65
+ 2783 050b 90050000 		.4byte	.LASF65
  2784 050f 01       		.byte	0x1
  2785 0510 0E01     		.2byte	0x10e
  2786 0512 A4000000 		.4byte	0xa4
@@ -5192,13 +5192,13 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2792 051d 77000000 		.4byte	0x77
  2793 0521 00000000 		.4byte	.LLST0
  2794 0525 15       		.uleb128 0x15
- 2795 0526 2B030000 		.4byte	.LASF66
+ 2795 0526 39030000 		.4byte	.LASF66
  2796 052a 01       		.byte	0x1
  2797 052b 1001     		.2byte	0x110
  2798 052d 77000000 		.4byte	0x77
  2799 0531 4D000000 		.4byte	.LLST1
  2800 0535 16       		.uleb128 0x16
- 2801 0536 AD030000 		.4byte	.LASF67
+ 2801 0536 9D030000 		.4byte	.LASF67
  2802 053a 01       		.byte	0x1
  2803 053b 1401     		.2byte	0x114
  2804 053d 3F060000 		.4byte	0x63f
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2818 055d 01       		.uleb128 0x1
  2819 055e 30       		.byte	0x30
  2820 055f 00       		.byte	0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 88
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 88
 
 
  2821 0560 0E       		.uleb128 0xe
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2875 05de 01       		.uleb128 0x1
  2876 05df 50       		.byte	0x50
  2877 05e0 01       		.uleb128 0x1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 89
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 89
 
 
  2878 05e1 30       		.byte	0x30
@@ -5327,7 +5327,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2921 063f 17       		.uleb128 0x17
  2922 0640 2F060000 		.4byte	0x62f
  2923 0644 12       		.uleb128 0x12
- 2924 0645 49040000 		.4byte	.LASF68
+ 2924 0645 39040000 		.4byte	.LASF68
  2925 0649 01       		.byte	0x1
  2926 064a 7102     		.2byte	0x271
  2927 064c 00000000 		.4byte	.LFB2
@@ -5336,16 +5336,16 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2930 0655 9C       		.byte	0x9c
  2931 0656 8A060000 		.4byte	0x68a
  2932 065a 18       		.uleb128 0x18
- 2933 065b 79060000 		.4byte	.LASF69
+ 2933 065b 7A060000 		.4byte	.LASF69
  2934 065f 01       		.byte	0x1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 90
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 90
 
 
  2935 0660 7102     		.2byte	0x271
  2936 0662 77000000 		.4byte	0x77
  2937 0666 6F000000 		.4byte	.LLST2
  2938 066a 18       		.uleb128 0x18
- 2939 066b DE030000 		.4byte	.LASF70
+ 2939 066b CE030000 		.4byte	.LASF70
  2940 066f 01       		.byte	0x1
  2941 0670 7102     		.2byte	0x271
  2942 0672 77000000 		.4byte	0x77
@@ -5361,7 +5361,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2952 0688 00       		.byte	0
  2953 0689 00       		.byte	0
  2954 068a 12       		.uleb128 0x12
- 2955 068b 37040000 		.4byte	.LASF71
+ 2955 068b 27040000 		.4byte	.LASF71
  2956 068f 01       		.byte	0x1
  2957 0690 3803     		.2byte	0x338
  2958 0692 00000000 		.4byte	.LFB3
@@ -5370,13 +5370,13 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2961 069b 9C       		.byte	0x9c
  2962 069c 18070000 		.4byte	0x718
  2963 06a0 18       		.uleb128 0x18
- 2964 06a1 79060000 		.4byte	.LASF69
+ 2964 06a1 7A060000 		.4byte	.LASF69
  2965 06a5 01       		.byte	0x1
  2966 06a6 3803     		.2byte	0x338
  2967 06a8 6B000000 		.4byte	0x6b
  2968 06ac B1000000 		.4byte	.LLST4
  2969 06b0 18       		.uleb128 0x18
- 2970 06b1 DE030000 		.4byte	.LASF70
+ 2970 06b1 CE030000 		.4byte	.LASF70
  2971 06b5 01       		.byte	0x1
  2972 06b6 3803     		.2byte	0x338
  2973 06b8 77000000 		.4byte	0x77
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  2989 06e7 5E090000 		.4byte	0x95e
  2990 06eb F5060000 		.4byte	0x6f5
  2991 06ef 10       		.uleb128 0x10
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 91
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 91
 
 
  2992 06f0 01       		.uleb128 0x1
@@ -5424,7 +5424,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3012 0716 00       		.byte	0
  3013 0717 00       		.byte	0
  3014 0718 12       		.uleb128 0x12
- 3015 0719 9D030000 		.4byte	.LASF73
+ 3015 0719 8D030000 		.4byte	.LASF73
  3016 071d 01       		.byte	0x1
  3017 071e 8404     		.2byte	0x484
  3018 0720 00000000 		.4byte	.LFB5
@@ -5433,7 +5433,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3021 0729 9C       		.byte	0x9c
  3022 072a 83070000 		.4byte	0x783
  3023 072e 18       		.uleb128 0x18
- 3024 072f DE030000 		.4byte	.LASF70
+ 3024 072f CE030000 		.4byte	.LASF70
  3025 0733 01       		.byte	0x1
  3026 0734 8404     		.2byte	0x484
  3027 0736 77000000 		.4byte	0x77
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3046 076e 91030000 		.4byte	0x391
  3047 0772 19       		.uleb128 0x19
  3048 0773 D6000000 		.4byte	.LVL81
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 92
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 92
 
 
  3049 0777 3E0A0000 		.4byte	0xa3e
@@ -5471,7 +5471,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3056 0781 00       		.byte	0
  3057 0782 00       		.byte	0
  3058 0783 12       		.uleb128 0x12
- 3059 0784 1A050000 		.4byte	.LASF74
+ 3059 0784 0A050000 		.4byte	.LASF74
  3060 0788 01       		.byte	0x1
  3061 0789 4704     		.2byte	0x447
  3062 078b 00000000 		.4byte	.LFB4
@@ -5491,7 +5491,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3076 07a8 00       		.byte	0
  3077 07a9 00       		.byte	0
  3078 07aa 1A       		.uleb128 0x1a
- 3079 07ab 69050000 		.4byte	.LASF117
+ 3079 07ab 4D050000 		.4byte	.LASF117
  3080 07af 01       		.byte	0x1
  3081 07b0 0505     		.2byte	0x505
  3082 07b2 6B000000 		.4byte	0x6b
@@ -5507,7 +5507,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3092 07cc 6B000000 		.4byte	0x6b
  3093 07d0 50010000 		.4byte	.LLST9
  3094 07d4 16       		.uleb128 0x16
- 3095 07d5 F5060000 		.4byte	.LASF76
+ 3095 07d5 F6060000 		.4byte	.LASF76
  3096 07d9 01       		.byte	0x1
  3097 07da 0705     		.2byte	0x507
  3098 07dc 6B000000 		.4byte	0x6b
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3103 07e7 49010000 		.4byte	.LASF72
  3104 07eb 01       		.byte	0x1
  3105 07ec 0805     		.2byte	0x508
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 93
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 93
 
 
  3106 07ee 6B000000 		.4byte	0x6b
@@ -5537,7 +5537,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3119 0814 3E0A0000 		.4byte	0xa3e
  3120 0818 00       		.byte	0
  3121 0819 12       		.uleb128 0x12
- 3122 081a 99050000 		.4byte	.LASF78
+ 3122 081a 7D050000 		.4byte	.LASF78
  3123 081e 01       		.byte	0x1
  3124 081f B505     		.2byte	0x5b5
  3125 0821 00000000 		.4byte	.LFB9
@@ -5546,7 +5546,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3128 082a 9C       		.byte	0x9c
  3129 082b 49080000 		.4byte	0x849
  3130 082f 18       		.uleb128 0x18
- 3131 0830 D4020000 		.4byte	.LASF79
+ 3131 0830 E2020000 		.4byte	.LASF79
  3132 0834 01       		.byte	0x1
  3133 0835 B505     		.2byte	0x5b5
  3134 0837 6B000000 		.4byte	0x6b
@@ -5556,7 +5556,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3138 0844 2E090000 		.4byte	0x92e
  3139 0848 00       		.byte	0
  3140 0849 12       		.uleb128 0x12
- 3141 084a 6E040000 		.4byte	.LASF80
+ 3141 084a 5E040000 		.4byte	.LASF80
  3142 084e 01       		.byte	0x1
  3143 084f E205     		.2byte	0x5e2
  3144 0851 00000000 		.4byte	.LFB10
@@ -5578,10 +5578,10 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3160 087a 9C       		.byte	0x9c
  3161 087b 99080000 		.4byte	0x899
  3162 087f 18       		.uleb128 0x18
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 94
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 94
 
 
- 3163 0880 4A050000 		.4byte	.LASF82
+ 3163 0880 2E050000 		.4byte	.LASF82
  3164 0884 01       		.byte	0x1
  3165 0885 0206     		.2byte	0x602
  3166 0887 6B000000 		.4byte	0x6b
@@ -5591,7 +5591,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3170 0894 35090000 		.4byte	0x935
  3171 0898 00       		.byte	0
  3172 0899 1B       		.uleb128 0x1b
- 3173 089a D7060000 		.4byte	.LASF83
+ 3173 089a D8060000 		.4byte	.LASF83
  3174 089e 01       		.byte	0x1
  3175 089f 1F       		.byte	0x1f
  3176 08a0 C1020000 		.4byte	0x2c1
@@ -5599,7 +5599,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3178 08a5 03       		.byte	0x3
  3179 08a6 00000000 		.4byte	cyPmBackup
  3180 08aa 1B       		.uleb128 0x1b
- 3181 08ab 88040000 		.4byte	.LASF84
+ 3181 08ab 78040000 		.4byte	.LASF84
  3182 08af 01       		.byte	0x1
  3183 08b0 20       		.byte	0x20
  3184 08b1 93010000 		.4byte	0x193
@@ -5607,7 +5607,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3186 08b6 03       		.byte	0x3
  3187 08b7 30000000 		.4byte	cyPmClockBackup
  3188 08bb 1B       		.uleb128 0x1b
- 3189 08bc 56050000 		.4byte	.LASF85
+ 3189 08bc 3A050000 		.4byte	.LASF85
  3190 08c0 01       		.byte	0x1
  3191 08c1 23       		.byte	0x23
  3192 08c2 CC080000 		.4byte	0x8cc
@@ -5617,7 +5617,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3196 08cc 17       		.uleb128 0x17
  3197 08cd 2F060000 		.4byte	0x62f
  3198 08d1 1C       		.uleb128 0x1c
- 3199 08d2 F7040000 		.4byte	.LASF86
+ 3199 08d2 E7040000 		.4byte	.LASF86
  3200 08d6 04       		.byte	0x4
  3201 08d7 9C       		.byte	0x9c
  3202 08d8 1C       		.uleb128 0x1c
@@ -5625,11 +5625,11 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3204 08dd 04       		.byte	0x4
  3205 08de 9D       		.byte	0x9d
  3206 08df 1C       		.uleb128 0x1c
- 3207 08e0 E0020000 		.4byte	.LASF88
+ 3207 08e0 EE020000 		.4byte	.LASF88
  3208 08e4 04       		.byte	0x4
  3209 08e5 9F       		.byte	0x9f
  3210 08e6 1D       		.uleb128 0x1d
- 3211 08e7 89020000 		.4byte	.LASF107
+ 3211 08e7 97020000 		.4byte	.LASF107
  3212 08eb 04       		.byte	0x4
  3213 08ec 5E       		.byte	0x5e
  3214 08ed 6B000000 		.4byte	0x6b
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3217 08f6 6B000000 		.4byte	0x6b
  3218 08fa 00       		.byte	0
  3219 08fb 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 95
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 95
 
 
  3220 08fc 06010000 		.4byte	.LASF89
@@ -5651,7 +5651,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3227 090c 6B000000 		.4byte	0x6b
  3228 0910 00       		.byte	0
  3229 0911 1F       		.uleb128 0x1f
- 3230 0912 84060000 		.4byte	.LASF90
+ 3230 0912 85060000 		.4byte	.LASF90
  3231 0916 04       		.byte	0x4
  3232 0917 9B       		.byte	0x9b
  3233 0918 27090000 		.4byte	0x927
@@ -5661,7 +5661,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3237 0922 6B000000 		.4byte	0x6b
  3238 0926 00       		.byte	0
  3239 0927 1C       		.uleb128 0x1c
- 3240 0928 B8060000 		.4byte	.LASF91
+ 3240 0928 B9060000 		.4byte	.LASF91
  3241 092c 04       		.byte	0x4
  3242 092d 9E       		.byte	0x9e
  3243 092e 1C       		.uleb128 0x1c
@@ -5669,11 +5669,11 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3245 0933 04       		.byte	0x4
  3246 0934 57       		.byte	0x57
  3247 0935 1C       		.uleb128 0x1c
- 3248 0936 CE030000 		.4byte	.LASF93
+ 3248 0936 BE030000 		.4byte	.LASF93
  3249 093a 04       		.byte	0x4
  3250 093b 59       		.byte	0x59
  3251 093c 1F       		.uleb128 0x1f
- 3252 093d 28050000 		.4byte	.LASF94
+ 3252 093d 18050000 		.4byte	.LASF94
  3253 0941 05       		.byte	0x5
  3254 0942 50       		.byte	0x50
  3255 0943 4D090000 		.4byte	0x94d
@@ -5681,7 +5681,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3257 0948 6B000000 		.4byte	0x6b
  3258 094c 00       		.byte	0
  3259 094d 1F       		.uleb128 0x1f
- 3260 094e F4020000 		.4byte	.LASF95
+ 3260 094e 02030000 		.4byte	.LASF95
  3261 0952 04       		.byte	0x4
  3262 0953 4D       		.byte	0x4d
  3263 0954 5E090000 		.4byte	0x95e
@@ -5689,7 +5689,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3265 0959 6B000000 		.4byte	0x6b
  3266 095d 00       		.byte	0
  3267 095e 1F       		.uleb128 0x1f
- 3268 095f 67040000 		.4byte	.LASF96
+ 3268 095f 57040000 		.4byte	.LASF96
  3269 0963 04       		.byte	0x4
  3270 0964 7F       		.byte	0x7f
  3271 0965 6F090000 		.4byte	0x96f
@@ -5697,14 +5697,14 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3273 096a 6B000000 		.4byte	0x6b
  3274 096e 00       		.byte	0
  3275 096f 1C       		.uleb128 0x1c
- 3276 0970 EB030000 		.4byte	.LASF97
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 96
+ 3276 0970 DB030000 		.4byte	.LASF97
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 96
 
 
  3277 0974 04       		.byte	0x4
  3278 0975 42       		.byte	0x42
  3279 0976 1F       		.uleb128 0x1f
- 3280 0977 48060000 		.4byte	.LASF98
+ 3280 0977 78020000 		.4byte	.LASF98
  3281 097b 04       		.byte	0x4
  3282 097c 48       		.byte	0x48
  3283 097d 87090000 		.4byte	0x987
@@ -5736,11 +5736,11 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3309 09b5 6B000000 		.4byte	0x6b
  3310 09b9 00       		.byte	0
  3311 09ba 1C       		.uleb128 0x1c
- 3312 09bb E2040000 		.4byte	.LASF102
+ 3312 09bb D2040000 		.4byte	.LASF102
  3313 09bf 04       		.byte	0x4
  3314 09c0 4B       		.byte	0x4b
  3315 09c1 1F       		.uleb128 0x1f
- 3316 09c2 FA030000 		.4byte	.LASF103
+ 3316 09c2 EA030000 		.4byte	.LASF103
  3317 09c6 04       		.byte	0x4
  3318 09c7 4E       		.byte	0x4e
  3319 09c8 D2090000 		.4byte	0x9d2
@@ -5748,7 +5748,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3321 09cd 6B000000 		.4byte	0x6b
  3322 09d1 00       		.byte	0
  3323 09d2 1F       		.uleb128 0x1f
- 3324 09d3 78050000 		.4byte	.LASF104
+ 3324 09d3 5C050000 		.4byte	.LASF104
  3325 09d7 04       		.byte	0x4
  3326 09d8 4F       		.byte	0x4f
  3327 09d9 E3090000 		.4byte	0x9e3
@@ -5756,14 +5756,14 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3329 09de 77000000 		.4byte	0x77
  3330 09e2 00       		.byte	0
  3331 09e3 1C       		.uleb128 0x1c
- 3332 09e4 CB060000 		.4byte	.LASF105
+ 3332 09e4 CC060000 		.4byte	.LASF105
  3333 09e8 04       		.byte	0x4
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 97
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 97
 
 
  3334 09e9 66       		.byte	0x66
  3335 09ea 1F       		.uleb128 0x1f
- 3336 09eb 54040000 		.4byte	.LASF106
+ 3336 09eb 44040000 		.4byte	.LASF106
  3337 09ef 04       		.byte	0x4
  3338 09f0 79       		.byte	0x79
  3339 09f1 FB090000 		.4byte	0x9fb
@@ -5771,7 +5771,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3341 09f6 83000000 		.4byte	0x83
  3342 09fa 00       		.byte	0
  3343 09fb 1D       		.uleb128 0x1d
- 3344 09fc 5D030000 		.4byte	.LASF108
+ 3344 09fc 6B030000 		.4byte	.LASF108
  3345 0a00 04       		.byte	0x4
  3346 0a01 65       		.byte	0x65
  3347 0a02 A4000000 		.4byte	0xa4
@@ -5780,7 +5780,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3350 0a0b 6B000000 		.4byte	0x6b
  3351 0a0f 00       		.byte	0
  3352 0a10 1C       		.uleb128 0x1c
- 3353 0a11 56060000 		.4byte	.LASF109
+ 3353 0a11 57060000 		.4byte	.LASF109
  3354 0a15 04       		.byte	0x4
  3355 0a16 4A       		.byte	0x4a
  3356 0a17 1D       		.uleb128 0x1d
@@ -5793,7 +5793,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3363 0a27 6B000000 		.4byte	0x6b
  3364 0a2b 00       		.byte	0
  3365 0a2c 1C       		.uleb128 0x1c
- 3366 0a2d 9C020000 		.4byte	.LASF111
+ 3366 0a2d AA020000 		.4byte	.LASF111
  3367 0a31 04       		.byte	0x4
  3368 0a32 47       		.byte	0x47
  3369 0a33 20       		.uleb128 0x20
@@ -5802,7 +5802,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3372 0a39 7D       		.byte	0x7d
  3373 0a3a 6B000000 		.4byte	0x6b
  3374 0a3e 1F       		.uleb128 0x1f
- 3375 0a3f 21040000 		.4byte	.LASF112
+ 3375 0a3f 11040000 		.4byte	.LASF112
  3376 0a43 04       		.byte	0x4
  3377 0a44 7E       		.byte	0x7e
  3378 0a45 4F0A0000 		.4byte	0xa4f
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3388              	.Ldebug_abbrev0:
  3389 0000 01       		.uleb128 0x1
  3390 0001 11       		.uleb128 0x11
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 98
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 98
 
 
  3391 0002 01       		.byte	0x1
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3445 0038 00       		.byte	0
  3446 0039 49       		.uleb128 0x49
  3447 003a 13       		.uleb128 0x13
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 99
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 99
 
 
  3448 003b 00       		.byte	0
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3502 0071 3A       		.uleb128 0x3a
  3503 0072 0B       		.uleb128 0xb
  3504 0073 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 100
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 100
 
 
  3505 0074 05       		.uleb128 0x5
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3559 00ab 19       		.uleb128 0x19
  3560 00ac 11       		.uleb128 0x11
  3561 00ad 01       		.uleb128 0x1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 101
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 101
 
 
  3562 00ae 12       		.uleb128 0x12
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3616 00ec 12       		.uleb128 0x12
  3617 00ed 06       		.uleb128 0x6
  3618 00ee 40       		.uleb128 0x40
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 102
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 102
 
 
  3619 00ef 18       		.uleb128 0x18
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3673 0127 3B       		.uleb128 0x3b
  3674 0128 05       		.uleb128 0x5
  3675 0129 49       		.uleb128 0x49
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 103
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 103
 
 
  3676 012a 13       		.uleb128 0x13
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3730 0160 17       		.uleb128 0x17
  3731 0161 00       		.byte	0
  3732 0162 00       		.byte	0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 104
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 104
 
 
  3733 0163 19       		.uleb128 0x19
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3787 019c 3F       		.uleb128 0x3f
  3788 019d 19       		.uleb128 0x19
  3789 019e 03       		.uleb128 0x3
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 105
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 105
 
 
  3790 019f 0E       		.uleb128 0xe
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3844 01d5 01       		.uleb128 0x1
  3845 01d6 13       		.uleb128 0x13
  3846 01d7 00       		.byte	0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 106
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 106
 
 
  3847 01d8 00       		.byte	0
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3901 004d E2010000 		.4byte	.LVL58
  3902 0051 EA010000 		.4byte	.LVL59
  3903 0055 0500     		.2byte	0x5
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 107
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 107
 
 
  3904 0057 72       		.byte	0x72
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  3958 00d2 00000000 		.4byte	.LVL64
  3959 00d6 09000000 		.4byte	.LVL65-1
  3960 00da 0100     		.2byte	0x1
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 108
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 108
 
 
  3961 00dc 51       		.byte	0x51
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  4015 0165 F3       		.byte	0xf3
  4016 0166 01       		.uleb128 0x1
  4017 0167 50       		.byte	0x50
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 109
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 109
 
 
  4018 0168 9F       		.byte	0x9f
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  4072 000b 00       		.byte	0
  4073 000c 0000     		.2byte	0
  4074 000e 0000     		.2byte	0
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 110
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 110
 
 
  4075 0010 00000000 		.4byte	.LFB12
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  4129 0048 00000000 		.4byte	.LFB3
  4130 004c F4000000 		.4byte	.LFE3
  4131 0050 00000000 		.4byte	.LFB5
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 111
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 111
 
 
  4132 0054 F4000000 		.4byte	.LFE5
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  4163      4D5F4241 
  4163      434B5550 
  4163      5F535452 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 112
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 112
 
 
  4163      55435400 
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  4185      6E61626C 
  4185      6500
  4186              	.LASF36:
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 113
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 113
 
 
  4187 0118 696C6F50 		.ascii	"iloPowerMode\000"
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  4211      6C6500
  4212              	.LASF115:
  4213 01ae 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cyPm.c\000"
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 114
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 114
 
 
  4213      6E657261 
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  4237      6B757053 
  4237      74727563 
  4238              	.LASF118:
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 115
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 115
 
 
  4239 0261 4379456E 		.ascii	"CyEnterCriticalSection\000"
@@ -6846,375 +6846,375 @@ ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 1
  4239      72697469 
  4239      63616C53 
  4239      65637469 
- 4240              	.LASF35:
- 4241 0278 6379506D 		.ascii	"cyPmBackupStruct\000"
- 4241      4261636B 
- 4241      75705374 
- 4241      72756374 
- 4241      00
- 4242              	.LASF107:
- 4243 0289 4379494C 		.ascii	"CyILO_SetPowerMode\000"
- 4243      4F5F5365 
- 4243      74506F77 
- 4243      65724D6F 
- 4243      646500
- 4244              	.LASF111:
- 4245 029c 4379494D 		.ascii	"CyIMO_Stop\000"
- 4245      4F5F5374 
- 4245      6F7000
- 4246              	.LASF33:
- 4247 02a7 43595F50 		.ascii	"CY_PM_CLOCK_BACKUP_STRUCT\000"
- 4247      4D5F434C 
- 4247      4F434B5F 
- 4247      4241434B 
- 4247      55505F53 
- 4248              	.LASF3:
- 4249 02c1 73686F72 		.ascii	"short unsigned int\000"
- 4249      7420756E 
- 4249      7369676E 
- 4249      65642069 
- 4249      6E7400
- 4250              	.LASF79:
- 4251 02d4 63747749 		.ascii	"ctwInterval\000"
- 4251      6E746572 
- 4251      76616C00 
- 4252              	.LASF88:
- 4253 02e0 43795664 		.ascii	"CyVdHvAnalogDisable\000"
- 4253      4876416E 
- 4253      616C6F67 
- 4253      44697361 
- 4253      626C6500 
- 4254              	.LASF95:
- 4255 02f4 43794D61 		.ascii	"CyMasterClk_SetSource\000"
- 4255      73746572 
- 4255      436C6B5F 
- 4255      53657453 
- 4255      6F757263 
- 4256              	.LASF40:
- 4257 030a 77616B65 		.ascii	"wakeupCfg0\000"
- 4257      75704366 
- 4257      673000
- 4258              	.LASF41:
- 4259 0315 77616B65 		.ascii	"wakeupCfg1\000"
+ 4240              	.LASF98:
+ 4241 0278 4379494D 		.ascii	"CyIMO_SetFreq\000"
+ 4241      4F5F5365 
+ 4241      74467265 
+ 4241      7100
+ 4242              	.LASF35:
+ 4243 0286 6379506D 		.ascii	"cyPmBackupStruct\000"
+ 4243      4261636B 
+ 4243      75705374 
+ 4243      72756374 
+ 4243      00
+ 4244              	.LASF107:
+ 4245 0297 4379494C 		.ascii	"CyILO_SetPowerMode\000"
+ 4245      4F5F5365 
+ 4245      74506F77 
+ 4245      65724D6F 
+ 4245      646500
+ 4246              	.LASF111:
+ 4247 02aa 4379494D 		.ascii	"CyIMO_Stop\000"
+ 4247      4F5F5374 
+ 4247      6F7000
+ 4248              	.LASF33:
+ 4249 02b5 43595F50 		.ascii	"CY_PM_CLOCK_BACKUP_STRUCT\000"
+ 4249      4D5F434C 
+ 4249      4F434B5F 
+ 4249      4241434B 
+ 4249      55505F53 
+ 4250              	.LASF3:
+ 4251 02cf 73686F72 		.ascii	"short unsigned int\000"
+ 4251      7420756E 
+ 4251      7369676E 
+ 4251      65642069 
+ 4251      6E7400
+ 4252              	.LASF79:
+ 4253 02e2 63747749 		.ascii	"ctwInterval\000"
+ 4253      6E746572 
+ 4253      76616C00 
+ 4254              	.LASF88:
+ 4255 02ee 43795664 		.ascii	"CyVdHvAnalogDisable\000"
+ 4255      4876416E 
+ 4255      616C6F67 
+ 4255      44697361 
+ 4255      626C6500 
+ 4256              	.LASF95:
+ 4257 0302 43794D61 		.ascii	"CyMasterClk_SetSource\000"
+ 4257      73746572 
+ 4257      436C6B5F 
+ 4257      53657453 
+ 4257      6F757263 
+ 4258              	.LASF40:
+ 4259 0318 77616B65 		.ascii	"wakeupCfg0\000"
  4259      75704366 
- 4259      673100
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 116
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 116
 
 
- 4260              	.LASF42:
- 4261 0320 77616B65 		.ascii	"wakeupCfg2\000"
+ 4259      673000
+ 4260              	.LASF41:
+ 4261 0323 77616B65 		.ascii	"wakeupCfg1\000"
  4261      75704366 
- 4261      673200
- 4262              	.LASF66:
- 4263 032b 636C6B42 		.ascii	"clkBusDivTmp\000"
- 4263      75734469 
- 4263      76546D70 
- 4263      00
- 4264              	.LASF55:
- 4265 0338 626F6F73 		.ascii	"boostRefExt\000"
- 4265      74526566 
- 4265      45787400 
- 4266              	.LASF26:
- 4267 0344 636C6B49 		.ascii	"clkImoSrc\000"
- 4267      6D6F5372 
- 4267      6300
- 4268              	.LASF63:
- 4269 034e 4379506D 		.ascii	"CyPmSaveClocks\000"
- 4269      53617665 
- 4269      436C6F63 
- 4269      6B7300
- 4270              	.LASF108:
- 4271 035d 43795854 		.ascii	"CyXTAL_Start\000"
- 4271      414C5F53 
- 4271      74617274 
- 4271      00
- 4272              	.LASF116:
- 4273 036a 443A5C73 		.ascii	"D:\\sjh\\9.14\\UAV_Control\\UAV_Control.cydsn\000"
- 4273      6A685C39 
- 4273      2E31345C 
- 4273      5541565F 
- 4273      436F6E74 
- 4274              	.LASF17:
- 4275 0394 73697A65 		.ascii	"sizetype\000"
- 4275      74797065 
- 4275      00
- 4276              	.LASF73:
- 4277 039d 4379506D 		.ascii	"CyPmHibernateEx\000"
- 4277      48696265 
- 4277      726E6174 
- 4277      65457800 
- 4278              	.LASF67:
- 4279 03ad 6379506D 		.ascii	"cyPmImoFreqMhz2Reg\000"
- 4279      496D6F46 
- 4279      7265714D 
- 4279      687A3252 
- 4279      656700
- 4280              	.LASF18:
- 4281 03c0 656E436C 		.ascii	"enClkA\000"
- 4281      6B4100
- 4282              	.LASF19:
- 4283 03c7 656E436C 		.ascii	"enClkD\000"
- 4283      6B4400
- 4284              	.LASF93:
- 4285 03ce 4379494C 		.ascii	"CyILO_Start100K\000"
- 4285      4F5F5374 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 117
+ 4261      673100
+ 4262              	.LASF42:
+ 4263 032e 77616B65 		.ascii	"wakeupCfg2\000"
+ 4263      75704366 
+ 4263      673200
+ 4264              	.LASF66:
+ 4265 0339 636C6B42 		.ascii	"clkBusDivTmp\000"
+ 4265      75734469 
+ 4265      76546D70 
+ 4265      00
+ 4266              	.LASF55:
+ 4267 0346 626F6F73 		.ascii	"boostRefExt\000"
+ 4267      74526566 
+ 4267      45787400 
+ 4268              	.LASF26:
+ 4269 0352 636C6B49 		.ascii	"clkImoSrc\000"
+ 4269      6D6F5372 
+ 4269      6300
+ 4270              	.LASF63:
+ 4271 035c 4379506D 		.ascii	"CyPmSaveClocks\000"
+ 4271      53617665 
+ 4271      436C6F63 
+ 4271      6B7300
+ 4272              	.LASF108:
+ 4273 036b 43795854 		.ascii	"CyXTAL_Start\000"
+ 4273      414C5F53 
+ 4273      74617274 
+ 4273      00
+ 4274              	.LASF39:
+ 4275 0378 736C7054 		.ascii	"slpTrBypass\000"
+ 4275      72427970 
+ 4275      61737300 
+ 4276              	.LASF17:
+ 4277 0384 73697A65 		.ascii	"sizetype\000"
+ 4277      74797065 
+ 4277      00
+ 4278              	.LASF73:
+ 4279 038d 4379506D 		.ascii	"CyPmHibernateEx\000"
+ 4279      48696265 
+ 4279      726E6174 
+ 4279      65457800 
+ 4280              	.LASF67:
+ 4281 039d 6379506D 		.ascii	"cyPmImoFreqMhz2Reg\000"
+ 4281      496D6F46 
+ 4281      7265714D 
+ 4281      687A3252 
+ 4281      656700
+ 4282              	.LASF18:
+ 4283 03b0 656E436C 		.ascii	"enClkA\000"
+ 4283      6B4100
+ 4284              	.LASF19:
+ 4285 03b7 656E436C 		.ascii	"enClkD\000"
+ 4285      6B4400
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 117
 
 
- 4285      61727431 
- 4285      30304B00 
- 4286              	.LASF70:
- 4287 03de 77616B65 		.ascii	"wakeupSource\000"
- 4287      7570536F 
- 4287      75726365 
- 4287      00
- 4288              	.LASF97:
- 4289 03eb 4379504C 		.ascii	"CyPLL_OUT_Stop\000"
- 4289      4C5F4F55 
- 4289      545F5374 
- 4289      6F7000
- 4290              	.LASF103:
- 4291 03fa 43794D61 		.ascii	"CyMasterClk_SetDivider\000"
- 4291      73746572 
- 4291      436C6B5F 
- 4291      53657444 
- 4291      69766964 
- 4292              	.LASF25:
- 4293 0411 696D6F43 		.ascii	"imoClkSrc\000"
- 4293      6C6B5372 
- 4293      6300
- 4294              	.LASF12:
- 4295 041b 666C6F61 		.ascii	"float\000"
- 4295      7400
- 4296              	.LASF112:
- 4297 0421 43794578 		.ascii	"CyExitCriticalSection\000"
- 4297      69744372 
- 4297      69746963 
- 4297      616C5365 
- 4297      6374696F 
- 4298              	.LASF71:
- 4299 0437 4379506D 		.ascii	"CyPmSleep\000"
- 4299      536C6565 
- 4299      7000
- 4300              	.LASF51:
- 4301 0441 6C766964 		.ascii	"lvidRst\000"
- 4301      52737400 
- 4302              	.LASF68:
- 4303 0449 4379506D 		.ascii	"CyPmAltAct\000"
- 4303      416C7441 
- 4303      637400
- 4304              	.LASF106:
- 4305 0454 43794465 		.ascii	"CyDelayCycles\000"
- 4305      6C617943 
- 4305      79636C65 
- 4305      7300
- 4306              	.LASF16:
- 4307 0462 72656738 		.ascii	"reg8\000"
- 4307      00
- 4308              	.LASF96:
- 4309 0467 43794861 		.ascii	"CyHalt\000"
- 4309      6C7400
- 4310              	.LASF80:
- 4311 046e 4379506D 		.ascii	"CyPmOppsSet\000"
- 4311      4F707073 
- 4311      53657400 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 118
+ 4286              	.LASF93:
+ 4287 03be 4379494C 		.ascii	"CyILO_Start100K\000"
+ 4287      4F5F5374 
+ 4287      61727431 
+ 4287      30304B00 
+ 4288              	.LASF70:
+ 4289 03ce 77616B65 		.ascii	"wakeupSource\000"
+ 4289      7570536F 
+ 4289      75726365 
+ 4289      00
+ 4290              	.LASF97:
+ 4291 03db 4379504C 		.ascii	"CyPLL_OUT_Stop\000"
+ 4291      4C5F4F55 
+ 4291      545F5374 
+ 4291      6F7000
+ 4292              	.LASF103:
+ 4293 03ea 43794D61 		.ascii	"CyMasterClk_SetDivider\000"
+ 4293      73746572 
+ 4293      436C6B5F 
+ 4293      53657444 
+ 4293      69766964 
+ 4294              	.LASF25:
+ 4295 0401 696D6F43 		.ascii	"imoClkSrc\000"
+ 4295      6C6B5372 
+ 4295      6300
+ 4296              	.LASF12:
+ 4297 040b 666C6F61 		.ascii	"float\000"
+ 4297      7400
+ 4298              	.LASF112:
+ 4299 0411 43794578 		.ascii	"CyExitCriticalSection\000"
+ 4299      69744372 
+ 4299      69746963 
+ 4299      616C5365 
+ 4299      6374696F 
+ 4300              	.LASF71:
+ 4301 0427 4379506D 		.ascii	"CyPmSleep\000"
+ 4301      536C6565 
+ 4301      7000
+ 4302              	.LASF51:
+ 4303 0431 6C766964 		.ascii	"lvidRst\000"
+ 4303      52737400 
+ 4304              	.LASF68:
+ 4305 0439 4379506D 		.ascii	"CyPmAltAct\000"
+ 4305      416C7441 
+ 4305      637400
+ 4306              	.LASF106:
+ 4307 0444 43794465 		.ascii	"CyDelayCycles\000"
+ 4307      6C617943 
+ 4307      79636C65 
+ 4307      7300
+ 4308              	.LASF16:
+ 4309 0452 72656738 		.ascii	"reg8\000"
+ 4309      00
+ 4310              	.LASF96:
+ 4311 0457 43794861 		.ascii	"CyHalt\000"
+ 4311      6C7400
+ 4312              	.LASF80:
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 118
 
 
- 4312              	.LASF1:
- 4313 047a 756E7369 		.ascii	"unsigned char\000"
- 4313      676E6564 
- 4313      20636861 
- 4313      7200
- 4314              	.LASF84:
- 4315 0488 6379506D 		.ascii	"cyPmClockBackup\000"
- 4315      436C6F63 
- 4315      6B426163 
- 4315      6B757000 
- 4316              	.LASF30:
- 4317 0498 706C6C45 		.ascii	"pllEnableState\000"
- 4317      6E61626C 
- 4317      65537461 
- 4317      746500
- 4318              	.LASF37:
- 4319 04a7 696C6F31 		.ascii	"ilo1kEnable\000"
- 4319      6B456E61 
- 4319      626C6500 
- 4320              	.LASF2:
- 4321 04b3 73686F72 		.ascii	"short int\000"
- 4321      7420696E 
- 4321      7400
- 4322              	.LASF57:
- 4323 04bd 4379506D 		.ascii	"CyPmHibSlpSaveSet\000"
- 4323      48696253 
- 4323      6C705361 
- 4323      76655365 
+ 4313 045e 4379506D 		.ascii	"CyPmOppsSet\000"
+ 4313      4F707073 
+ 4313      53657400 
+ 4314              	.LASF1:
+ 4315 046a 756E7369 		.ascii	"unsigned char\000"
+ 4315      676E6564 
+ 4315      20636861 
+ 4315      7200
+ 4316              	.LASF84:
+ 4317 0478 6379506D 		.ascii	"cyPmClockBackup\000"
+ 4317      436C6F63 
+ 4317      6B426163 
+ 4317      6B757000 
+ 4318              	.LASF30:
+ 4319 0488 706C6C45 		.ascii	"pllEnableState\000"
+ 4319      6E61626C 
+ 4319      65537461 
+ 4319      746500
+ 4320              	.LASF37:
+ 4321 0497 696C6F31 		.ascii	"ilo1kEnable\000"
+ 4321      6B456E61 
+ 4321      626C6500 
+ 4322              	.LASF2:
+ 4323 04a3 73686F72 		.ascii	"short int\000"
+ 4323      7420696E 
  4323      7400
- 4324              	.LASF38:
- 4325 04cf 696C6F31 		.ascii	"ilo100kEnable\000"
- 4325      30306B45 
- 4325      6E61626C 
- 4325      6500
- 4326              	.LASF14:
- 4327 04dd 63686172 		.ascii	"char\000"
- 4327      00
- 4328              	.LASF102:
- 4329 04e2 4379494D 		.ascii	"CyIMO_DisableDoubler\000"
- 4329      4F5F4469 
- 4329      7361626C 
- 4329      65446F75 
- 4329      626C6572 
- 4330              	.LASF86:
- 4331 04f7 43795664 		.ascii	"CyVdLvDigitDisable\000"
- 4331      4C764469 
- 4331      67697444 
- 4331      69736162 
- 4331      6C6500
- 4332              	.LASF54:
- 4333 050a 696D6F41 		.ascii	"imoActFreq12Mhz\000"
- 4333      63744672 
- 4333      65713132 
- 4333      4D687A00 
- 4334              	.LASF74:
- 4335 051a 4379506D 		.ascii	"CyPmHibernate\000"
- 4335      48696265 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 119
+ 4324              	.LASF57:
+ 4325 04ad 4379506D 		.ascii	"CyPmHibSlpSaveSet\000"
+ 4325      48696253 
+ 4325      6C705361 
+ 4325      76655365 
+ 4325      7400
+ 4326              	.LASF38:
+ 4327 04bf 696C6F31 		.ascii	"ilo100kEnable\000"
+ 4327      30306B45 
+ 4327      6E61626C 
+ 4327      6500
+ 4328              	.LASF14:
+ 4329 04cd 63686172 		.ascii	"char\000"
+ 4329      00
+ 4330              	.LASF102:
+ 4331 04d2 4379494D 		.ascii	"CyIMO_DisableDoubler\000"
+ 4331      4F5F4469 
+ 4331      7361626C 
+ 4331      65446F75 
+ 4331      626C6572 
+ 4332              	.LASF86:
+ 4333 04e7 43795664 		.ascii	"CyVdLvDigitDisable\000"
+ 4333      4C764469 
+ 4333      67697444 
+ 4333      69736162 
+ 4333      6C6500
+ 4334              	.LASF54:
+ 4335 04fa 696D6F41 		.ascii	"imoActFreq12Mhz\000"
+ 4335      63744672 
+ 4335      65713132 
+ 4335      4D687A00 
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 119
 
 
- 4335      726E6174 
- 4335      6500
- 4336              	.LASF94:
- 4337 0528 4379466C 		.ascii	"CyFlash_SetWaitCycles\000"
- 4337      6173685F 
- 4337      53657457 
- 4337      61697443 
- 4337      79636C65 
- 4338              	.LASF39:
- 4339 053e 736C7054 		.ascii	"slpTrBypass\000"
- 4339      72427970 
- 4339      61737300 
+ 4336              	.LASF74:
+ 4337 050a 4379506D 		.ascii	"CyPmHibernate\000"
+ 4337      48696265 
+ 4337      726E6174 
+ 4337      6500
+ 4338              	.LASF94:
+ 4339 0518 4379466C 		.ascii	"CyFlash_SetWaitCycles\000"
+ 4339      6173685F 
+ 4339      53657457 
+ 4339      61697443 
+ 4339      79636C65 
  4340              	.LASF82:
- 4341 054a 66747749 		.ascii	"ftwInterval\000"
+ 4341 052e 66747749 		.ascii	"ftwInterval\000"
  4341      6E746572 
  4341      76616C00 
  4342              	.LASF85:
- 4343 0556 6379506D 		.ascii	"cyPmImoFreqReg2Mhz\000"
+ 4343 053a 6379506D 		.ascii	"cyPmImoFreqReg2Mhz\000"
  4343      496D6F46 
  4343      72657152 
  4343      6567324D 
  4343      687A00
  4344              	.LASF117:
- 4345 0569 4379506D 		.ascii	"CyPmReadStatus\000"
+ 4345 054d 4379506D 		.ascii	"CyPmReadStatus\000"
  4345      52656164 
  4345      53746174 
  4345      757300
  4346              	.LASF104:
- 4347 0578 43794275 		.ascii	"CyBusClk_SetDivider\000"
+ 4347 055c 43794275 		.ascii	"CyBusClk_SetDivider\000"
  4347      73436C6B 
  4347      5F536574 
  4347      44697669 
  4347      64657200 
  4348              	.LASF32:
- 4349 058c 636C6B44 		.ascii	"clkDistDelay\000"
+ 4349 0570 636C6B44 		.ascii	"clkDistDelay\000"
  4349      69737444 
  4349      656C6179 
  4349      00
  4350              	.LASF78:
- 4351 0599 4379506D 		.ascii	"CyPmCtwSetInterval\000"
+ 4351 057d 4379506D 		.ascii	"CyPmCtwSetInterval\000"
  4351      43747753 
  4351      6574496E 
  4351      74657276 
  4351      616C00
  4352              	.LASF65:
- 4353 05ac 73746174 		.ascii	"status\000"
+ 4353 0590 73746174 		.ascii	"status\000"
  4353      757300
  4354              	.LASF114:
- 4355 05b3 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 4355 0597 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  4355      4320342E 
  4355      392E3320 
  4355      32303135 
  4355      30333033 
- 4356 05e6 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 4356 05ca 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
  4356      20726576 
  4356      6973696F 
  4356      6E203232 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 120
-
-
  4356      31323230 
- 4357 0619 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 120
+
+
+ 4357 05fd 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  4357      66756E63 
  4357      74696F6E 
  4357      2D736563 
  4357      74696F6E 
  4358              	.LASF48:
- 4359 0641 6C766961 		.ascii	"lviaEn\000"
+ 4359 0625 6C766961 		.ascii	"lviaEn\000"
  4359      456E00
- 4360              	.LASF98:
- 4361 0648 4379494D 		.ascii	"CyIMO_SetFreq\000"
- 4361      4F5F5365 
- 4361      74467265 
- 4361      7100
+ 4360              	.LASF116:
+ 4361 062c 443A5C73 		.ascii	"D:\\sjh\\10.18\\UAV_Control\\UAV_Control.cydsn\000"
+ 4361      6A685C31 
+ 4361      302E3138 
+ 4361      5C554156 
+ 4361      5F436F6E 
  4362              	.LASF109:
- 4363 0656 4379494D 		.ascii	"CyIMO_EnableDoubler\000"
+ 4363 0657 4379494D 		.ascii	"CyIMO_EnableDoubler\000"
  4363      4F5F456E 
  4363      61626C65 
  4363      446F7562 
  4363      6C657200 
  4364              	.LASF60:
- 4365 066a 4379506D 		.ascii	"CyPmHibSaveSet\000"
+ 4365 066b 4379506D 		.ascii	"CyPmHibSaveSet\000"
  4365      48696253 
  4365      61766553 
  4365      657400
  4366              	.LASF69:
- 4367 0679 77616B65 		.ascii	"wakeupTime\000"
+ 4367 067a 77616B65 		.ascii	"wakeupTime\000"
  4367      75705469 
  4367      6D6500
  4368              	.LASF90:
- 4369 0684 43795664 		.ascii	"CyVdLvAnalogEnable\000"
+ 4369 0685 43795664 		.ascii	"CyVdLvAnalogEnable\000"
  4369      4C76416E 
  4369      616C6F67 
  4369      456E6162 
  4369      6C6500
  4370              	.LASF15:
- 4371 0697 63797374 		.ascii	"cystatus\000"
+ 4371 0698 63797374 		.ascii	"cystatus\000"
  4371      61747573 
  4371      00
  4372              	.LASF23:
- 4373 06a0 666C6173 		.ascii	"flashWaitCycles\000"
+ 4373 06a1 666C6173 		.ascii	"flashWaitCycles\000"
  4373      68576169 
  4373      74437963 
  4373      6C657300 
  4374              	.LASF52:
- 4375 06b0 6C766961 		.ascii	"lviaRst\000"
+ 4375 06b1 6C766961 		.ascii	"lviaRst\000"
  4375      52737400 
  4376              	.LASF91:
- 4377 06b8 43795664 		.ascii	"CyVdHvAnalogEnable\000"
+ 4377 06b9 43795664 		.ascii	"CyVdHvAnalogEnable\000"
  4377      4876416E 
  4377      616C6F67 
  4377      456E6162 
  4377      6C6500
  4378              	.LASF105:
- 4379 06cb 43795854 		.ascii	"CyXTAL_Stop\000"
+ 4379 06cc 43795854 		.ascii	"CyXTAL_Stop\000"
  4379      414C5F53 
  4379      746F7000 
-ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccs5hfoP.s 			page 121
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccgMAHvA.s 			page 121
 
 
  4380              	.LASF83:
- 4381 06d7 6379506D 		.ascii	"cyPmBackup\000"
+ 4381 06d8 6379506D 		.ascii	"cyPmBackup\000"
  4381      4261636B 
  4381      757000
  4382              	.LASF47:
- 4383 06e2 6C766964 		.ascii	"lvidTrip\000"
+ 4383 06e3 6C766964 		.ascii	"lvidTrip\000"
  4383      54726970 
  4383      00
  4384              	.LASF24:
- 4385 06eb 696D6F45 		.ascii	"imoEnable\000"
+ 4385 06ec 696D6F45 		.ascii	"imoEnable\000"
  4385      6E61626C 
  4385      6500
  4386              	.LASF76:
- 4387 06f5 696E7465 		.ascii	"interruptStatus\000"
+ 4387 06f6 696E7465 		.ascii	"interruptStatus\000"
  4387      72727570 
  4387      74537461 
  4387      74757300 

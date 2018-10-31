@@ -1,4 +1,6 @@
 #include "Control.h"
+#include <stdio.h>
+#include "math.h"
 
 //来自蓝牙的数据
 extern int BT_Throttle, BT_Yaw, BT_Pitch, BT_Roll;
@@ -12,7 +14,7 @@ extern float Roll, Pitch, Yaw;           //三轴角度，单位为°
 extern int MagX, MagY, MagZ;             //三轴磁场
 
 //其他临时变量
-int set_speed_1, set_speed_2, set_speed_3, set_speed_4; //储存设定的速度
+float set_power_1, set_power_2, set_power_3, set_power_4; //储存设定的动力，范围0-10000
 float Error_roll, Error_pitch, Error_w_yaw; //三轴角度/Yaw角速度的误差
 float last_Error_roll, last_Error_pitch, last_Error_w_yaw; //上一时刻的角度误差，用于求差分
 float int_Error_roll, int_Error_pitch, int_Error_w_yaw; //误差的积分
@@ -23,26 +25,30 @@ float last_Error_w_roll, last_Error_w_pitch; //上一时刻的Roll和Pitch角速
 float int_Error_w_roll, int_Error_w_pitch; //角速度误差的积分
 float Control_Roll, Control_Pitch, Control_Yaw;
 
+float last_power_1, last_power_2, last_power_3, last_power_4;
+#define MAX_POWER_ACCELERATION 150
+
 //PID相关参数
-#define angle_P_roll  2.0 //PID参数有待调整
-#define angle_I_roll  0.0
-#define angle_D_roll  0.0
-#define angle_P_pitch 2.0
-#define angle_I_pitch 0.0
-#define angle_D_pitch 0.0
-#define Omega_P_roll  2.0
-#define Omega_I_roll  0.0
-#define Omega_D_roll  0.0
-#define Omega_P_pitch 2.0
-#define Omega_I_pitch 0.0
-#define Omega_D_pitch 0.0
-#define Omega_P_yaw   3.0
-#define Omega_I_yaw   0.0
-#define Omega_D_yaw   0.0
+// 全为正数
+#define angle_P_roll  0.5 //PID参数有待调整
+#define angle_I_roll  0.000
+#define angle_D_roll  1.0
+#define angle_P_pitch 0.5
+#define angle_I_pitch 0.000
+#define angle_D_pitch 1.0
+#define Omega_P_roll  10.0
+#define Omega_I_roll  0.00
+#define Omega_D_roll  15.0
+#define Omega_P_pitch 10.0
+#define Omega_I_pitch 0.00
+#define Omega_D_pitch 15.0
+#define Omega_P_yaw   5.0
+#define Omega_I_yaw   0.00
+#define Omega_D_yaw   12.0
 
 //积分上限
-#define Angle_Int_Sup 1000.0
-#define Omega_Int_Sup 1000.0
+#define Angle_Int_Sup 5000.0
+#define Omega_Int_Sup 5000.0
 
 //期望偏角/角速度限制
 #define Angle_Roll_Sup   30.0
@@ -55,11 +61,12 @@ float Control_Roll, Control_Pitch, Control_Yaw;
 //电机转速
 extern int Motor_v_1, Motor_v_2,  Motor_v_3,  Motor_v_4;
 
-int tmpcount = 0; //================================
+//计算与蓝牙断开连接的时间
+volatile int connection_lost_time = 0;
 
 //初始化所有变量
 void Control_Func_InitVariable() {
-    set_speed_1 = set_speed_2 = set_speed_3 = set_speed_4 = 0;
+    set_power_1 = set_power_2 = set_power_3 = set_power_4 = 0;
     Error_roll = Error_pitch = Error_w_yaw = Error_w_pitch = Error_w_roll = 0.0;
     last_Error_roll = last_Error_pitch = last_Error_w_yaw = last_Error_w_pitch = last_Error_w_roll = 0.0;
     int_Error_pitch = int_Error_roll = int_Error_w_pitch = int_Error_w_roll = int_Error_w_yaw = 0.0;
@@ -67,17 +74,17 @@ void Control_Func_InitVariable() {
     Control_Roll = Control_Pitch = Control_Yaw = 0.0;
 }
 
+extern int Debug_Mode;
+char displayBuffer[16];
 //主要控制算法
 void Control_Main() {
-    //设定根据油门大小设定转速，并留出控制余量
-    set_speed_1 = BT_Throttle * 900 / 1024;
-    set_speed_2 = BT_Throttle * 900 / 1024;
-    set_speed_3 = BT_Throttle * 900 / 1024;
-    set_speed_4 = BT_Throttle * 900 / 1024;
+    //设定根据油门大小设定动力，并留出控制余量
+    set_power_1 = BT_Throttle * 9000 / 1024;
+    set_power_2 = BT_Throttle * 9000 / 1024;
+    set_power_3 = BT_Throttle * 9000 / 1024;
+    set_power_4 = BT_Throttle * 9000 / 1024;
     
     //解码蓝牙传输的设定角度
-    //Desire_angle_pitch = -((float)BT_Pitch - 512.0) * 30.0 / 512.0;
-    //Desire_angle_roll = ((float)BT_Roll - 512.0) * 30.0 / 512.0;
     Desire_angle_pitch = ((float)BT_Roll - 512.0) * 30.0 / 512.0;
     Desire_angle_roll = ((float)BT_Pitch - 512.0) * 30.0 / 512.0;
     Desire_w_yaw = ((float)BT_Yaw - 512.0) * 40.0 / 512.0;
@@ -143,47 +150,93 @@ void Control_Main() {
     last_Error_w_yaw = Error_w_yaw;
     
     //控制量转化为电机转速变化
-    //实际旋转方向和电机编号需要进一步确认
-    set_speed_1 +=  Control_Roll + Control_Pitch + Control_Yaw;
-    set_speed_2 += -Control_Roll + Control_Pitch - Control_Yaw;
-    set_speed_3 += -Control_Roll - Control_Pitch + Control_Yaw;
-    set_speed_4 +=  Control_Roll - Control_Pitch - Control_Yaw;
+    set_power_1 +=  Control_Roll + Control_Pitch + Control_Yaw;
+    set_power_2 += -Control_Roll + Control_Pitch - Control_Yaw;
+    set_power_3 += -Control_Roll - Control_Pitch + Control_Yaw;
+    set_power_4 +=  Control_Roll - Control_Pitch - Control_Yaw;
     
-    //限制电机转速在0-1000
-    set_speed_1 = (set_speed_1 < 0)?(0):((set_speed_1 > 1000)?(1000):(set_speed_1));
-    set_speed_2 = (set_speed_2 < 0)?(0):((set_speed_2 > 1000)?(1000):(set_speed_2));
-    set_speed_3 = (set_speed_3 < 0)?(0):((set_speed_3 > 1000)?(1000):(set_speed_3));
-    set_speed_4 = (set_speed_4 < 0)?(0):((set_speed_4 > 1000)?(1000):(set_speed_4));
+    //限制目标动力在0-10000
+    set_power_1 = (set_power_1 < 0)?(0):((set_power_1 > 10000)?(10000):(set_power_1));
+    set_power_2 = (set_power_2 < 0)?(0):((set_power_2 > 10000)?(10000):(set_power_2));
+    set_power_3 = (set_power_3 < 0)?(0):((set_power_3 > 10000)?(10000):(set_power_3));
+    set_power_4 = (set_power_4 < 0)?(0):((set_power_4 > 10000)?(10000):(set_power_4));
+
+    connection_lost_time++;
+    if(connection_lost_time >= 50)
+        connection_lost_time = 50;
     
-    LCD_Position(0, 0);
-    LCD_PrintDecUint16(set_speed_1); //=========================
-    LCD_PrintString("     ");
-    LCD_Position(0, 4);
-    LCD_PrintDecUint16(set_speed_2);
-    LCD_PrintString("     ");
-    LCD_Position(0, 8);
-    LCD_PrintDecUint16(set_speed_3);
-    LCD_PrintString("     ");
-    LCD_Position(0, 12);
-    LCD_PrintDecUint16(set_speed_4);
-    LCD_PrintString("     ");
+    //限制动力增加速率，提高安全性
+    if(set_power_1 > last_power_1 + MAX_POWER_ACCELERATION)
+        set_power_1 = last_power_1 + MAX_POWER_ACCELERATION;
+    if(set_power_2 > last_power_2 + MAX_POWER_ACCELERATION)
+        set_power_2 = last_power_2 + MAX_POWER_ACCELERATION;
+    if(set_power_3 > last_power_3 + MAX_POWER_ACCELERATION)
+        set_power_3 = last_power_3 + MAX_POWER_ACCELERATION;
+    if(set_power_4 > last_power_4 + MAX_POWER_ACCELERATION)
+        set_power_4 = last_power_4 + MAX_POWER_ACCELERATION;
     
-    /*LCD_Position(1, 0);
-    LCD_PrintDecUint16((int)(Desire_w_roll*10.0)); //=========================
-    LCD_Position(1, 5);
-    LCD_PrintDecUint16((int)(Desire_w_pitch*10.0));
-    LCD_Position(1, 10);
-    LCD_PrintDecUint16((int)(Desire_w_yaw*10.0));*/
-    tmpcount++;
-    if(tmpcount >= 100)
-        tmpcount = 0;
-    LCD_Position(1, 0);
-    LCD_PrintDecUint16(tmpcount);
-    LCD_PrintString("     ");
+    last_power_1 = set_power_1;
+    last_power_2 = set_power_2;
+    last_power_3 = set_power_3;
+    last_power_4 = set_power_4;
     
     //Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
-    /*Motor_v_1 = set_speed_1;
-    Motor_v_2 = set_speed_2;
-    Motor_v_3 = set_speed_3;
-    Motor_v_4 = set_speed_4;*/
+    //动力转速换算，因为推力与转速的平方成正比
+    //从动力0-10000换算到转速0-1000
+    if(connection_lost_time <= 30) { //一定时间接收不到蓝牙控制信号就自动停止
+        Motor_v_1 = (int)(10.0 * sqrt(set_power_1));
+        Motor_v_2 = (int)(10.0 * sqrt(set_power_2));
+        Motor_v_3 = (int)(10.0 * sqrt(set_power_3));
+        Motor_v_4 = (int)(10.0 * sqrt(set_power_4));
+    }
+    else
+        Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
+    
+    //向LCD屏输出3个控制量，仅供调试
+    if(Debug_Mode) {
+        LCD_Position(1, 0);
+        sprintf(displayBuffer, "%d", (int)Control_Roll);
+        LCD_PrintString(displayBuffer);
+        LCD_PrintString("     ");
+        LCD_Position(1, 5);
+        sprintf(displayBuffer, "%d", (int)Control_Pitch);
+        LCD_PrintString(displayBuffer);
+        LCD_PrintString("     ");
+        LCD_Position(1, 10);
+        sprintf(displayBuffer, "%d", (int)Control_Yaw);
+        LCD_PrintString(displayBuffer);
+        LCD_PrintString("     ");
+    }
+    
+    //向LCD屏输出设定的动力，仅供调试
+    if(Debug_Mode) {
+        LCD_Position(0, 0);
+        LCD_PrintDecUint16((int)(set_power_1 / 10.0));
+        LCD_PrintString("     ");
+        LCD_Position(0, 4);
+        LCD_PrintDecUint16((int)(set_power_2 / 10.0));
+        LCD_PrintString("     ");
+        LCD_Position(0, 8);
+        LCD_PrintDecUint16((int)(set_power_3 / 10.0));
+        LCD_PrintString("     ");
+        LCD_Position(0, 12);
+        LCD_PrintDecUint16((int)(set_power_4 / 10.0));
+        LCD_PrintString("     ");
+    }
+    
+    //向LCD屏输出设定的电机转速（PWM），仅供调试
+    /*if(Debug_Mode) {
+        LCD_Position(1, 0);
+        LCD_PrintDecUint16(Motor_v_1);
+        LCD_PrintString("     ");
+        LCD_Position(1, 4);
+        LCD_PrintDecUint16(Motor_v_2);
+        LCD_PrintString("     ");
+        LCD_Position(1, 8);
+        LCD_PrintDecUint16(Motor_v_3);
+        LCD_PrintString("     ");
+        LCD_Position(1, 12);
+        LCD_PrintDecUint16(Motor_v_4);
+        LCD_PrintString("     ");
+    }*/
 }

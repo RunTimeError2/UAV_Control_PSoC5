@@ -2,7 +2,7 @@
 --	Conversion of UAV_Control.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Oct 11 16:56:57 2018
+--	Fri Oct 26 11:00:34 2018
 --
 
 USE cypress.cypress.all;
@@ -1613,9 +1613,9 @@ SIGNAL \USBUART_1:dma_complete_6\ : bit;
 SIGNAL \USBUART_1:Net_1916\ : bit;
 SIGNAL \USBUART_1:dma_complete_7\ : bit;
 SIGNAL \USBUART_1:Net_1915\ : bit;
-SIGNAL Net_2457 : bit;
 SIGNAL Net_2425 : bit;
 SIGNAL \Timer_Control:Net_260\ : bit;
+SIGNAL Net_2457 : bit;
 SIGNAL \Timer_Control:Net_55\ : bit;
 SIGNAL Net_2462 : bit;
 SIGNAL \Timer_Control:Net_53\ : bit;
@@ -3345,7 +3345,7 @@ Rx_JY901:cy_psoc3_pins_v1_10
 		id=>"ea4c7357-46d1-46dd-a8fa-0b632283a8a7/be0a0e37-ad17-42ca-b5a1-1a654d736358",
 		source_clock_id=>"",
 		divisor=>0,
-		period=>"1085069444.44444",
+		period=>"271267361.111111",
 		is_direct=>'0',
 		is_digital=>'1')
 	PORT MAP(clock_out=>\UART_JY901:Net_9\,
@@ -3643,7 +3643,7 @@ Rx_JY901:cy_psoc3_pins_v1_10
 	PORT MAP(int_signal=>Net_2390);
 isr_Ctrl:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10")
-	PORT MAP(int_signal=>Net_2457);
+	PORT MAP(int_signal=>Net_2258);
 \Timer_Control:TimerUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
 	PORT MAP(clock_in=>Net_120,
@@ -3672,7 +3672,7 @@ isr_Ctrl:cy_isr_v1_0
 		clock=>\Timer_Control:TimerUDB:ClockOutFromEnBlock\,
 		status=>(zero, zero, zero, \Timer_Control:TimerUDB:status_3\,
 			\Timer_Control:TimerUDB:status_2\, zero, \Timer_Control:TimerUDB:status_tc\),
-		interrupt=>Net_2457);
+		interrupt=>\Timer_Control:Net_55\);
 \Timer_Control:TimerUDB:sT24:timerdp:u0\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000",
 		d0_init=>"00000000",

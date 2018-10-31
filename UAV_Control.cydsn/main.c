@@ -1,14 +1,3 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
 #include <project.h>
 #include "Motors.h"
 #include "BlueTooth.h"
@@ -26,20 +15,6 @@ void LCD_Disp(char *str, unsigned char row, unsigned char col) {
 #ifndef ABS
     #define ABS(x) (((x)>0)?(x):(-(x)))
 #endif
-//小数显示（不知道为什么sprintf不能用%f）
-void Convert_Float2String(char *str, float x) {
-    uint8 symbol = (x > 0.0) ? 1 : 0;
-    float num = ABS(x);
-    int int_part = (int)num;
-    int float_2part = (int)((num - int_part)*100.0); //取两位小数
-    if(float_2part >= 10)
-        sprintf(str, "%c%d.%d", (symbol == 1)?'+':'-', int_part, float_2part);
-    else
-        if(float_2part > 0)
-            sprintf(str, "%c%d.0%d", (symbol == 1)?'+':'-', int_part, float_2part);
-        else
-            sprintf(str, "%c%d.00", (symbol == 1)?'+':'-', int_part);
-}
 
 //电机速度控制
 volatile int Motor_v_1, Motor_v_2,  Motor_v_3,  Motor_v_4;
@@ -65,15 +40,15 @@ CY_ISR(Timer_1_Interrupt_Handler) {
     }
 }
 
-//蓝牙接收与解码
+//蓝牙串口接收与解码
 uint8 BTRxBuf[64];
 uint8 BTRxBufLen;
 uint8 tmp;
 int flag = 0;
+extern int connection_lost_time;
 
 CY_ISR(Bluetooth_RX_Interrupt_Handler) {
     tmp = UART_Bluetooth_ReadRxData();
-    //LCD_Disp("Ha", 1, 14);
     if(tmp == 0xa5 && flag == 0) { //遇到起始位，开始接收
         BTRxBuf[0] = 0xa5;
         BTRxBufLen = 1;
@@ -86,7 +61,7 @@ CY_ISR(Bluetooth_RX_Interrupt_Handler) {
         }
         else
             if(flag == 1 && BTRxBufLen == 15) {
-                //LCD_Disp("GetData!", 1, 8); //输出提示信息
+                connection_lost_time = 0;
                 Process_Bluetooth_Message(BTRxBuf, BTRxBufLen); //转入解码函数
                 BTRxBufLen = 0; //清空缓冲区
                 flag = 0;
@@ -100,29 +75,6 @@ uint8 tmp2;
 int flag_55 = 0;
 int flag_rec = 0;
 int decode_success;
-
-//在LCD屏上显示角度
-char LCDBuffer[16];
-int float2int_tmp;
-char symbol;
-float f_tmp;
-void Float28Str(float f) {
-    f_tmp = f;
-    symbol = (f_tmp < 0) ? '-' : ' ';
-    f_tmp = (f_tmp < 0) ? (-f_tmp) : f_tmp;
-    float2int_tmp = (int)(f_tmp*1000.0);
-    sprintf(LCDBuffer, "%c%3d.%d", symbol, float2int_tmp/1000, float2int_tmp%1000);
-    LCDBuffer[8] = '\0';
-}
-
-void LCD_DisplayAngle() {
-    Float28Str(Roll);
-    LCD_Disp(LCDBuffer, 0, 0);
-    Float28Str(Pitch);
-    LCD_Disp(LCDBuffer, 0, 8);
-    Float28Str(Yaw);
-    LCD_Disp(LCDBuffer, 1, 0);
-}
 
 CY_ISR(JY901_RX_Interrupt_Handler) {
     tmp2 = UART_JY901_ReadRxData();
@@ -151,105 +103,59 @@ CY_ISR(JY901_RX_Interrupt_Handler) {
                 flag_55 = flag_rec = 0; //其他情况清空标志位
 }
 
+//向串口输出JY901解码得到的信息，仅供调试
 char DisplayBuffer[128];
 CY_ISR(JY901_Debug_Display) {
     while(USBUART_1_CDCIsReady() == 0u);
     USBUART_1_PutString("===== Debug Data =====\n");
     while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString("AccelX=");
-    Convert_Float2String(DisplayBuffer, AccelX);
-    while(USBUART_1_CDCIsReady() == 0u);
+    sprintf(DisplayBuffer, "AccelX=%f, AccelY=%f, AccelZ=%f\n", AccelX, AccelY, AccelZ);
     USBUART_1_PutString(DisplayBuffer);
     while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(", AccelY=");
-    Convert_Float2String(DisplayBuffer, AccelY);
-    while(USBUART_1_CDCIsReady() == 0u);
+    sprintf(DisplayBuffer, "OmegaX=%f, OmegaY=%f, OmegaZ=%f\n", OmegaX, OmegaY, OmegaZ);
     USBUART_1_PutString(DisplayBuffer);
     while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(", AccelZ=");
-    Convert_Float2String(DisplayBuffer, AccelZ);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(DisplayBuffer);
-    
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString("\nOmegaX=");
-    Convert_Float2String(DisplayBuffer, OmegaX);
-    while(USBUART_1_CDCIsReady() == 0u);
+    sprintf(DisplayBuffer, "Roll=%f, Pitch=%f, Yaw=%f\n", Roll, Pitch, Yaw);
     USBUART_1_PutString(DisplayBuffer);
     while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(", OmegaY=");
-    Convert_Float2String(DisplayBuffer, OmegaY);
-    while(USBUART_1_CDCIsReady() == 0u);
+    sprintf(DisplayBuffer, "Hx=%d, Hy=%d, Hz=%d\n", MagX, MagY, MagZ);
     USBUART_1_PutString(DisplayBuffer);
     while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(", OmegaZ=");
-    Convert_Float2String(DisplayBuffer, OmegaZ);
-    while(USBUART_1_CDCIsReady() == 0u);
+    sprintf(DisplayBuffer, "Temp=%f\n\n", Temperature);
     USBUART_1_PutString(DisplayBuffer);
-    
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString("\nRoll=");
-    Convert_Float2String(DisplayBuffer, Roll);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(DisplayBuffer);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(", Pitch=");
-    Convert_Float2String(DisplayBuffer, Pitch);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(DisplayBuffer);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(", Yaw=");
-    Convert_Float2String(DisplayBuffer, Yaw);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(DisplayBuffer);
-    
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString("\nHx=");
-    Convert_Float2String(DisplayBuffer, MagX);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(DisplayBuffer);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(", Hy=");
-    Convert_Float2String(DisplayBuffer, MagY);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(DisplayBuffer);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(", Hz=");
-    Convert_Float2String(DisplayBuffer, MagZ);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(DisplayBuffer);
-    
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString("\nTemp=");
-    Convert_Float2String(DisplayBuffer, Temperature);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString(DisplayBuffer);
-    while(USBUART_1_CDCIsReady() == 0u);
-    USBUART_1_PutString("\n\n");
+}
+
+//定时运行控制算法函数
+int launch_control_cnt = 0;
+CY_ISR(Launch_Control) {
+    launch_control_cnt++;
+    if(launch_control_cnt >= 4) {
+        Control_Main();
+        launch_control_cnt = 0;
+    }
 }
 
 //主函数
 char tmpbuf[10];
-int main()
-{
-    CyGlobalIntEnable; /* Enable global interrupts. */
+volatile int Debug_Mode = 0; //0表示进入实际运行状态，1表示调试模式
+int main() {
+    CyGlobalIntEnable;
     
     //LCD显示相关
     LCD_Start();
     LCD_Disp("Init     ", 0, 0);
     
-    //定时器/PWM相关
+    //定时器相关，控制PWM和控制算法
     isr_Timer_1_StartEx(Timer_1_Interrupt_Handler);
+    if(!Debug_Mode)
+        isr_Ctrl_StartEx(Control_Main);
     Timer_1_Start();
     Initialize_All_PWM();
     
-    //USBUART相关
+    //USBUART相关，用于输出调试信息
     USBUART_1_Start(0u, USBUART_1_3V_OPERATION);
     while(!USBUART_1_GetConfiguration());
     USBUART_1_CDC_Init();
-    
-    //USBUART_1_PutData(buffer, length);
-    //USBUART_1_PutString(str);
     
     //蓝牙相关
     BTRxBufLen = 0;
@@ -266,25 +172,25 @@ int main()
     
     //初始化控制算法变量
     Control_Func_InitVariable();
-    
-    //控制算法定时器
-    //isr_Ctrl_StartEx(Control_Main);
-    //Timer_Control_Start();
-    
+
+    //初始电机停转，保持10秒，调试状态下可以接上电池
     LCD_Disp("Start    ", 0, 0);
     Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
-    
-    int velocity = 200;
-    
     BT_Throttle = 0;
     BT_Pitch = 512;
     BT_Roll = 512;
     BT_Yaw = 512;
-    CyDelay(10000);
-    LCD_Disp("Ready    ", 0, 0);
+    if(Debug_Mode) {
+        CyDelay(10000);
+        LCD_Disp("Ready    ", 0, 0);
+    }
+    else {
+        CyDelay(1000);
+    }
     
-    //仅供测试
-    /*Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
+    //仅供测试，四个电机轮流转动1秒，用于检查电机是否正常工作以及顺序是否正确
+    /*int velocity = 300;  //0-1000
+    Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
     Motor_v_1 = velocity;
     LCD_Disp("Run 1    ", 0, 0);
     CyDelay(1000);
@@ -306,16 +212,17 @@ int main()
     
     Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
 
-    //设置电机停转
     for(;;) {
-        /*BT_Throttle = 300;
-        BT_Pitch = 512;
-        BT_Roll = 512;
-        BT_Yaw = 512;*/
-        //JY901_Debug_Display(); //每隔1秒通过串口向上位机输出JY901数据
-        //Motor_v_1 = Motor_v_2 = Motor_v_3 = Motor_v_4 = 0;
-        //CyDelay(500);
-        Control_Main();
-        CyDelay(100);
+        if(Debug_Mode) {
+            JY901_Debug_Display(); //通过串口向上位机输出JY901数据
+            Control_Main();
+            CyDelay(500);
+        }
+        else {
+            if(connection_lost_time >= 30)
+                LCD_Disp("Stop    ", 1, 0);
+            else
+                LCD_Disp("Control ", 1, 0);
+        }
     }
 }
